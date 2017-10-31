@@ -12,9 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
+//THIS COULD BE DELETED BUT CONTAINS A LOGIN EXAMPLE LET IT LIVE UNTIL WE FINISH THE CONTACT FORM
 Route::get('/test','testController@index');
-
-Route::get('/test/create','testController@create');//this creates a element in the DB
+Route::get('/test/create','testController@create');//this creates a element in DB

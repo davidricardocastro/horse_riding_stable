@@ -14,10 +14,7 @@ class CreateHorsesTable extends Migration
     public function up()
     {
         Schema::create('horses', function (Blueprint $table) {
-            //
             $table->increments('id');
-            $table->string('name')->nullable();
-            $table->string('images')->nullable();
             $table->timestamps();
         });
     }
