@@ -11,9 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+/*Route::get('/', function () {
+    return view('welcome');
+});*/
+Route::get('/','indexController@index');
+
+
+
+
 
 //THIS COULD BE DELETED BUT CONTAINS A LOGIN EXAMPLE LET IT LIVE UNTIL WE FINISH THE CONTACT FORM
 Route::get('/test','testController@index');
