@@ -20,10 +20,3 @@ Route::get('/stable','stableController@stable');
 Route::get('/team','teamController@team');
 Route::get('/contact','contactController@contact');
 Route::get('/admin','adminController@admin');
-
-
-
-
-//THIS COULD BE DELETED BUT CONTAINS A LOGIN EXAMPLE LET IT LIVE UNTIL WE FINISH THE CONTACT FORM
-Route::get('/test','testController@index');
-Route::get('/test/create','testController@create');//this creates a element in DB

@@ -9,6 +9,6 @@ class horseController extends Controller
     //
     public function horse()
     {
-       return view('horse');
+       return view('team');
     }
 }
