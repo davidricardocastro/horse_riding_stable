@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test','testController@index');
+
+Route::get('/test/create','testController@create');//this creates a element in the DB
