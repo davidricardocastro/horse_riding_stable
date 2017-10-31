@@ -15,7 +15,12 @@
     return view('welcome');
 });*/
 Route::get('/','indexController@index');
-
+Route::get('/riding','ridingController@riding');
+Route::get('/stable','stableController@stable');
+Route::get('/riding','ridingController@riding');
+Route::get('/team','teamController@team');
+Route::get('/contact','contactController@contact');
+Route::get('/admin','adminController@admin');
 
 
 
