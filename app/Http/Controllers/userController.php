@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class riding extends Controller
+class userController extends Controller
 {
     //
 }

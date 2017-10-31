@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Klaukkala Stable</title>
-</head>
-<body>
-<p>This is the homepage</p>
-    @yield('content')
-</body>
-</html>
+@extends('wrapper')
+
+@section('content')
+<p>This is the index.blade.php</p>
+@endsection

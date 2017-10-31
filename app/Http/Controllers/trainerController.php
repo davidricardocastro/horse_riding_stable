@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class horse extends Controller
+class trainerController extends Controller
 {
     //
 }
