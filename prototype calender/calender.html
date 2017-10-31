@@ -10,7 +10,7 @@ body {font-family: Verdana, sans-serif;}
 .month {
     padding: 70px 25px;
     width: 100%;
-    background: #1abc9c;
+    background: #bc5e1a;
     text-align: center;
 }
 
@@ -40,50 +40,53 @@ body {font-family: Verdana, sans-serif;}
     margin: 0;
     padding: 10px 0;
     background-color: #ddd;
+    
 }
 
 .weekdays li {
     display: inline-block;
-    width: 13.6%;
     color: #666;
     text-align: center;
+    width: 10%;
+    flex-grow: 1;
 }
 
 .days {
     padding: 10px 0;
     background: #eee;
     margin: 0;
+    
 }
 
 .days li {
     list-style-type: none;
     display: inline-block;
-    width: 13.6%;
     text-align: center;
     margin-bottom: 5px;
     font-size:12px;
     color: #777;
+    width: 11.9%;
 }
 
 .days li .active {
     padding: 5px;
-    background: #1abc9c;
+    background: #bc5e1a;
     color: white !important
 }
 
-/* Add media queries for smaller screens */
+/* Add media unfinished queries for smaller screens 
 @media screen and (max-width:720px) {
-    .weekdays li, .days li {width: 13.1%;}
-}
+    .weekdays li, .days li {width: 10.9%;}
+}/*
 
 @media screen and (max-width: 420px) {
-    .weekdays li, .days li {width: 12.5%;}
+    .weekdays li, .days li {width: 11.9%;}
     .days li .active {padding: 2px;}
 }
 
 @media screen and (max-width: 290px) {
-    .weekdays li, .days li {width: 12.2%;}
-}
+    .weekdays li, .days li {width: 11.9%;}
+}*/
 </style>
 </head>
 <body>
