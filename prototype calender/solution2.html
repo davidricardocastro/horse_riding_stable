@@ -74,10 +74,10 @@ $('.t').click(function () {
     //console.log(className);
     //toggling to change color
     $(this).toggleClass(className).toggleClass(className + '1');
-
+    //console.log($(this));
     //check if its clicked already using data- attribute
     if ($(this).data("clicked")) {
-        console.log($(this).data("clicked"));
+        //console.log($(this).data("clicked"));
         //remove it if yes
         $("#newDiv").find("#tablefor-" + className).remove();
     } else {
