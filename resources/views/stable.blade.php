@@ -15,7 +15,7 @@
     <div class="row">
         <div class="col">
 
-            <img src="/img/stable_side.jpg" class="img-fluid" alt="stable side">
+            <img src="./img/stable_side.jpg" class="img-fluid" alt="stable side">
 
         </div>
 
@@ -30,7 +30,7 @@
     <div class="row">
         <div class="col">
 
-            <img src="/img/path.jpg" alt="path">
+            <img src="./img/path.jpg" alt="path">
 
         </div>
 
