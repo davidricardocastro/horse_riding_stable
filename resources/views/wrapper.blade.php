@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-
+    <link rel="stylesheet" href="./css/style.css">
     <title> Klaukkala Stable</title>
 </head>
 
@@ -44,9 +44,26 @@
     </nav>
     @yield('content')
 
+    <footer>
+        <div class="container-fluid base_dark_background_color">
+            <div class="row">
+                <div class="col">
+                    <p class="text-left text-white">
+                    Klaukkala Stable, LLC
+                    </p>
+                </div>
+                <div class="col">
+                    <p class="text-right text-white">
+                    Tel: +35965165654<br>
+                    Location: Address 123 Finish st.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="{{ asset('js/jquery.min.js')}}"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
-
 </body>
 
 </html>
