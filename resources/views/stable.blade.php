@@ -13,9 +13,9 @@
 
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-2">
 
-            <img src="./img/stable_side.jpg" class="img-fluid" alt="stable side">
+            <img src="./img/stable_side.jpg" class="img-responsive" alt="stable side">
 
         </div>
 
