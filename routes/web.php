@@ -20,3 +20,7 @@ Route::get('/stable','stableController@stable');
 Route::get('/team','horseController@horse');
 Route::get('/contact','contactController@contact');
 Route::get('/admin','adminController@admin');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

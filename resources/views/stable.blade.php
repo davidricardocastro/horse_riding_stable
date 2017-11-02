@@ -13,16 +13,16 @@
 
     </div>
     <div class="row">
-        <div class="col-2">
+        <div class="col">
 
-            <img src="./img/stable_side.jpg" class="img-responsive" alt="stable side">
+            <img src="./img/stable_side_low.jpg" class="img-fluid" alt="stable side">
 
         </div>
 
         <div class="col">
 
-            <p>Talli Andantino toimii Numlahden kartanon historiallisessa ympäristössä. Hevoset asuvat tilavissa karsinoissa
-                vanhassa tiilitallissa. Vapaa- aikansa ne viettävät tarhoissa tai laitumilla ruuna- ja tammalaumoissa. </p>
+            <h3 class="">Talli Andantino toimii Numlahden kartanon historiallisessa ympäristössä. Hevoset asuvat tilavissa karsinoissa
+                vanhassa tiilitallissa. Vapaa- aikansa ne viettävät tarhoissa tai laitumilla ruuna- ja tammalaumoissa. </h3>
         
         </div>
     </div>
@@ -30,15 +30,15 @@
     <div class="row">
         <div class="col">
 
-            <img src="./img/path.jpg" alt="path">
+            <img src="./img/path_low.jpg" class="img-fluid" alt="path">
 
         </div>
 
         <div class="col">
 
-            <p>Meillä on käytössämme hyväpohjainen ratsastuskenttä 25x50 metriä, sekä vaihteleva maastoinen laitumia kiertävä
+            <h3>Meillä on käytössämme hyväpohjainen ratsastuskenttä 25x50 metriä, sekä vaihteleva maastoinen laitumia kiertävä
                 maastolenkki.
-            </p>
+            </h3>
 
         </div>
     </div>
