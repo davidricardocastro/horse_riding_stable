@@ -42,7 +42,7 @@
 <!-- Authentication Links -->
 @guest
                     <li class="nav-item active" >
-                        <a class="nav-link" href="{{ route('login') }}">Login</a>
+                        <a class="nav-link" href="{{ route('login') }}">Kirjaudu sisään</a>
                     </li>
                     <li class="nav-item active"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
                 @else
@@ -73,29 +73,27 @@
     </nav> 
     @yield('content')
 
-    <footer>
+    <footer >
         <div class="container-fluid base_dark_background_color">
             <div class="row">
-                <div class="col">
-                    <p class="text-left text-white">
-                    Klaukkala Stable, LLC
-                    </p>
+                <div class="col p-2">
+                   
+                   <p class=" text-center text-white" >Talli Andantino | Lopentie 6, Nurmijärvi | +35965165654
+                </p>
                 </div>
-                <div class="col">
-                    <p class="text-right text-white">
-                    Tel: +35965165654<br>
-                    Location: Address 123 Finish st.
-                    </p>
-                </div>
+                
             </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   
+   
+   <!-- this link is need for the dropdown menu in the navbar.-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     
-  <!--<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script> -->
+    
+
+ <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script> 
+  
 </body>
 </html>
