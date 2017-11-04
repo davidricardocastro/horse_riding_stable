@@ -20,31 +20,31 @@
             </button>
         </div>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ action('indexController@index') }}">Etusivu</a>
+            <ul class="navbar-nav mx-auto ">
+                <li class="nav-item active px-2 ">
+                    <a class="nav-link " href="{{ action('indexController@index') }}">Etusivu</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active px-2">
                     <a class="nav-link" href="{{ action('ridingController@riding') }}">Ratsastus</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ action('stableController@stable') }}">Tali</a>
+                <li class="nav-item active px-2">
+                    <a class="nav-link" href="{{ action('stableController@stable') }}">Talli</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active px-2">
                     <a class="nav-link" href="{{ action('horseController@horse') }}">Hevoset</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ action('contactController@contact') }}">Yhteydenotto</a>
+                <li class="nav-item active px-2">
+                    <a class="nav-link" href="{{ action('contactController@contact') }}">Yhteystiedot</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active px-2">
                     <a class="nav-link" href="{{ action('adminController@admin') }}">Booking</a>
                 </li>
 <!-- Authentication Links -->
 @guest
-                    <li class="nav-item active" >
+                    <li class="nav-item active px-2" >
                         <a class="nav-link" href="{{ route('login') }}">Kirjaudu sisään</a>
                     </li>
-                    <li class="nav-item active"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
+                    <li class="nav-item active px-2"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -78,7 +78,7 @@
             <div class="row">
                 <div class="col p-2">
                    
-                   <p class=" text-center text-white" >Talli Andantino | Lopentie 6, Nurmijärvi | +35965165654
+                   <p class=" text-center text-white" >Talli Andantino | Lopentie 6, Nurmijärvi | +358 452 312 398
                 </p>
                 </div>
                 

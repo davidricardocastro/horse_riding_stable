@@ -7,7 +7,7 @@
         <div class="col-12 m-3">
             <h1>Hevoset</h1>
         </div>
-
+        <div class="card-deck">
         <div class="card m-3 text-center bg-light" style="width: 20rem;">
             <div class="card-body">
                 <h4 class="card-title">Antonya</h4>
@@ -39,7 +39,7 @@
                 <p class="card-text">born bla bla bla. parents bla bla bla</p>
             </div>
 
-
+</div>
         </div>
 
 

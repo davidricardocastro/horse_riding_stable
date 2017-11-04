@@ -5,11 +5,26 @@
 
 <div class="container">
     <div class="row">
+<div class="col-12 pb-2">
+<h1>Yhteystiedot</h1>
 
+<h2>Andatino Talli</h2>
+
+<p>Lopentie 6<br>
+01860 Nurmijärvi</p>
+
+<p>+358 452 312 398</p>
+
+<p>andantinotalli@gmail.com</p>
+
+</div>
         <div class="col-12">
-            <h3>Voit ottaa yhteyttä Andatino Talliin myös oheisella lomakkeella. Täytä yhteystietosi, niin otamme
-                yhteyttä!</h3>
+            <h4>Voit ottaa yhteyttä Andatino Talliin myös oheisella lomakkeella. Täytä yhteystietosi, niin otamme
+                yhteyttä!</h4>
         </div>
+
+
+
 
         <div class="col">
 
