@@ -65,9 +65,9 @@ class contactController extends Controller
    
    return Redirect::route('contact')->with('message', 'Thanks for contacting us!');
 
-
+*/
     }
         
-*/
+
 
 }
