@@ -24,3 +24,6 @@ Route::get('/admin','adminController@admin');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//for storing contacts to db
+Route::post('/contact', 'contactController@store');

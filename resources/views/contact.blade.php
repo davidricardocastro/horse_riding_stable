@@ -14,23 +14,27 @@
         <div class="col">
 
 
-            <form action="" method="get">
+            <form action="" method="post">
+
+
+            {{ csrf_field()}}  
+
 
                 <div class="form-group">
                     <label for="Name">Nimi</label>
-                    <input type="text" class="form-control" id="name" placeholder="">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="" value="">
 
                 </div>
 
                 <div class="form-group">
                     <label for="email">Sähköposti</label>
-                    <input type="email" class="form-control" id="email" placeholder="">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="" value="">
 
                 </div>
 
                 <div class="form-group">
                     <label for="phone">Puhelinnumero</label>
-                    <input type="int" class="form-control" id="phone" placeholder="">
+                    <input type="int" class="form-control" name="phone" id="phone" placeholder="" value="">
 
                 </div>
 
@@ -38,7 +42,7 @@
 
                 <div class="form-group">
                     <label for="message">Viesti</label>
-                    <textarea class="form-control" id="message" rows="6"></textarea>
+                    <textarea class="form-control" id="message" rows="6" value=""  name="message"></textarea>
 
                 </div>
 
