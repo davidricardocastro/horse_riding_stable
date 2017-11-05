@@ -14,7 +14,7 @@
         font-family: Playball-Regular;
         src: url('/fonts/Playball-Regular.tff');
         }*/
-        .main_font {
+        .main_font, h1, h2, h3 {
             font-family: 'Playball', cursive, sans;
         }
         .bigger_font {
@@ -36,6 +36,10 @@
             background-position: 0%;
             font-size: 3em;
             padding: 20px;
+        }
+
+        .img_responsive {
+            width
         }
     </style>
 </head>
@@ -103,9 +107,7 @@
     </nav>
 
     <div class="container_background">
-        <div class="container background_light">
-            @yield('content')
-        </div>
+            @yield('content')      
     </div>
 
     <footer >
