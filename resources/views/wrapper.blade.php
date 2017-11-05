@@ -7,44 +7,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
     <title> Klaukkala Stable</title>
+    <style>
+        /*@font-face {
+        font-family: Playball-Regular;
+        src: url('/fonts/Playball-Regular.tff');
+        }*/
+        .main_font {
+            font-family: 'Playball', cursive, sans;
+        }
+        .bigger_font {
+            font-size: 1.25em;
+        }
+        .container_background {
+            background: url("/img/deeärr.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 0%;
+            padding: 1em;
+        }
+        .background_light  {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .top {
+            background: url("/img/horse_eating_cut.jpg");
+            background-size: cover;
+            background-position: 0%;
+            font-size: 3em;
+            padding: 20px;
+        }
+    </style>
 </head>
-
 <body>
-
+    <div class="top">
+        <h1 class="main_font bigger_font text-light">Talli</h1>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="navbar-header">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                aria-expanded="false" aria-label="Toggle navigation">                       
                 <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
+
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto ">
                 <li class="nav-item active px-2 ">
-                    <a class="nav-link " href="{{ action('indexController@index') }}">Etusivu</a>
+                    <a class="nav-link main_font bigger_font" href="{{ action('indexController@index') }}">Etusivu</a>
                 </li>
                 <li class="nav-item active px-2">
-                    <a class="nav-link" href="{{ action('ridingController@riding') }}">Ratsastus</a>
+                    <a class="nav-link main_font bigger_font" href="{{ action('ridingController@riding') }}">Ratsastus</a>
                 </li>
                 <li class="nav-item active px-2">
-                    <a class="nav-link" href="{{ action('stableController@stable') }}">Talli</a>
+                    <a class="nav-link main_font bigger_font" href="{{ action('stableController@stable') }}">Talli</a>
                 </li>
                 <li class="nav-item active px-2">
-                    <a class="nav-link" href="{{ action('horseController@horse') }}">Hevoset</a>
+                    <a class="nav-link main_font bigger_font" href="{{ action('horseController@horse') }}">Hevoset</a>
                 </li>
                 <li class="nav-item active px-2">
-                    <a class="nav-link" href="{{ action('contactController@contact') }}">Yhteystiedot</a>
+                    <a class="nav-link main_font bigger_font" href="{{ action('contactController@contact') }}">Yhteystiedot</a>
                 </li>
                 <li class="nav-item active px-2">
-                    <a class="nav-link" href="{{ action('adminController@admin') }}">Booking</a>
+                    <a class="nav-link main_font bigger_font" href="{{ action('adminController@admin') }}">Booking</a>
                 </li>
 <!-- Authentication Links -->
 @guest
                     <li class="nav-item active px-2" >
-                        <a class="nav-link" href="{{ route('login') }}">Kirjaudu sisään</a>
+                        <a class="nav-link main_font bigger_font" href="{{ route('login') }}">Kirjaudu sisään</a>
                     </li>
-                    <li class="nav-item active px-2"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
+                    <li class="nav-item active px-2 main_font bigger_font"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -70,15 +100,20 @@
 
             </ul>
         </div>
-    </nav> 
-    @yield('content')
+    </nav>
+
+    <div class="container_background">
+        <div class="container background_light">
+            @yield('content')
+        </div>
+    </div>
 
     <footer >
         <div class="container-fluid base_dark_background_color">
             <div class="row">
                 <div class="col p-2">
                    
-                   <p class=" text-center text-white" >Talli Andantino | Lopentie 6, Nurmijärvi | +358 452 312 398
+                   <p class=" text-center text-white main_font bigger_font" >Talli Andantino | Lopentie 6, Nurmijärvi | +358 452 312 398
                 </p>
                 </div>
                 
