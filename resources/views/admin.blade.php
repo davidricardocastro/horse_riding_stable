@@ -509,5 +509,13 @@
         }//reverses the data- to register the change on the clicked element
         $(this).data("clicked", !$(this).data("clicked"));
      });
+     $('#reset').click(function(){
+        //ugly way is refresh page, good way is to remove the table and uncheck the slots!
+        location.reload();
+       /* $(".newDiv").remove();
+        $('.slot').data.toggleClass(".unchecked");
+        $(this).toggleClass(className).toggleClass(className2);
+        $(this).data("clicked", !$(this).data("clicked"));*/
+    });
     </script>
 </html>
