@@ -8,7 +8,7 @@
 <div class="col-12 pb-2">
 <h1>Yhteystiedot</h1>
 
-<h2>Andatino Talli</h2>
+<h2>Talli Andatino</h2>
 
 <p>Lopentie 6<br>
 01860 Nurmijärvi</p>
@@ -36,7 +36,7 @@
 
 
                 <div class="form-group">
-                    <label for="Name">Nimi</label>
+                    <label for="name">Nimi</label>
                     <input type="text" class="form-control" name="name" id="name" placeholder="" value="">
 
                 </div>

@@ -12,7 +12,7 @@
             </div>
 
         </div>
-        <div class="row ">
+        <div class="row align-items-center ">
             <div class="col-sm-12 col-md-4 p-5">
 
                 <img src="./img/stable_side_low.jpg" class="img-fluid" alt="stable side">
@@ -25,7 +25,8 @@
                     vanhassa tiilitallissa. Vapaa- aikansa ne viettävät tarhoissa tai laitumilla ruuna- ja tammalaumoissa. </h3>
                 
             </div>
-        
+            </div>
+            <div class="row align-items-center">
             <div class="col-sm-12 col-md-4 p-5">
 
                 <img src="./img/path_low.jpg" class="img-fluid" alt="path">
@@ -38,6 +39,7 @@
                     maastolenkki.
                 </h3>
 
+            </div>
             </div>
     </div>
 

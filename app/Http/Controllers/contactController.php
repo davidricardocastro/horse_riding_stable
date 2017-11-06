@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Contact;
-
+use Mail;
 
 class contactController extends Controller
 {
@@ -42,30 +42,31 @@ class contactController extends Controller
         session()->flash('success_message', 'Message was sent');
         
         // redirect to mainpage
-      return redirect()->action('indexController@index');
+      //return redirect()->action('indexController@index');
         
 
 
        
+$request = request();
 
-
-//For sending contact to email. Does not work!!
-  /*     Mail::send('contact',
+//For sending contact to email. 
+     Mail::send('contact',
         array(
             'name' => $request->get('name'),
             'email' => $request->get('email'),
             'user_message' => $request->get('message')
         ), function($message)
     {
-        $message->from('stable@mail.com');
-        $message->to('davidricardocastro@outlook.com', 'Admin')->subject('contact');
+        $message->from('davidricardocastro@outlook.com');
+        $message->to('davidricardocastro@gmail.com', 'Admin')->subject('contact');
     });
 
 
-   
-   return Redirect::route('contact')->with('message', 'Thanks for contacting us!');
+    //need a redirect and thank you message
+    return redirect()->action('indexController@index');
+   //return Redirect::route('contact')->with('message', 'Thanks for contacting us!');
 
-*/
+
     }
         
 

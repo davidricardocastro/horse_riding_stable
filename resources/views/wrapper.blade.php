@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="./css/style.css">
     <!--<link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">-->
-    <title> Klaukkala Stable</title>
+    <title> Talli Andantino</title>
     <style>
         /*@font-face {
         font-family: Playball-Regular;
@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="top">
-        <h1 class="main_font bigger_font text-light">Andantino Talli</h1>
+        <h1 class="main_font bigger_font text-light">Talli Andantino</h1>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
