@@ -18,7 +18,7 @@
     background-color: rgba(255, 255, 255, 0.9);
 }
 .top {
-    background: url("../img/horse_eating_cut.jpg");
+    background: url("/img/horse_eating_cut.jpg");
     background-size: cover;
     background-position: 0%;
     font-size: 3em;
