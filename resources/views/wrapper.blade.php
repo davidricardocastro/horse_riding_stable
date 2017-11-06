@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="top">
-        <h1 class="main_font bigger_font text-light">Talli</h1>
+        <h1 class="main_font bigger_font text-light">Andatino Talli</h1>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
