@@ -1,5 +1,4 @@
 @extends('wrapper')
-
 <div class="container background_light">
 
 @section('content')
@@ -74,7 +73,6 @@
 
 
 </div>
-
 
 
 

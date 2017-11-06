@@ -7,40 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">-->
     <title> Klaukkala Stable</title>
     <style>
         /*@font-face {
         font-family: Playball-Regular;
         src: url('/fonts/Playball-Regular.tff');
         }*/
-        .main_font, h1, h2, h3 {
-            font-family: 'Playball', cursive, sans;
-        }
-        .bigger_font {
-            font-size: 1.25em;
-        }
-        .container_background {
-            background: url("/img/deeärr.jpg");
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: 0%;
-            padding: 1em;
-        }
-        .background_light  {
-            background-color: rgba(255, 255, 255, 0.9);
-        }
-        .top {
-            background: url("/img/horse_eating_cut.jpg");
-            background-size: cover;
-            background-position: 0%;
-            font-size: 3em;
-            padding: 20px;
-        }
-
-        .img_responsive {
-            width
-        }
+        
     </style>
 </head>
 <body>

@@ -10,7 +10,9 @@
 </div>
 <div class="container background_light mt-2">
 <h1>Map!</h1>
+
 </div>
+
 
 @endsection
 
