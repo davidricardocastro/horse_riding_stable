@@ -7,18 +7,21 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class Contact extends Mailable
+class ContactMail extends Mailable
 {
     use Queueable, SerializesModels;
+
+    public $data = [];
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($info)
     {
         //
+        $this->data = $info;
     }
 
     /**
@@ -28,6 +31,7 @@ class Contact extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.contact');
+        return $this->from('davidricardocastro@outlook.com')
+                    ->view('emails.contact')->with($this->data);
     }
 }

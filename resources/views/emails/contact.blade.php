@@ -2,13 +2,17 @@
 
 Message from website:
 
-{{name}}
+Name:
+{{$name}}
 
-{{phone}}
+Phone:
+{{$phone}}
 
-{{email}}
+email:
+{{$email}}
 
-{{message}}
+Message:
+{{$user_message}}
 
 
 

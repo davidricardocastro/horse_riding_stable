@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Contact;
 use Mail;
+use App\Mail\ContactMail;
 
 class contactController extends Controller
 {
@@ -50,7 +51,16 @@ class contactController extends Controller
 $request = request();
 
 //For sending contact to email. 
-     Mail::send('contact',
+$email=new ContactMail(array(
+    'name' => $request->get('name'),
+    'email' => $request->get('email'),
+    'user_message' => $request->get('message'),
+    'phone'=>$request->get('phone')
+));
+
+Mail::to('davidricardocastro@gmail.com', 'Admin')->send($email);
+
+    /* Mail::send('emails.contact',
         array(
             'name' => $request->get('name'),
             'email' => $request->get('email'),
@@ -59,7 +69,7 @@ $request = request();
     {
         $message->from('davidricardocastro@outlook.com');
         $message->to('davidricardocastro@gmail.com', 'Admin')->subject('contact');
-    });
+    });*/
 
 
     //need a redirect and thank you message
