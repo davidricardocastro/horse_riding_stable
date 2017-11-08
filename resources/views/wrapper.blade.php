@@ -7,15 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="./css/style.css">
-    <!--<link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">-->
-    <title> Talli Andantino</title>
-    <style>
-        /*@font-face {
-        font-family: Playball-Regular;
-        src: url('/fonts/Playball-Regular.tff');
-        }*/
-        
-    </style>
+    <title>Talli Andantino</title>
+    <meta name="description" content="Tarjoamme ratsastustunteja tiistaista lauantaihin, myös aamuisin ja aamupäivisin. Kaikki tuntimme keskittyvät kouluratsastukseen, muuta teemme myös tarvittaessa harjoituksia puomeilla.">
+    <meta name="title" content="Talli Andantino">
+    
+
 </head>
 <body>
     <div class="top">

@@ -1,12 +1,12 @@
 @extends('wrapper')
 
 @section('content')
-    <div class="container background_light">
-        <h1>Ratsastus</h2> <!--horse riding-->
+    <div class="container background_light p-4">
+        <h2>Ratsastus</h2> <!--horse riding-->
     
         <p>Tarjoamme ratsastustunteja tiistaista lauantaihin, myös aamuisin ja aamupäivisin. Kaikki tuntimme keskittyvät kouluratsastukseen, muuta teemme myös tarvittaessa harjoituksia puomeilla. Ryhmien koko max. 4 ratsastajaa. Kaikilla hevosilla on käytössä koulusatula. Hevosten ehdoton maksimi työmäärä oppilaskäytössä on 2 tuntia päivässä. </p>
     </div>
-    <div class="container background_light">
+    <div class="container background_light p-4 mt-2">
         <h2 class="main_font">Ohjeita ratsastajalle</h3>
         <p>Tahdomme säilyttää hevosemme positiivisina ja mielellään työskentelevinä. Huomioithan siis muutamia asioita:<p>
         <ul>

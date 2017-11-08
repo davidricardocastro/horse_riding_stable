@@ -3,19 +3,17 @@
 
 @section('content')
 
-    <div class="container background_light">
+    <div class="container background_light p-4">
     <div class="row">
 <div class="col-12 pb-2">
 <h1>Yhteystiedot</h1>
 
 <h2>Talli Andatino</h2>
 
-<p>Lopentie 6<br>
+<p class="m-0">Lopentie 6<br>
 01860 Nurmijärvi</p>
-
-<p>+358 452 312 398</p>
-
-<p>andantinotalli@gmail.com</p>
+<p class="m-0">+358 452 312 398</p>
+<p class="m-0">andantinotalli@gmail.com</p>
 
 </div>
         <div class="col-12">
