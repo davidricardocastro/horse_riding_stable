@@ -1,8 +1,12 @@
 .base_dark_background_color {
     background-color: #A53F11;
 }
-.main_font, h1, h2, h3 {
-    font-family: 'Playball', cursive, sans;
+.main_font, h1, h2 {
+    font-family: 'Playball', sans;
+}
+
+p, h3, h4, h5, h6 {
+    font-family: 'Lora', sans;
 }
 .bigger_font {
     font-size: 1.25em;
@@ -28,4 +32,9 @@
 @font-face {
     font-family: Playball;
     src: url('/fonts/Playball-Regular.ttf');
+    }
+
+@font-face {
+    font-family: Lora;
+    src: url('/fonts/Lora-Regular.ttf');
     }
