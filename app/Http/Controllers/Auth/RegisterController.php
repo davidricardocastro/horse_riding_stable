@@ -27,7 +27,8 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/admin';
+
 
     /**
      * Create a new controller instance.
@@ -70,4 +71,14 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
+    protected function authenticated(Request $request, $user){
+        $request->session()->flash('flash_notification','Registeration successful.');
+    
+        return redirect()->intended($this->redirectPath());
+    
+}
+
+
+
 }

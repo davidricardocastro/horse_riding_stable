@@ -79,6 +79,15 @@
         </div>
     </nav>
 
+    <!--informs user when loggin in or register is successful-->
+    @if(session()->has('flash_notification'))
+    <div class="alert alert-success">
+    
+    {{ session('flash_notification') }}
+
+    </div>
+    @endif
+    
     <div class="container_background">
             @yield('content')      
     </div>
