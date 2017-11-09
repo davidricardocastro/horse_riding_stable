@@ -70,15 +70,16 @@ class RegisterController extends Controller
             'address' => $data['address'],
             'password' => bcrypt($data['password']),
         ]);
+
+        
     }
 
-    protected function authenticated(Request $request, $user){
+    /*protected function authenticated(Request $request, $user){
         $request->session()->flash('flash_notification','Registeration successful.');
     
         return redirect()->intended($this->redirectPath());
-    
+    */
 }
 
 
 
-}

@@ -2,6 +2,9 @@
 
 @section('content')
 <div class="container background_light">
-    <p>This is the admin.blade.php a possible color #bc5e1a</p>
+    <p>Booking/Admin/Etc</p>
+
+
+    <img src="\img\Num3.jpg" alt="">
 </div>
 @endsection

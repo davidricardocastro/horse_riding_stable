@@ -1,7 +1,7 @@
 @extends('wrapper')
 
 @section('content')
-<div class="container">
+<div class="container background_light">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
@@ -52,8 +52,13 @@
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Login
+                                Kirjaudu sisään
                                 </button>
+
+
+                                <a class="btn btn-outline-primary" href="{{ route('register') }}">
+                                    Rekisteröidy
+                                </a>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     Forgot Your Password?
