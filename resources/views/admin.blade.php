@@ -96,7 +96,7 @@
 @section('scripts')
         <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
         <script>
-            $(function () {
+            $(function booking() {
                 //displays the datepicker
                 $("#datepicker").datepicker({
                     onSelect:function(date,inst){
@@ -137,6 +137,10 @@
 
             $('#confirm').on('click', function(){
                 $( "#booking_confirmation" ).dialog();
+
+            });
+            $('#reset').on('click', function(){
+                //booking();
 
             });
             $('#accept').on('click', function(){
