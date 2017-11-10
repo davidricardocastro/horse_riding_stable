@@ -4,7 +4,7 @@
 
 <div class="container background_light">
     <h1>Talli</h1>
-    <h2>Best stable in the world, bla bla bla...</h2>
+    <h2>This page is under development</h2>
 </div>
 <div class="container background_light p-4">
     <img class="img-fluid" src="{{url ('/img/horse5_cut.jpg') }}" alt="horse">

@@ -2,7 +2,7 @@
 
 
 @section('content')
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <div class="container background_light p-4">
     <div class="row">
 <div class="col-12 pb-2">
@@ -58,6 +58,10 @@
                     <textarea class="form-control" id="message" rows="6" value=""  name="message"></textarea>
 
                 </div>
+
+
+                <div class="g-recaptcha" data-sitekey="6LcdIDgUAAAAAPi04wbQkq_u791O3gvjodZGEwRK"></div>
+
 
                 <button class="btn btn-primary" id: "send_btn" type="submit">
                     Lähetä
