@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://stable.matic.plus/</loc>
+  <lastmod>2017-11-10T13:45:30+00:00</lastmod>
+</url>
+<url>
+  <loc>https://stable.matic.plus/riding</loc>
+  <lastmod>2017-11-10T13:45:30+00:00</lastmod>
+</url>
+<url>
+  <loc>https://stable.matic.plus/stable</loc>
+  <lastmod>2017-11-10T13:45:30+00:00</lastmod>
+</url>
+<url>
+  <loc>https://stable.matic.plus/team</loc>
+  <lastmod>2017-11-10T13:45:30+00:00</lastmod>
+</url>
+<url>
+  <loc>https://stable.matic.plus/contact</loc>
+  <lastmod>2017-11-10T13:45:30+00:00</lastmod>
+</url>
+<url>
+  <loc>https://stable.matic.plus/login</loc>
+  <lastmod>2017-11-10T13:45:30+00:00</lastmod>
+</url>
+<url>
+  <loc>https://stable.matic.plus/register</loc>
+  <lastmod>2017-11-10T13:45:30+00:00</lastmod>
+</url>
+<url>
+  <loc>https://stable.matic.plus/password/reset</loc>
+  <lastmod>2017-11-10T13:45:30+00:00</lastmod>
+</url>
+</urlset>

@@ -42,7 +42,7 @@
                     <textarea class="form-control" id="message" rows="6" value=""  name="message"></textarea>
                 </div>
                 <div class="g-recaptcha" data-sitekey="6LcdIDgUAAAAAPi04wbQkq_u791O3gvjodZGEwRK"></div>
-                <button> class="btn btn-primary" id="send_btn" type="submit">
+                <button class="btn btn-primary" id="send_btn" type="submit">
                     Lähetä
                 </button>
             </form>
