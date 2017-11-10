@@ -1,6 +1,8 @@
 @extends('wrapper')
 
 @section('content')
+
+
     <link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style_booking.css') }}">
     <div class="container background_light">
