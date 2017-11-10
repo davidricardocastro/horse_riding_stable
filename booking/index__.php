@@ -9,26 +9,26 @@
 </head>
 
 <body>
-<h3 class="ui-accordion ui-accordion-header weekday day1">Please select a date</h3>
+<h3>Please select a date</h3>
         
     <div id="datepicker"></div>
 
     <?php include_once 'accordion.php'; ?>
 
-    <div id="confirmbtns" style="display:none;" class="confirm"> 
+    <div id="confirm_buttons" style="display:none;" class="confirm">
     <button type="submit" id="confirm" class="btn btn-primary">Confirm</button> 
-    <button type="submit" id="reset" class="btn btn-primary">Reset</button> 
+    <button type="submit" id="reset" class="btn btn-alert">Reset</button>
     </div>
 
-    <div id="overlay" title="Booking Confirmation">
-    <div class="newDiv"></div>
+    <div id="booking_confirmation" title="Booking Confirmation">
+    <div class="selection_div"></div>
     <button type="submit" id="accept" class="btn btn-primary">Accept</button> 
     <button type="submit" id="cancel" class="btn btn-primary">Cancel</button> 
     </div>
 
-    <div id="finish" title="Success">
-        <p>Thank you for your reservation. You will receive an email when is accepted by the Stabe</p>
-        <button type="submit" id="back" class="btn btn-primary">continue</button> 
+    <div id="booking_sent" title="Booking Sent">
+        <p>Thank you for your reservation. You will receive an email with the deatils of your lesson</p>
+        <button type="submit" id="back" class="btn btn-primary">Continue</button>
     
 </div>
 </body>
@@ -39,54 +39,52 @@
         //displays the datepicker
         $("#datepicker").datepicker({       
             onSelect:function(date,inst){
-                //console.log(date);
                 $("#accordion").css('display','block');
-                //.css({display:'block', color: 'red'}    
             }
         });
-                $("#accordion").accordion({
-                    collapsible: true,
-                    heightStyle: "content"
-                    });
-                $( "#overlay" ).css('display','none');
-                $( "#finish" ).css('display','none');
+        $("#accordion").accordion({
+            collapsible: true,
+            heightStyle: "content"
+            });
+        $( "#booking_confirmation" ).css('display','none');
+        $( "#booking_sent" ).css('display','none');
     });
 //Slot time management and display in the table below the week
     $('.slot').click(function(){
         var className = $(this).data('class');//unchecked
         var parentVal = $(this).parent().attr('id');
-        var elementVal = $(this).attr('id');
-        var className2 = className.slice(2,className.length) //checked by slicing the string
+        var elementVal = $(this).attr('id');//info for the selection table from datepicker
+        var className2 = className.slice(2,className.length) //toggles between (un)checked
         $(this).toggleClass(className).toggleClass(className2);
         //we want to display a table with the selected hours
-        var newTable = '<p id="tablefor-'+className+'">Lesson for a hour X was selected</p>';
+        var selection_table = '<p id="tablefor-'+className+'">Lesson for a hour X was selected</p>';
         //Tell me if this element of the class slot was clicked!
         if($(this).data("clicked")){
             //someone clicked so table is already somewhere, lets find it and erase it!
-            $(".newDiv").find("#tablefor-" + className).remove();
+            $(".selection_div").find("#tablefor-" + className).remove();
         } else {
             //this means that the slot has not been clicked so append awesome table
-            $(".newDiv").append(newTable);
+            $(".selection_div").append(selection_table);
         }
         //reverses the data- to register the change on the clicked element
         $(this).data("clicked", !$(this).data("clicked"));
-        if($(".newDiv")!==null){$(".confirm").css('display','block');}else{$(".confirm").css('display','none');}  
+        if($(".selection_div")!==null){$(".confirm").css('display','block');}else{$(".confirm").css('display','none');}
      });
 
     $('#confirm').on('click', function(){
-        $( "#overlay" ).dialog();
+        $( "#booking_confirmation" ).dialog();
         
     });
     $('#accept').on('click', function(){
-        $( "#overlay" ).remove();
-        $( "#finish" ).dialog();
+        //$( "#booking_confirmation" ).hide();
+        $( "#booking_sent" ).dialog();
     });
+    
     $('#back').on('click', function(){
         alert('here the redirect to the member area');
-      // $( "#finish" ).css('display','none');
-       //$("#accordion").css('display','none');
-       //$("#confirmbtns").css('display','none');
-       //here redirect to the memeber area
+
     });
+
+
 </script>
 </html>
