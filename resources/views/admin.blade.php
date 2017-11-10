@@ -19,51 +19,51 @@
         <div id="accordion" style="display:none;">
             <h3 class="weekday day1">Please select a time</h3>
             <table class="table" id="table_mobile" style="width:100%">
-                <tr class="" id="1">
+                <tr id="1">
                     <td id="0" class="slot_data">08:00 - 09:00</td>
-                    <td id="1" class="slot unchecked" data-class="unchecked">Gruop(1/4)</td>
+                    <td id="1" class="slot unchecked" data-class="unchecked"></td>
                 </tr>
-                <tr class="" id="2">
+                <tr id="2">
                     <td id="0" class="slot_data">09:00 - 10:00</td>
-                    <td id="1" class="slot unchecked" data-class="unchecked">Ind 1</td>
+                    <td id="1" class="slot unchecked" data-class="unchecked"></td>
                 </tr>
-                <tr class="" id="3">
+                <tr id="3">
                     <td id="0" class="slot_data">10:00 - 11:00</td>
                     <td id="1" class="slot unchecked" data-class="unchecked"></td>
                 </tr>
-                <tr class="" id="4">
+                <tr id="4">
                     <td id="0" class="slot_data">11:00 - 12:00</td>
                     <td id="1" class="slot unchecked" data-class="unchecked"></td>
                 </tr>
-                <tr class="" id="5">
+                <tr id="5">
                     <td id="0" class="slot_data">12:00 - 13:00</td>
                     <td id="1" class="slot unchecked" data-class="unchecked"></td>
                 </tr>
-                <tr class="" id="6">
+                <tr id="6">
                     <td id="0" class="slot_data">13:00 - 14:00</td>
                     <td id="1" class="slot unchecked" data-class="unchecked"></td>
                 </tr>
-                <tr class="" id="7">
+                <tr id="7">
                     <td id="0" class="slot_data">14:00 - 15:00</td>
                     <td id="1" class="slot unchecked" data-class="unchecked"></td>
                 </tr>
-                <tr class="" id="8">
+                <tr id="8">
                     <td id="0" class="slot_data">15:00 - 16:00</td>
                     <td id="1" class="slot unchecked" data-class="unchecked"></td>
                 </tr>
-                <tr class="" id="9">
+                <tr id="9">
                     <td id="0" class="slot_data">16:00 - 17:00</td>
                     <td id="1" class="slot unchecked" data-class="unchecked"></td>
                 </tr>
-                <tr class="" id="10">
+                <tr id="10">
                     <td id="0" class="slot_data">17:00 - 18:00</td>
                     <td id="1" class="slot unchecked" data-class="unchecked"></td>
                 </tr>
-                <tr class="" id="11">
+                <tr id="11">
                     <td id="0" class="slot_data">18:00 - 19:00</td>
                     <td id="1" class="slot unchecked" data-class="unchecked"></td>
                 </tr>
-                <tr class="" id="12">
+                <tr id="12">
                     <td id="0" class="slot_data">19:00 - 20:00</td>
                     <td id="1" class="slot unchecked" data-class="unchecked"></td>
                 </tr>
@@ -100,7 +100,7 @@
                 //displays the datepicker
                 $("#datepicker").datepicker({
                     onSelect:function(date,inst){
-                        var select_date = date;
+                        var select_date = date;//11/12/2013 09:00 10:00
                         $("#accordion").css('display','block');
                     }
                 });
@@ -116,8 +116,10 @@
             //Slot time management and display in the table below the week
             $('.slot').click(function(){
                 var className = $(this).data('class');//unchecked
-                var parentVal = $(this).parent().attr('id');
-                var elementVal = $(this).attr('id');//info for the selection table from datepicker
+
+                var time_slot = $(this).closest('td#1').attr;
+                console.log(time_slot);
+
                 var className2 = className.slice(2,className.length); //toggles between (un)checked
                 $(this).toggleClass(className).toggleClass(className2);
                 //we want to display a table with the selected hours
@@ -140,12 +142,14 @@
 
             });
             $('#reset').on('click', function(){
-                //booking();
-
+                // should be a function booking();
+                location.reload();
             });
             $('#accept').on('click', function(){
                 //$( "#booking_confirmation" ).hide();
+                $( "#booking_confirmation" ).dialog("close");
                 $( "#booking_sent" ).dialog();
+
 
 
             });
@@ -157,6 +161,7 @@
             $('#back').on('click', function(){
                 $( "#booking_sent" ).dialog("close");
                 //redirect when clicked
+                location.reload();
 
             });
 
