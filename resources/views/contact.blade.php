@@ -12,7 +12,7 @@
 
 <p class="m-0">Lopentie 6<br>
 01860 Nurmijärvi</p>
-<p class="m-0">+358  452 312 398</p>
+<p class="m-0">+358 452 312 398</p>
 <p class="m-0">andantinotalli@gmail.com</p>
 
 </div>
