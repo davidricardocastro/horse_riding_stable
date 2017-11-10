@@ -22,59 +22,32 @@
         </div>
 
 
-
-
         <div class="col">
-
-
             <form action="" method="post">
-
-
-            {{ csrf_field()}}  
-
-
+            {{ csrf_field()}}
                 <div class="form-group">
                     <label for="name">Nimi</label>
                     <input type="text" class="form-control" name="name" id="name" placeholder="" value="">
-
                 </div>
-
                 <div class="form-group">
                     <label for="email">Sähköposti</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="" value="">
-
                 </div>
-
                 <div class="form-group">
                     <label for="phone">Puhelinnumero</label>
                     <input type="int" class="form-control" name="phone" id="phone" placeholder="" value="">
-
                 </div>
-
-
-
                 <div class="form-group">
                     <label for="message">Viesti</label>
                     <textarea class="form-control" id="message" rows="6" value=""  name="message"></textarea>
-
                 </div>
-
-
                 <div class="g-recaptcha" data-sitekey="6LcdIDgUAAAAAPi04wbQkq_u791O3gvjodZGEwRK"></div>
-
-
-                <button class="btn btn-primary" id="send_btn" type="submit">
+                <button> class="btn btn-primary" id="send_btn" type="submit">
                     Lähetä
                 </button>
-
             </form>
-
         </div>
     </div>
 </div>
-
-
-
-
 
 @endsection
