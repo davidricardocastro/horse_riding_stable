@@ -96,10 +96,11 @@
 @section('scripts')
         <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
         <script>
-            $(function () {
+            $(function booking() {
                 //displays the datepicker
                 $("#datepicker").datepicker({
                     onSelect:function(date,inst){
+                        var select_date = date;
                         $("#accordion").css('display','block');
                     }
                 });
@@ -107,6 +108,8 @@
                     collapsible: true,
                     heightStyle: "content"
                 });
+
+
                 $( "#booking_confirmation" ).css('display','none');
                 $( "#booking_sent" ).css('display','none');
             });
@@ -136,13 +139,24 @@
                 $( "#booking_confirmation" ).dialog();
 
             });
+            $('#reset').on('click', function(){
+                //booking();
+
+            });
             $('#accept').on('click', function(){
                 //$( "#booking_confirmation" ).hide();
                 $( "#booking_sent" ).dialog();
+
+
+            });
+            $('#cancel').on('click', function(){
+            $( "#booking_confirmation" ).dialog("close");
+
             });
 
             $('#back').on('click', function(){
-                alert('here the redirect to the member area');
+                $( "#booking_sent" ).dialog("close");
+                //redirect when clicked
 
             });
 
