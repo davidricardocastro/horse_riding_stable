@@ -107,12 +107,10 @@
    
    
    <!-- this link is need for the dropdown menu in the navbar.-->
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    
-    
+    <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
 
- <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script> 
-  
+    @yield('scripts')
 </body>
 </html>
