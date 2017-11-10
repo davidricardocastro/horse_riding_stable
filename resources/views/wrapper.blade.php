@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="./css/style.css">
     <title>Talli Andantino</title>
+    <meta name="google-site-verification" content="NiiCPfk6WwAm8q-Ou36omWALx5JwXGlvSJK5X_ezunM" />
     <meta name="description" content="Tarjoamme ratsastustunteja tiistaista lauantaihin, myös aamuisin ja aamupäivisin. Kaikki tuntimme keskittyvät kouluratsastukseen, muuta teemme myös tarvittaessa harjoituksia puomeilla.">
     <meta name="title" content="Talli Andantino">
     
