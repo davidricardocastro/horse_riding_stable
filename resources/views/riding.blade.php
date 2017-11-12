@@ -6,8 +6,8 @@
             <h2>Ratsastus</h2>
             <!--horse riding-->
 
-            <h4>Tarjoamme ratsastustunteja tiistaista lauantaihin, myös aamuisin ja aamupäivisin. Kaikki tuntimme keskittyvät
-                kouluratsastukseen, muuta teemme myös tarvittaessa harjoituksia puomeilla. Ryhmien koko max. 4 ratsastajaa.
+            <h4>Tarjoamme ratsastustunteja tiistaista lauantaihin, myös aamuisin ja aamupäivisin. <br> Kaikki tuntimme keskittyvät
+                kouluratsastukseen, muuta teemme myös tarvittaessa harjoituksia puomeilla.  <br>Ryhmien koko max. 4 ratsastajaa. <br>
                 Kaikilla hevosilla on käytössä koulusatula. Hevosten ehdoton maksimi työmäärä oppilaskäytössä on 2 tuntia
                 päivässä. </h4>
 
@@ -19,7 +19,7 @@
        
 
         <div class="col-12 col-md-6 py-3">
-            <img src="\img\Num3.jpg" class="img-fluid" alt="rider on horse">
+            <img src="\img\Num3_low.jpg" class="img-fluid" alt="rider on horse">
         </div>
 
         <div class="col-12 col-md-6 py-3">

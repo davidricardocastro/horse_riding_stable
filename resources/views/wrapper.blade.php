@@ -94,13 +94,11 @@
     </div>
 
     <footer >
-        <div class="container-fluid base_dark_background_color">
-            <div class="row">
-                <div class="col p-2">
-                   
-                   <p class=" text-center text-white main_font bigger_font" >Talli Andantino | Lopentie 6, Nurmijärvi | +358 452 312 398
-                </p>
-                </div>
+        <div class="container-fluid base_dark_background_color ">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-3"><p class=" text-center text-white main_font bigger_font " >Talli Andantino </p></div>
+                <div class="col-md-12 col-lg-3"><p class=" text-center text-white main_font bigger_font"> Lopentie 6, Nurmijärvi </p> </div>
+                <div class="col-md-12 col-lg-3"><p class=" text-center text-white main_font bigger_font">+358 452 312 398 </p> </div>
                 
             </div>
         </div>
