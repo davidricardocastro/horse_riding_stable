@@ -13,9 +13,7 @@ class contactController extends Controller
     // Display a listing of the resource.
     public function contact()
     {   
-        
-        
-        
+
         return view('contact');
     }
 
@@ -27,9 +25,18 @@ class contactController extends Controller
     }
         
     // Store a newly created resource in storage.
-    public function store()  {
+    public function store(Request $request)  {
+
+        $this->validate($request, [
+            'name' => 'required|max:100',
+            'email' => 'required',
+            'phone' => 'required|max:10',
+            'message' => 'required|max:140'
+        ]);
 
         $contact = new Contact();
+
+
 
         $contact->fill(request()->only([
             'name',
@@ -42,12 +49,7 @@ class contactController extends Controller
         // flash a success message
         session()->flash('success_message', 'Message was sent');
         
-        // redirect to mainpage
-      //return redirect()->action('indexController@index');
-        
 
-
-       
 $request = request();
 
 //For sending contact to email. 
@@ -58,7 +60,7 @@ $email=new ContactMail(array(
     'phone'=>$request->get('phone')
 ));
 
-Mail::to('davidricardocastro@gmail.com', 'Admin')->send($email);
+Mail::to('dptorri@gmail.com', 'Admin')->send($email);
 
     /* Mail::send('emails.contact',
         array(
