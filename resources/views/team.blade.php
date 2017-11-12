@@ -5,7 +5,7 @@
     <div class="row justify-content-around">
 
         <div class="col-12 m-3">
-            <h1>Hevoset</h1>
+            <h2>Hevoset</h2>
         </div>
       
             <div class="card m-3 text-center bg-light" style="width: 20rem;">
