@@ -26,7 +26,6 @@ class contactController extends Controller
         
     // Store a newly created resource in storage.
     public function store(Request $request)  {
-
         $this->validate($request, [
             'name' => 'required|max:100',
             'email' => 'required',
@@ -35,9 +34,6 @@ class contactController extends Controller
         ]);
 
         $contact = new Contact();
-
-
-
         $contact->fill(request()->only([
             'name',
             'email',
@@ -45,11 +41,8 @@ class contactController extends Controller
             'message'
         ]));
         $contact->save();
-
         // flash a success message
         session()->flash('success_message', 'Message was sent');
-        
-
 $request = request();
 
 //For sending contact to email. 

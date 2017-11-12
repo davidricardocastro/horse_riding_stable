@@ -9,6 +9,10 @@ class adminController extends Controller
     //
     public function admin()
     {
-        return view('admin');
+        $userId = \Auth::id();
+        $email = \Auth::user()->email;
+        return view('admin',['user'=>$userId,'email'=>$email]);
     }
+
+
 }

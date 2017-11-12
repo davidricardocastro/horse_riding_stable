@@ -9,7 +9,7 @@
        <div class="row">
        <div class="col-12">
        
-       <h3>Please select a date</h3>
+       <h3>Please select a date, {{ $user }}</h3>
        </div>
             
         <div class="col-12">
@@ -129,7 +129,7 @@
                 var className2 = className.slice(2,className.length); //toggles between (un)checked
                 $(this).toggleClass(className).toggleClass(className2);
                 //we want to display a table with the selected hours
-                var selection_table = '<p id="tablefor-'+className+'">Lesson for '+select_date+' at '+time_slot+' was selected</p>';
+                var selection_table = '<p id="tablefor-'+className+'">Lesson for <br>'+select_date+'<br> at '+time_slot+'<br>selected.</p>';
                 //Tell me if this element of the class slot was clicked!
                 if($(this).data("clicked")){
                     //someone clicked so table is already somewhere, lets find it and erase it!
@@ -150,13 +150,12 @@
             $('#reset').on('click', function(){
                 // should be a function booking();
                 location.reload();
+
             });
             $('#accept').on('click', function(){
-                //$( "#booking_confirmation" ).hide();
+
                 $( "#booking_confirmation" ).dialog("close");
                 $( "#booking_sent" ).dialog();
-
-
 
             });
             $('#cancel').on('click', function(){
@@ -166,8 +165,10 @@
 
             $('#back').on('click', function(){
                 $( "#booking_sent" ).dialog("close");
-                //redirect when clicked
-                location.reload();
+                $( "#booking_confirmation" ).dialog("close");
+                $("#accordion").css('display','none');
+                $("#confirm_buttons").css('display','none');
+
 
             });
 
