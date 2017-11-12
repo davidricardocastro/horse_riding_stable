@@ -103,10 +103,10 @@
             $(function booking() {
                 //displays the datepicker
                 $("#datepicker").datepicker({
-                    onSelect:function(date,inst){
+                        onSelect:function(date,inst){
 
                         select_date = date;//11/12/2013 09:00 10:00
-                        console.log(select_date);
+                        //console.log(select_date);
                         $("#accordion").css('display','block');
                     }
                 });
@@ -129,7 +129,7 @@
                 var className2 = className.slice(2,className.length); //toggles between (un)checked
                 $(this).toggleClass(className).toggleClass(className2);
                 //we want to display a table with the selected hours
-                var selection_table = '<p id="tablefor-'+className+'">Lesson for'+select_date+'at'+time_slot+'was selected</p>';
+                var selection_table = '<p id="tablefor-'+className+'">Lesson for '+select_date+' at '+time_slot+' was selected</p>';
                 //Tell me if this element of the class slot was clicked!
                 if($(this).data("clicked")){
                     //someone clicked so table is already somewhere, lets find it and erase it!
