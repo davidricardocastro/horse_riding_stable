@@ -8,10 +8,8 @@ class slot extends Model
 {
     //
     protected $fillable = [
-        'name',
-        'email',
-        'phone',
-        'message'
+        'user_detail',
+        'slot_detail'
     ];
 
     protected $guarded = [

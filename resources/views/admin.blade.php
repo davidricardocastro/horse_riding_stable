@@ -87,8 +87,12 @@
 
         <div id="booking_sent" title="Booking Sent">
             <p>Thank you for your reservation. You will receive an email with the deatils of your lesson</p>
-            <button type="submit" id="back" class="btn btn-primary">Continue</button>
-
+                <-- trying to submit the information into the slot table -->
+                <form action="" method="post">
+                    <input type="text" value="test">
+                    <button type="submit" id="back" class="btn btn-primary">Continue</button>
+                </form>
+                <-- trying to submit the information into the slot table -->
         </div>
         </div>
     </div>
