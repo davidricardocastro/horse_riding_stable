@@ -16,7 +16,7 @@ class contactController extends Controller
 
         return view('contact');
     }
-    
+
         
     // Store a newly created resource in storage.
     public function store(Request $request)  {

@@ -92,7 +92,7 @@
                     <input type="text" value="test">
                     <button type="submit" id="back" class="btn btn-primary">Continue</button>
                 </form>
-                <-- trying to submit the information into the slot table -->
+                <-- trying to submit the informationadm into the slot table -->
         </div>
         </div>
     </div>
@@ -103,7 +103,7 @@
         <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
         <script>
             var select_date = "";
-
+            var time_slot = "";
             $(function booking() {
                 //displays the datepicker
                 $("#datepicker").datepicker({
@@ -127,7 +127,7 @@
             $('.slot').click(function(){
                 var className = $(this).data('class');//unchecked
 
-                var time_slot = $(this).attr('id');
+                 time_slot = $(this).attr('id');
                 //console.log(time_slot);//13:00 - 14:00
 
                 var className2 = className.slice(2,className.length); //toggles between (un)checked
@@ -148,7 +148,21 @@
             });
 
             $('#confirm').on('click', function(){
-                $( "#booking_confirmation" ).dialog();
+                //ajax request
+                $.ajax(
+                    {
+                        method : 'post',
+                        url: '{{ action('Api\ReservationController@create_reservation')}}',
+                        data: {
+                          date: select_date,
+                          time: time_slot
+                        },
+                        success: function(data){
+                               console.log(data);
+                        }
+                    }
+                )
+               // $( "#booking_confirmation" ).dialog();
 
             });
             $('#reset').on('click', function(){

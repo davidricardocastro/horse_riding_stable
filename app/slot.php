@@ -16,3 +16,5 @@ class slot extends Model
         'id'
     ];
 }
+
+
