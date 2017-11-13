@@ -42,7 +42,7 @@
                     <a class="nav-link main_font bigger_font" href="{{ action('contactController@contact') }}">Yhteystiedot</a>
                 </li>
                 <li class="nav-item active px-2">
-                    <a class="nav-link main_font bigger_font" href="{{ action('adminController@admin') }}">Booking</a>
+                    <a class="nav-link main_font bigger_font" href="{{ action('userController@user') }}">Booking</a>
                 </li>
 <!-- Authentication Links -->
                 @guest
