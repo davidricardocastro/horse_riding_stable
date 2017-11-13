@@ -9,6 +9,9 @@ class userController extends Controller
     //
     public function user()
     {
-       return view('user');
+        $userId = \Auth::id();
+        $name = \Auth::user()->name;
+        $email = \Auth::user()->email;
+        return view('user',['user_id'=>$userId,'user_name'=>$name,'user_email'=>$email]);
     }
 }

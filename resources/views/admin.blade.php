@@ -9,7 +9,7 @@
        <div class="row">
        <div class="col-12">
        
-       <h3>Please select a date, {{ $user }}</h3>
+       <h3>Welcome {{ $user_name }} <br> Please select a date: </h3>
        </div>
             
         <div class="col-12">
@@ -87,12 +87,10 @@
 
         <div id="booking_sent" title="Booking Sent">
             <p>Thank you for your reservation. You will receive an email with the deatils of your lesson</p>
-                <-- trying to submit the information into the slot table -->
-                <form action="" method="post">
+
                     <input type="text" value="test">
                     <button type="submit" id="back" class="btn btn-primary">Continue</button>
-                </form>
-                <-- trying to submit the informationadm into the slot table -->
+
         </div>
         </div>
     </div>
@@ -162,7 +160,7 @@
                         }
                     }
                 )
-               // $( "#booking_confirmation" ).dialog();
+                $( "#booking_confirmation" ).dialog();
 
             });
             $('#reset').on('click', function(){
