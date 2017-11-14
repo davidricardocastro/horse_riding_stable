@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container background_light">
-    <h1>Talli Andantino - Ratsastustunnit 1-4 hengen ryhmissä Perttulassa, Nummijärvellä</h1>
+    <h1 class="secundary_font">Talli Andantino <br> Ratsastustunnit 1-4 hengen ryhmissä Perttulassa, Nummijärvellä</h1>
     
 </div>
 <div class="container background_light p-4">

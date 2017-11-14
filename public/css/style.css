@@ -1,9 +1,22 @@
-.base_dark_background_color {
-    background-color: #A53F11;
+.custom_color1 {
+    background-color: rgb(32, 53, 33);
 }
-.main_font, h1, h2 {
+.custom__color2 {
+    background-color: #B39C4D
+}
+
+/*old color: background-color: #A53F11;*/
+
+.main_font {
     font-family: 'Playball', sans;
+    color: #D0CFCF;
 }
+
+.secundary_font {
+    font-family: 'Playball', sans;
+    color: rgb(32, 53, 33);
+};
+
 
 p, h3, h4, h5, h6 {
     font-family: 'Lora', sans;

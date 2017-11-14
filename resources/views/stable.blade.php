@@ -3,7 +3,7 @@
 <div class="container background_light">
     <div class="row">
         <div class="col m-3">
-            <h2 class="main_font"> Talli </h2>
+            <h2 class="secondary_font"> Talli </h2>
         </div>
     </div>
 

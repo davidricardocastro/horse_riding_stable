@@ -18,9 +18,9 @@
 </head>
 <body>
     <div class="top">
-        <h1 class="main_font bigger_font text-light">Talli Andantino</h1>
+        <span class="main_font bigger_font ">Talli Andantino</span>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark custom_color1">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">                       
                 <span class="navbar-toggler-icon"></span>
@@ -96,11 +96,11 @@
     </div>
 
     <footer >
-        <div class="container-fluid base_dark_background_color ">
+        <div class="container-fluid custom_color1 ">
             <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-3"><p class=" text-center text-white  bigger_font " >Talli Andantino </p></div>
-                <div class="col-md-12 col-lg-3"><p class=" text-center text-white  bigger_font"> Lopentie 6, Nurmijärvi </p> </div>
-                <div class="col-md-12 col-lg-3"><p class=" text-center text-white  bigger_font">&#x1F4DE +358 452 312 398 </p> </div>
+                <div class="col-md-12 col-lg-3"><p class=" text-center  main_font bigger_font " >Talli Andantino </p></div>
+                <div class="col-md-12 col-lg-3"><p class=" text-center main_font bigger_font"> Lopentie 6, Nurmijärvi </p> </div>
+                <div class="col-md-12 col-lg-3"><p class=" text-center main_font  bigger_font">&#x1F4DE +358 452 312 398 </p> </div>
                 
             </div>
         </div>
