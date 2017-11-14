@@ -98,19 +98,24 @@
             </div>
         </div>
         @can('admin')
+            
+            <div class="week-picker"></div>
+            <br /><br />
+            <label>Week :</label> <span id="startDate"></span> - <span id="endDate"></span>
+            </div>
+
             <div class="container">
                 <h3>Administrator's Master Menu</h3>
-                <button id="previous_week">Previous Week</button><button id="next_week">Next Week</button>
                 <table id="table_desktop" style="width:100%">
                     <tr class="row" id="0">
                         <th class="slot_title">Time_Slot</th>
-                        <th class="weekday day1">Monday 30</th>
-                        <th class="weekday day2">Tuesday 31</th>
-                        <th class="weekday day3">Wednesday 1</th>
-                        <th class="weekday day4">Thursday 2</th>
-                        <th class="weekday day5">Friday 3</th>
-                        <th class="weekday day6">Saturday 4</th>
-                        <th class="weekday day7">Sunday 5</th>
+                        <th id="day0" class="weekday day1"></th>
+                        <th id="day1" class="weekday day2"></th>
+                        <th id="day2" class="weekday day3"></th>
+                        <th id="day3" class="weekday day4"></th>
+                        <th id="day4" class="weekday day5"></th>
+                        <th id="day5" class="weekday day6"></th>
+                        <th id="day6" class="weekday day7"></th>
                     </tr>
                     <tr class="row" id="1">
                         <td id="0" class="slot_data">08:00 - 09:00</td>
@@ -339,6 +344,52 @@
         });
 
 
+    </script>
+    
+    <script type="text/javascript">
+    // Week picker
+    $(function() {
+        var startDate;
+        var endDate;
+        
+        var selectCurrentWeek = function() {
+            window.setTimeout(function () {
+                $('.week-picker').find('.ui-datepicker-current-day a').addClass('ui-state-active')
+            }, 1);
+        }
+        
+        $('.week-picker').datepicker( {
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            onSelect: function(dateText, inst) { 
+                var date = $(this).datepicker('getDate');
+                startDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay());
+                endDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + 6);
+                var dateFormat = inst.settings.dateFormat || $.datepicker._defaults.dateFormat;
+                $('#startDate').text($.datepicker.formatDate( dateFormat, startDate, inst.settings ));
+                $('#endDate').text($.datepicker.formatDate( dateFormat, endDate, inst.settings ));
+
+                for (var i=0; i <=6; i++)  {
+                    datex = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()+ i);
+                    $('#day'+i).text($.datepicker.formatDate('D, dd-mm-yy', datex,inst.settings));
+                }
+
+                selectCurrentWeek();
+            },
+            beforeShowDay: function(date) {
+                var cssClass = '';
+                if(date >= startDate && date <= endDate)
+                    cssClass = 'ui-datepicker-current-day';
+                return [true, cssClass];
+            },
+            onChangeMonthYear: function(year, month, inst) {
+                selectCurrentWeek();
+            }
+        });
+        
+        $('.week-picker .ui-datepicker-calendar tr').live('mousemove', function() { $(this).find('td a').addClass('ui-state-hover'); });
+        $('.week-picker .ui-datepicker-calendar tr').live('mouseleave', function() { $(this).find('td a').removeClass('ui-state-hover'); });
+    });
     </script>
 
 @endsection
