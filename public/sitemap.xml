@@ -7,30 +7,6 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-<<<<<<< HEAD
-  <loc>http://stable.matic.plus/</loc>
-</url>
-<url>
-  <loc>http://stable.matic.plus/riding</loc>
-</url>
-<url>
-  <loc>http://stable.matic.plus/stable</loc>
-</url>
-<url>
-  <loc>http://stable.matic.plus/team</loc>
-</url>
-<url>
-  <loc>http://stable.matic.plus/contact</loc>
-</url>
-<url>
-  <loc>http://stable.matic.plus/login</loc>
-</url>
-<url>
-  <loc>http://stable.matic.plus/register</loc>
-</url>
-<url>
-  <loc>http://stable.matic.plus/password/reset</loc>
-=======
   <loc>https://stable.matic.plus/</loc>
   <lastmod>2017-11-10T13:45:30+00:00</lastmod>
 </url>
@@ -61,6 +37,5 @@
 <url>
   <loc>https://stable.matic.plus/password/reset</loc>
   <lastmod>2017-11-10T13:45:30+00:00</lastmod>
->>>>>>> online_version
 </url>
 </urlset>

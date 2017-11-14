@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    
     <title>Talli Andantino</title>
     <meta name="google-site-verification" content="NiiCPfk6WwAm8q-Ou36omWALx5JwXGlvSJK5X_ezunM" />
     <meta name="description" content="Tarjoamme ratsastustunteja tiistaista lauantaihin, myös aamuisin ja aamupäivisin. Kaikki tuntimme keskittyvät kouluratsastukseen, muuta teemme myös tarvittaessa harjoituksia puomeilla.">
