@@ -10,12 +10,9 @@
 
 
 
-<p class="m-0">&#x1F3E0
-
-Lopentie 6, 
-01860 Nurmijärvi</p>
-<p class="m-0">&#x1F4DE +358 452 312 398</p>
-<p class="m-0">&#x1F4E7 stallgranbacka@gmail.com</p>
+<p class="m-0"><i class="fa fa-home" aria-hidden="true"></i>Lopentie 6, 01860 Nurmijärvi</p>
+<p class="m-0"><i class="fa fa-phone " aria-hidden="true"></i> +358 452 312 398</p>
+<p class="m-0"><i class="fa fa-envelope-o" aria-hidden="true"></i> stallgranbacka@gmail.com </p>
 
 
 </div>

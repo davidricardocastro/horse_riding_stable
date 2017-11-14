@@ -51,12 +51,12 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-success">
                                 Kirjaudu sisään
                                 </button>
 
 
-                                <a class="btn btn-outline-primary" href="{{ route('register') }}">
+                                <a class="btn btn-outline-success" href="{{ route('register') }}">
                                     Rekisteröidy
                                 </a>
 

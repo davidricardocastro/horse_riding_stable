@@ -6,7 +6,9 @@
 }
 
 /*old color: background-color: #A53F11;*/
-
+body{ 
+    color: rgb(32, 53, 33);
+}
 .main_font {
     font-family: 'Playball', sans;
     color: #D0CFCF;
@@ -15,7 +17,11 @@
 .secundary_font {
     font-family: 'Playball', sans;
     color: rgb(32, 53, 33);
-};
+}
+
+.nav_font{
+    color: #D0CFCF;
+}
 
 
 p, h3, h4, h5, h6 {

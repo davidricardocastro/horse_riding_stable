@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <title>Talli Andantino</title>
 
@@ -98,9 +100,9 @@
     <footer >
         <div class="container-fluid custom_color1 ">
             <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-3"><p class=" text-center  main_font bigger_font " >Talli Andantino </p></div>
-                <div class="col-md-12 col-lg-3"><p class=" text-center main_font bigger_font"> Lopentie 6, Nurmijärvi </p> </div>
-                <div class="col-md-12 col-lg-3"><p class=" text-center main_font  bigger_font">&#x1F4DE +358 452 312 398 </p> </div>
+                <div class="col-lg-12 col-xl-3"><p class=" text-center nav_font bigger_font " ><i class="fa fa-home" aria-hidden="true"></i>Lopentie 6, 01860 Nurmijärvi </p></div>
+                <div class="col-lg-12 col-xl-3"><p class=" text-center nav_font bigger_font"><i class="fa fa-envelope-o" aria-hidden="true"></i> stallgranbacka@gmail.com </p> </div>
+                <div class="col-lg-12 col-xl-3"><p class=" text-center nav_font  bigger_font"><i class="fa fa-phone " aria-hidden="true"></i> +358 452 312 398 </p> </div>
                 
             </div>
         </div>
