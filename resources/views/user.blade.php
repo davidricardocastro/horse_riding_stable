@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="{{ asset('css/style_booking.css') }}">
     <div class="container background_light">
         <div class="row">
+            @can('admin')
+                <nav>
+                    Administrator's menu
+                </nav>
+            @endcan
             <div class="col-12">
 
                 <h3>Welcome {{ $user_name }} <br> Please select a date: </h3>
