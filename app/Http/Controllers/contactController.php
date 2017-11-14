@@ -17,16 +17,9 @@ class contactController extends Controller
         return view('contact');
     }
 
-    // Show the form for creating a new resource.
-    public function create() {
-        //$view = view('contact');
-        //$view->contact = new Contact;
-        //return $view;
-    }
         
     // Store a newly created resource in storage.
     public function store(Request $request)  {
-
         $this->validate($request, [
             'name' => 'required|max:100',
             'email' => 'required',
@@ -35,9 +28,6 @@ class contactController extends Controller
         ]);
 
         $contact = new Contact();
-
-
-
         $contact->fill(request()->only([
             'name',
             'email',
@@ -45,11 +35,8 @@ class contactController extends Controller
             'message'
         ]));
         $contact->save();
-
         // flash a success message
         session()->flash('success_message', 'Message was sent');
-        
-
 $request = request();
 
 //For sending contact to email. 

@@ -20,6 +20,7 @@ Route::get('/stable','stableController@stable');
 Route::get('/team','horseController@horse');
 Route::get('/contact','contactController@contact');
 Route::get('/admin','adminController@admin')->middleware('auth');
+Route::get('/user','userController@user')->middleware('auth');
 
 Auth::routes();
 

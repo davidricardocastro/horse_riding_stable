@@ -9,7 +9,7 @@
        <div class="row">
        <div class="col-12">
        
-       <h3>Please select a date</h3>
+       <h3>Welcome {{ $user_name }} <br> Please select a date: </h3>
        </div>
             
         <div class="col-12">
@@ -87,7 +87,9 @@
 
         <div id="booking_sent" title="Booking Sent">
             <p>Thank you for your reservation. You will receive an email with the deatils of your lesson</p>
-            <button type="submit" id="back" class="btn btn-primary">Continue</button>
+
+                    <input type="text" value="test">
+                    <button type="submit" id="back" class="btn btn-primary">Continue</button>
 
         </div>
         </div>
@@ -99,7 +101,7 @@
         <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
         <script>
             var select_date = "";
-
+            var time_slot = "";
             $(function booking() {
                 //displays the datepicker
                 $("#datepicker").datepicker({
@@ -123,13 +125,13 @@
             $('.slot').click(function(){
                 var className = $(this).data('class');//unchecked
 
-                var time_slot = $(this).attr('id');
+                 time_slot = $(this).attr('id');
                 //console.log(time_slot);//13:00 - 14:00
 
                 var className2 = className.slice(2,className.length); //toggles between (un)checked
                 $(this).toggleClass(className).toggleClass(className2);
                 //we want to display a table with the selected hours
-                var selection_table = '<p id="tablefor-'+className+'">Lesson for '+select_date+' at '+time_slot+' was selected</p>';
+                var selection_table = '<p id="tablefor-'+className+'">Lesson for <br>'+select_date+'<br> at '+time_slot+'<br>selected.</p>';
                 //Tell me if this element of the class slot was clicked!
                 if($(this).data("clicked")){
                     //someone clicked so table is already somewhere, lets find it and erase it!
@@ -144,19 +146,32 @@
             });
 
             $('#confirm').on('click', function(){
+                //ajax request
+                $.ajax(
+                    {
+                        method : 'post',
+                        url: '{{ action('Api\ReservationController@create_reservation')}}',
+                        data: {
+                          date: select_date,
+                          time: time_slot
+                        },
+                        success: function(data){
+                               console.log(data);
+                        }
+                    }
+                )
                 $( "#booking_confirmation" ).dialog();
 
             });
             $('#reset').on('click', function(){
                 // should be a function booking();
                 location.reload();
+
             });
             $('#accept').on('click', function(){
-                //$( "#booking_confirmation" ).hide();
+
                 $( "#booking_confirmation" ).dialog("close");
                 $( "#booking_sent" ).dialog();
-
-
 
             });
             $('#cancel').on('click', function(){
@@ -166,8 +181,10 @@
 
             $('#back').on('click', function(){
                 $( "#booking_sent" ).dialog("close");
-                //redirect when clicked
-                location.reload();
+                $( "#booking_confirmation" ).dialog("close");
+                $("#accordion").css('display','none');
+                $("#confirm_buttons").css('display','none');
+
 
             });
 

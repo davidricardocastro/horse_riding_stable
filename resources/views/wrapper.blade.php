@@ -43,7 +43,7 @@
                     <a class="nav-link main_font bigger_font" href="{{ action('contactController@contact') }}">Yhteystiedot</a>
                 </li>
                 <li class="nav-item active px-2">
-                    <a class="nav-link main_font bigger_font" href="{{ action('adminController@admin') }}">Booking</a>
+                    <a class="nav-link main_font bigger_font" href="{{ action('userController@user') }}">Booking</a>
                 </li>
 <!-- Authentication Links -->
                 @guest
@@ -97,9 +97,9 @@
     <footer >
         <div class="container-fluid base_dark_background_color ">
             <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-3"><p class=" text-center text-white main_font bigger_font " >Talli Andantino </p></div>
-                <div class="col-md-12 col-lg-3"><p class=" text-center text-white main_font bigger_font"> Lopentie 6, Nurmijärvi </p> </div>
-                <div class="col-md-12 col-lg-3"><p class=" text-center text-white main_font bigger_font">+358 452 312 398 </p> </div>
+                <div class="col-md-12 col-lg-3"><p class=" text-center text-white  bigger_font " >Talli Andantino </p></div>
+                <div class="col-md-12 col-lg-3"><p class=" text-center text-white  bigger_font"> Lopentie 6, Nurmijärvi </p> </div>
+                <div class="col-md-12 col-lg-3"><p class=" text-center text-white  bigger_font">&#x1F4DE +358 452 312 398 </p> </div>
                 
             </div>
         </div>
