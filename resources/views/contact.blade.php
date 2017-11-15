@@ -10,7 +10,7 @@
 
 
 
-<p class="m-0"><i class="fa fa-home" aria-hidden="true"></i>Lopentie 6, 01860 Nurmijärvi</p>
+<p class="m-0"><i class="fa fa-map-marker" aria-hidden="true"></i>Lopentie 6, 01860 Nurmijärvi</p>
 <p class="m-0"><i class="fa fa-phone " aria-hidden="true"></i> +358 452 312 398</p>
 <p class="m-0"><i class="fa fa-envelope-o" aria-hidden="true"></i> stallgranbacka@gmail.com </p>
 
@@ -45,7 +45,7 @@
                     <textarea class="form-control" id="message" rows="6" value=""  name="message"></textarea>
                 </div>
                 <div class="form-group g-recaptcha" data-sitekey="6LcdIDgUAAAAAPi04wbQkq_u791O3gvjodZGEwRK"></div>
-                <button class="btn btn-primary" id="send_btn" type="submit">
+                <button class="btn btn-success" id="send_btn" type="submit">
                     Lähetä
                 </button>
             </form>
