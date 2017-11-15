@@ -16,7 +16,7 @@
                     <div id="datepicker"></div>
                 </div>
                     <div class="col-12">
-                        <div id="accordion" style="display:none;">
+                        <div id="accordion"">
                             <h3 class="weekday day1">Please select a time</h3>
                             <table class="table" id="table_mobile" style="width:100%">
                                 <tr id="1">
@@ -84,10 +84,17 @@
                 </div>
 
                 <div id="booking_sent" title="Booking Sent">
-                    <p>Thank you for your reservation. You will receive an email with the deatils of your lesson</p>
+                    <p>Thank you for your reservation. You will receive an email with the details of your lesson</p>
                     <button type="submit" id="back" class="btn btn-primary">Continue</button>
 
                 </div>
+            </div>
+            <div class="legend">Instructions: Please click to book a lesson. Shortly your request will be confirmed by the trainer.
+            <ul>
+                <li><div style="width:10px;height:10px;background:lightgreen;"></div>Green: class available</li>
+                <li><div style="width:10px;height:10px;background:#007fff;"></div>Blue: class selected</li>
+                <li><div style="width:10px;height:10px;background:darkslategrey;"></div>Grey: class unavailable</li>
+            </ul>
             </div>
         </div>
 
@@ -97,6 +104,11 @@
             <style>
                 div#datepicker{ display:none;}
                 div#confirm_buttons{ display:none;}
+                button#confirm{ display:none;}
+                button#reset{ display:none;}
+                div#booking_confirmation{ display:none;}
+                div#booking_sent{ display:none;}
+                div#accordion{display:none;}
             </style>
 
         <div class="container">
@@ -104,7 +116,7 @@
                 <label>Week :</label> <span id="startDate"></span> - <span id="endDate"></span>
                 <h3>Administrator's Master Menu</h3>
 
-                <!-- this is a dump of the users table usefull to make our edit table
+                <!-- this is a dump of the users table useful to make our edit table
                 <p>{{ $user_whole }}</p>-->
 
                 <table id="table_desktop" style="width:100%">
@@ -241,7 +253,6 @@
                     </tr>
                 </table>
             </div>
-            <div class="legend">Instructions: Please click to book a lesson. Shortly your request will be confirmed by the trainer.</div>
             <div class="newDiv"></div>
         @endcan
     </div>
