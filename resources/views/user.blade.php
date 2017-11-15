@@ -8,73 +8,68 @@
     <link rel="stylesheet" href="{{ asset('css/style_booking.css') }}">
     <div class="container background_light">
         <div class="row">
-
             <div class="col-12">
-
                 <h3>Welcome {{ $user_name }}</h3>
                 <p>Please select a date:</p>
             </div>
-
-            <div class="col-12">
-
-                <div id="datepicker"></div>
-            </div>
-
-            <div class="col-12">
-                <div id="accordion" style="display:none;">
-                    <h3 class="weekday day1">Please select a time</h3>
-                    <table class="table" id="table_mobile" style="width:100%">
-                        <tr id="1">
-                            <td id="0" class="slot_data">08:00 - 09:00</td>
-                            <td id="08:00 - 09:00" class="slot unchecked" data-class="unchecked"></td>
-                        </tr>
-                        <tr id="2">
-                            <td id="0" class="slot_data">09:00 - 10:00</td>
-                            <td id="09:00 - 10:00" class="slot unchecked" data-class="unchecked"></td>
-                        </tr>
-                        <tr id="3">
-                            <td id="0" class="slot_data">10:00 - 11:00</td>
-                            <td id="10:00 - 11:00" class="slot unchecked" data-class="unchecked"></td>
-                        </tr>
-                        <tr id="4">
-                            <td id="0" class="slot_data">11:00 - 12:00</td>
-                            <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        </tr>
-                        <tr id="5">
-                            <td id="0" class="slot_data">12:00 - 13:00</td>
-                            <td id="11:00 - 12:00" class="slot unchecked" data-class="unchecked"></td>
-                        </tr>
-                        <tr id="6">
-                            <td id="0" class="slot_data">13:00 - 14:00</td>
-                            <td id="13:00 - 14:00" class="slot unchecked" data-class="unchecked"></td>
-                        </tr>
-                        <tr id="7">
-                            <td id="0" class="slot_data">14:00 - 15:00</td>
-                            <td id="14:00 - 15:00" class="slot unchecked" data-class="unchecked"></td>
-                        </tr>
-                        <tr id="8">
-                            <td id="0" class="slot_data">15:00 - 16:00</td>
-                            <td id="15:00 - 16:00" class="slot unchecked" data-class="unchecked"></td>
-                        </tr>
-                        <tr id="9">
-                            <td id="0" class="slot_data">16:00 - 17:00</td>
-                            <td id="16:00 - 17:00" class="slot unchecked" data-class="unchecked"></td>
-                        </tr>
-                        <tr id="10">
-                            <td id="0" class="slot_data">17:00 - 18:00</td>
-                            <td id="17:00 - 18:00" class="slot unchecked" data-class="unchecked"></td>
-                        </tr>
-                        <tr id="11">
-                            <td id="0" class="slot_data">18:00 - 19:00</td>
-                            <td id="18:00 - 19:00" class="slot unchecked" data-class="unchecked"></td>
-                        </tr>
-                        <tr id="12">
-                            <td id="0" class="slot_data">19:00 - 20:00</td>
-                            <td id="19:00 - 20:00" class="slot unchecked" data-class="unchecked"></td>
-                        </tr>
-                    </table>
+                <div class="col-12">
+                    <div id="datepicker"></div>
                 </div>
-            </div>
+                    <div class="col-12">
+                        <div id="accordion" style="display:none;">
+                            <h3 class="weekday day1">Please select a time</h3>
+                            <table class="table" id="table_mobile" style="width:100%">
+                                <tr id="1">
+                                    <td id="0" class="slot_data">08:00 - 09:00</td>
+                                    <td id="08:00 - 09:00" class="slot unchecked" data-class="unchecked"></td>
+                                </tr>
+                                <tr id="2">
+                                    <td id="0" class="slot_data">09:00 - 10:00</td>
+                                    <td id="09:00 - 10:00" class="slot unchecked" data-class="unchecked"></td>
+                                </tr>
+                                <tr id="3">
+                                    <td id="0" class="slot_data">10:00 - 11:00</td>
+                                    <td id="10:00 - 11:00" class="slot unchecked" data-class="unchecked"></td>
+                                </tr>
+                                <tr id="4">
+                                    <td id="0" class="slot_data">11:00 - 12:00</td>
+                                    <td id="1" class="slot unchecked" data-class="unchecked"></td>
+                                </tr>
+                                <tr id="5">
+                                    <td id="0" class="slot_data">12:00 - 13:00</td>
+                                    <td id="11:00 - 12:00" class="slot unchecked" data-class="unchecked"></td>
+                                </tr>
+                                <tr id="6">
+                                    <td id="0" class="slot_data">13:00 - 14:00</td>
+                                    <td id="13:00 - 14:00" class="slot unchecked" data-class="unchecked"></td>
+                                </tr>
+                                <tr id="7">
+                                    <td id="0" class="slot_data">14:00 - 15:00</td>
+                                    <td id="14:00 - 15:00" class="slot unchecked" data-class="unchecked"></td>
+                                </tr>
+                                <tr id="8">
+                                    <td id="0" class="slot_data">15:00 - 16:00</td>
+                                    <td id="15:00 - 16:00" class="slot unchecked" data-class="unchecked"></td>
+                                </tr>
+                                <tr id="9">
+                                    <td id="0" class="slot_data">16:00 - 17:00</td>
+                                    <td id="16:00 - 17:00" class="slot unchecked" data-class="unchecked"></td>
+                                </tr>
+                                <tr id="10">
+                                    <td id="0" class="slot_data">17:00 - 18:00</td>
+                                    <td id="17:00 - 18:00" class="slot unchecked" data-class="unchecked"></td>
+                                </tr>
+                                <tr id="11">
+                                    <td id="0" class="slot_data">18:00 - 19:00</td>
+                                    <td id="18:00 - 19:00" class="slot unchecked" data-class="unchecked"></td>
+                                </tr>
+                                <tr id="12">
+                                    <td id="0" class="slot_data">19:00 - 20:00</td>
+                                    <td id="19:00 - 20:00" class="slot unchecked" data-class="unchecked"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
 
             <div class="col">
                 <div id="confirm_buttons" style="display:none;" class="confirm">
@@ -97,15 +92,18 @@
                 </div>
             </div>
         </div>
-        @can('admin')
-            
-            <div class="week-picker"></div>
-            <br /><br />
-            <label>Week :</label> <span id="startDate"></span> - <span id="endDate"></span>
-            </div>
 
-            <div class="container">
+        @can('admin')
+
+        <!-- This style hides the users datepicker-->
+            <style>div#datepicker{ display:none;}</style>
+
+        <div class="container">
+            <div class="week-picker"></div>
+                <br /><br />
+                <label>Week :</label> <span id="startDate"></span> - <span id="endDate"></span>
                 <h3>Administrator's Master Menu</h3>
+                <p>{{ $user_whole }}</p>
                 <table id="table_desktop" style="width:100%">
                     <tr class="row" id="0">
                         <th class="slot_title">Time_Slot</th>
@@ -242,16 +240,10 @@
             </div>
             <div class="legend">Instructions: Please click to book a lesson. Shortly your request will be confirmed by the trainer.</div>
             <div class="newDiv"></div>
-
-
-            <style>p{ display:none;}
-                </style>
         @endcan
-
     </div>
-
-
 @endsection
+
 @section('scripts')
     <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
     <script>
