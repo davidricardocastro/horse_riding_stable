@@ -254,6 +254,39 @@
                 </table>
             </div>
             <div class="newDiv"></div>
+
+
+        <!--Table for displaying all users info -->
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>email</th>
+                        <th>phone</th>
+                        <th>address</th>
+                    </tr>
+                </thead>
+
+                <tbody>              
+
+                    @foreach ($user_table as $user)
+                        
+                        <tr>
+                        <th scope="row">{{$user['id']}}</th>                        
+                        <td>{{$user['name']}}</td>
+                        <td>{{$user['email']}}</td>
+                        <td>{{$user['phone']}}</td>
+                        <td>{{$user['address']}}</td>
+                        </tr>                        
+                      
+                    @endforeach
+
+                </tbody>
+
+            </table>
+
         @endcan
     </div>
 @endsection

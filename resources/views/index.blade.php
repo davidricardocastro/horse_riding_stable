@@ -7,7 +7,11 @@
     
 </div>
 <div class="container background_light p-4">
-    <img class="img-fluid" src="{{url ('/img/horse5_cut.jpg') }}" alt="horse">
+    
+     <img class="img-fluid" src="{{url ('/img/horse5_cut.jpg') }}" alt="black horse">
+        
+    
+    
 </div>
 <div class="container background_light mt-2 p-4">
     <div class="embed-responsive embed-responsive-16by9" style="max-height:350px">     
