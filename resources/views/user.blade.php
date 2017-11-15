@@ -93,12 +93,14 @@
 
         @can('admin')
 
-        <!-- This style hides the users datepicker-->
-            <style>div#datepicker{ display:none;}</style>
+        <!-- This style hides the user's datepicker,confirm_buttons-->
+            <style>
+                div#datepicker{ display:none;}
+                div#confirm_buttons{ display:none;}
+            </style>
 
         <div class="container">
             <div class="week-picker"></div>
-
                 <label>Week :</label> <span id="startDate"></span> - <span id="endDate"></span>
                 <h3>Administrator's Master Menu</h3>
 
