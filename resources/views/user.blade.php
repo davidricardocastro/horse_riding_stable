@@ -85,8 +85,6 @@
 
                 <div id="booking_sent" title="Booking Sent">
                     <p>Thank you for your reservation. You will receive an email with the deatils of your lesson</p>
-
-                    <input type="text" value="test">
                     <button type="submit" id="back" class="btn btn-primary">Continue</button>
 
                 </div>
@@ -100,10 +98,13 @@
 
         <div class="container">
             <div class="week-picker"></div>
-                <br /><br />
+
                 <label>Week :</label> <span id="startDate"></span> - <span id="endDate"></span>
                 <h3>Administrator's Master Menu</h3>
-                <p>{{ $user_whole }}</p>
+
+                <!-- this is a dump of the users table usefull to make our edit table
+                <p>{{ $user_whole }}</p>-->
+
                 <table id="table_desktop" style="width:100%">
                     <tr class="row" id="0">
                         <th class="slot_title">Time_Slot</th>
@@ -378,9 +379,9 @@
                 selectCurrentWeek();
             }
         });
-        
-        $('.week-picker .ui-datepicker-calendar tr').live('mousemove', function() { $(this).find('td a').addClass('ui-state-hover'); });
-        $('.week-picker .ui-datepicker-calendar tr').live('mouseleave', function() { $(this).find('td a').removeClass('ui-state-hover'); });
+        <!-- Marco this is causing a problem in the console(live is not a function) is it really nessesary? :) -->
+        //$('.week-picker .ui-datepicker-calendar tr').live('mousemove', function() { $(this).find('td a').addClass('ui-state-hover'); });
+        //$('.week-picker .ui-datepicker-calendar tr').live('mouseleave', function() { $(this).find('td a').removeClass('ui-state-hover'); });
     });
     </script>
 
