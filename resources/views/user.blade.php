@@ -91,9 +91,9 @@
             </div>
             <div class="legend">Instructions: Please click to book a lesson. Shortly your request will be confirmed by the trainer.
             <ul>
-                <li><div style="width:10px;height:10px;background:lightgreen;"></div>Green: class available</li>
-                <li><div style="width:10px;height:10px;background:#007fff;"></div>Blue: class selected</li>
-                <li><div style="width:10px;height:10px;background:darkslategrey;"></div>Grey: class unavailable</li>
+                <div style="width:10px;height:10px;background:lightgreen;"></div>Green:  available<br>
+                <div style="width:10px;height:10px;background:#007fff;"></div>Blue:  current selection<br>
+                <div style="width:10px;height:10px;background:darkslategrey;"></div>Grey:  unavailable<br>
             </ul>
             </div>
         </div>
@@ -117,7 +117,7 @@
                 <h3>Administrator's Master Menu</h3>
 
                 <!-- this is a dump of the users table useful to make our edit table
-                <p>{{ $user_whole }}</p>-->
+                <p>{{ $user_table }}</p>-->
 
                 <table id="table_desktop" style="width:100%">
                     <tr class="row" id="0">
