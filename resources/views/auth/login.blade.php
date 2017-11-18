@@ -49,17 +49,14 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group m-0">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-success mr-2">
                                 Kirjaudu sisään
                                 </button>
-
-
                                 <a class="btn btn-outline-success" href="{{ route('register') }}">
                                     Rekisteröidy
                                 </a>
-
                                 <a class="btn btn-outline-success mt-3 mb-2" href="{{ route('password.request') }}">
                                     Forgot Your Password?
                                 </a>
