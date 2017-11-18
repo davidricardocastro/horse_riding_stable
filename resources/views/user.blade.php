@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="{{ asset('css/style_booking.css') }}">
     <div class="container background_light">
         <div class="row">
+       
+        <div class="col-6 forms my-5">
+        
+        </div>
             <div class="col-12">
                 <h3>Welcome {{ $user_name }}</h3>
                 <p>Please select a date:</p>

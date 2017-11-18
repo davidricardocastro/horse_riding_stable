@@ -28,3 +28,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //for storing contacts to db
 Route::post('/contact', 'contactController@store');
+
+
+//new slot
+Route::get('/slot/new', 'slotController@create');
+Route::post('/slot/new', 'slotController@store');
+
+//edit slot
+Route::get('/slot/edit/{id}', 'slotController@edit');
+Route::post('/slot/edit/{id}', 'slotController@store');
+
+//list all slots
+Route::get('/slot/list', 'slotController@listing')->name('slot detail');

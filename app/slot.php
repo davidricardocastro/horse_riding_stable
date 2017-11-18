@@ -8,8 +8,11 @@ class slot extends Model
 {
     //
     protected $fillable = [
-        'user_detail',
-        'slot_detail'
+        'n_students',
+        'description',
+        'lesson_start',
+        'lesson_end',
+        'available'  
     ];
 
     protected $guarded = [
