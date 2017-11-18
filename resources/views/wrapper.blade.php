@@ -100,9 +100,9 @@
     <footer >
         <div class="container-fluid custom_color1 ">
             <div class="row justify-content-center">
-                <div class="col-lg-12 col-xl-3"><p class=" text-center nav_font bigger_font " ><i class="fa fa-map-marker" aria-hidden="true"></i> Lopentie 6, 01860 Nurmijärvi </p></div>
-                <div class="col-lg-12 col-xl-3"><p class=" text-center nav_font bigger_font"><i class="fa fa-envelope-o" aria-hidden="true"></i> stallgranbacka@gmail.com </p> </div>
-                <div class="col-lg-12 col-xl-3"><p class=" text-center nav_font  bigger_font"><i class="fa fa-phone " aria-hidden="true"></i> +358 452 312 398 </p> </div>
+                <div class="col-lg-12 col-xl-3"><p class=" text-center nav_font" ><i class="fa fa-map-marker" aria-hidden="true"></i> Lopentie 6, 01860 Nurmijärvi </p></div>
+                <div class="col-lg-12 col-xl-3"><p class=" text-center nav_font"><i class="fa fa-envelope-o" aria-hidden="true"></i> stallgranbacka@gmail.com </p> </div>
+                <div class="col-lg-12 col-xl-3"><p class=" text-center nav_font"><i class="fa fa-phone " aria-hidden="true"></i> +358 452 312 398 </p> </div>
                 
             </div>
         </div>

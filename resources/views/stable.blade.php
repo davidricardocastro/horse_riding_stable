@@ -1,20 +1,19 @@
 @extends('wrapper') @section('content')
-
-<div class="container background_light">
+<div class="container background_light p-4">
     <div class="row">
-        <div class="col m-3">
-            <h2 class="secondary_font"> Talli </h2>
+        <div class="col-12">
+            <h2> Talli </h2>
         </div>
     </div>
 
     <div class="row justify-content-around p-2">
 
         <div class="col-12 pb-3">
-            <h4 class="">Talli Andantino toimii Numlahden kartanon historiallisessa ympäristössä. Hevoset asuvat tilavissa karsinoissa
+            <p class="">Talli Andantino toimii Numlahden kartanon historiallisessa ympäristössä. Hevoset asuvat tilavissa karsinoissa
                 vanhassa tiilitallissa. Vapaa- aikansa ne viettävät tarhoissa tai laitumilla ruuna- ja tammalaumoissa. 
 
             <br><br> Meillä on käytössämme hyväpohjainen ratsastuskenttä 25x50 metriä, sekä vaihteleva maastoinen laitumia kiertävä
-            maastolenkki.</h4>
+            maastolenkki.</p>
         </div>
 
 
