@@ -28,7 +28,7 @@ class slotController extends Controller
         
 
         $view = view('/slots/edit');
-        $view->slot = new Slot;
+        $view->slot = new slot;
         return $view;
     }
 

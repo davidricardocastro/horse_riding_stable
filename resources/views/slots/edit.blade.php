@@ -6,7 +6,7 @@
 
     <div class="col-6">
 
-        Create new slots for ridding lessons
+        <h4>Create new slots for ridding lessons</h4>
         <form action="" method="post">
             {{ csrf_field()}}
             <div class="form-group">
@@ -23,10 +23,10 @@
                 </select>
 
                 <label for="start_time">Start time</label>
-                <input class="form-control" type="datetime-local" name="start_time" value="{{ $slot->start_time }}">
+                <input class="form-control" type="datetime-local" name="lesson_start" value="{{ $slot->lesson_start }}">
 
                 <label for="finish_time">Finish time</label>
-                <input class="form-control" type="datetime-local" name="finish_time" value="{{ $slot->finish_time }}">
+                <input class="form-control" type="datetime-local" name="lesson_end" value="{{ $slot->lesson_end }}">
 
 
                 <label for="is_active">Active lesson</label>
