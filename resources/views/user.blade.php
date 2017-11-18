@@ -16,7 +16,7 @@
                     <div id="datepicker"></div>
                 </div>
                     <div class="col-12">
-                        <div id="accordion"">
+                        <div id="accordion">
                             <h3 class="weekday day1">Please select a time</h3>
                             <table class="table" id="table_mobile" style="width:100%">
                                 <tr id="1">
@@ -264,9 +264,9 @@
 
 
         <div class="row">
-        <div class="col">
+        <div class="col-12">
 
-        <h5>Users details:</h5>
+        <h5>Users details:<h5>
 
             <table class="table table-responsive">
                 <thead>
