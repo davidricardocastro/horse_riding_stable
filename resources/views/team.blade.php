@@ -1,10 +1,8 @@
 @extends('wrapper') @section('content')
 
-<div class="container background_light">
-
+<div class="container background_light p-4">
     <div class="row justify-content-around">
-
-        <div class="col-12 m-3">
+        <div class="col-12">
             <h2>Hevoset</h2>
         </div>
       

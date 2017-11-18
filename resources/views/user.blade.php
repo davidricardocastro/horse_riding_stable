@@ -424,6 +424,11 @@
                     $('#day'+i).text($.datepicker.formatDate('D, dd-mm-yy', datex,inst.settings));
                 }
 
+
+                var header_day = $('th#day0').text();
+                console.log(header_day);
+
+                
                 selectCurrentWeek();
             },
             beforeShowDay: function(date) {
@@ -436,9 +441,7 @@
                 selectCurrentWeek();
             }
         });
-        <!-- Marco this is causing a problem in the console(live is not a function) is it really nessesary? :) -->
-        //$('.week-picker .ui-datepicker-calendar tr').live('mousemove', function() { $(this).find('td a').addClass('ui-state-hover'); });
-        //$('.week-picker .ui-datepicker-calendar tr').live('mouseleave', function() { $(this).find('td a').removeClass('ui-state-hover'); });
+
     });
     </script>
 

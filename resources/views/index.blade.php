@@ -2,11 +2,11 @@
 
 @section('content')
 
-<div class="container background_light">
-    <h1 class="secundary_font">Talli Andantino <br> Ratsastustunnit 1-4 hengen ryhmissä Perttulassa, Nummijärvellä</h1>
+<div class="container background_light p-4">
+    <h4>Talli Andantino <br> Ratsastustunnit 1-4 hengen ryhmissä Perttulassa, Nummijärvellä</h4>
     
 </div>
-<div class="container background_light p-4">
+<div class="container background_light p-4 mt-3">
     
      <img class="img-fluid" src="{{url ('/img/horse5_cut.jpg') }}" alt="black horse">
         

@@ -14,7 +14,7 @@ body{
     color: #D0CFCF;
 }
 
-.secundary_font {
+.secondary_font {
     font-family: 'Playball', sans;
     color: rgb(32, 53, 33);
 }
@@ -24,7 +24,7 @@ body{
 }
 
 
-p, h3, h4, h5, h6 {
+p, h2, h3, h4, h5, h6 {
     font-family: 'Lora', sans;
 }
 .bigger_font {
