@@ -138,125 +138,125 @@
                         <th id="day6" class="weekday day7"></th>
                     </tr>
                     <tr  id="1">
-                        <td id="0" class="slot_data">08:00 - 09:00</td>
-                        <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="7" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row1col0" class="slot_data">08:00 - 09:00</td>
+                        <td id="row1col1" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row1col2" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row1col3" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row1col4" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row1col5" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row1col6" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row1col7" class="slot unchecked" data-class="unchecked"></td>
                     </tr>
                     <tr  id="2">
-                        <td id="0" class="slot_data">09:00 - 10:00</td>
-                        <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="7" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row2col0" class="slot_data">09:00 - 10:00</td>
+                        <td id="row2col1" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row2col2" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row2col3" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row2col4" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row2col5" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row2col6" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row2col7" class="slot unchecked" data-class="unchecked"></td>
                     </tr>
                     <tr  id="3">
-                        <td id="0" class="slot_data">10:00 - 11:00</td>
-                        <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="7" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row3col0" class="slot_data">10:00 - 11:00</td>
+                        <td id="row3col1" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row3col2" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row3col3" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row3col4" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row3col5" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row3col6" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row3col7" class="slot unchecked" data-class="unchecked"></td>
                     </tr>
                     <tr  id="4">
-                        <td id="0" class="slot_data">11:00 - 12:00</td>
-                        <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="7" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row4col0" class="slot_data">11:00 - 12:00</td>
+                        <td id="row4col1" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row4col2" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row4col3" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row4col4" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row4col5" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row4col6" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row4col7" class="slot unchecked" data-class="unchecked"></td>
                     </tr>
                     <tr id="5">
-                        <td id="0" class="slot_data">12:00 - 13:00</td>
-                        <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="7" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row5col0" class="slot_data">12:00 - 13:00</td>
+                        <td id="row5col1" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row5col2" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row5col3" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row5col4" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row5col5" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row5col6" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row5col7" class="slot unchecked" data-class="unchecked"></td>
                     </tr>
                     <tr  id="6">
-                        <td id="0" class="slot_data">13:00 - 14:00</td>
-                        <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="7" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row6col0" class="slot_data">13:00 - 14:00</td>
+                        <td id="row6col1" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row6col2" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row6col3" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row6col4" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row6col5" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row6col6" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row6col7" class="slot unchecked" data-class="unchecked"></td>
                     </tr>
                     <tr  id="7">
-                        <td id="0" class="slot_data">14:00 - 15:00</td>
-                        <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="7" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row7col0" class="slot_data">14:00 - 15:00</td>
+                        <td id="row7col1" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row7col2" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row7col3" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row7col4" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row7col5" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row7col6" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row7col7" class="slot unchecked" data-class="unchecked"></td>
                     </tr>
 
                     <tr  id="8">
-                        <td id="0" class="slot_data">15:00 - 16:00</td>
-                        <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="7" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row8col0" class="slot_data">15:00 - 16:00</td>
+                        <td id="row8col1" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row8col2" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row8col3" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row8col4" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row8col5" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row8col6" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row8col7" class="slot unchecked" data-class="unchecked"></td>
                     </tr>
                     <tr  id="9">
-                        <td id="0" class="slot_data">16:00 - 17:00</td>
-                        <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="7" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row9col0" class="slot_data">16:00 - 17:00</td>
+                        <td id="row9col1" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row9col2" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row9col3" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row9col4" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row9col5" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row9col6" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row9col7" class="slot unchecked" data-class="unchecked"></td>
                     </tr>
                     <tr id="10">
-                        <td id="0" class="slot_data">17:00 - 18:00</td>
-                        <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="7" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row10col0" class="slot_data">17:00 - 18:00</td>
+                        <td id="row10col1" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row10col2" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row10col3" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row10col4" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row10col5" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row10col6" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row10col7" class="slot unchecked" data-class="unchecked"></td>
                     </tr>
                     <tr  id="11">
-                        <td id="0" class="slot_data">18:00 - 19:00</td>
-                        <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="7" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row11col0" class="slot_data">18:00 - 19:00</td>
+                        <td id="row11col1" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row11col2" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row11col3" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row11col4" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row11col5" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row11col6" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row11col7" class="slot unchecked" data-class="unchecked"></td>
                     </tr>
                     <tr  id="12">
-                        <td id="0" class="slot_data">19:00 - 20:00</td>
-                        <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                        <td id="7" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row12col0" class="slot_data">19:00 - 20:00</td>
+                        <td id="row12col1" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row12col2" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row12col3" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row12col4" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row12col5" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row12col6" class="slot unchecked" data-class="unchecked"></td>
+                        <td id="row12col7" class="slot unchecked" data-class="unchecked"></td>
                     </tr>
                 </table>
             </div>
@@ -268,40 +268,57 @@
 
 
         <div class="row">
-        <div class="col-12">
 
-        <h5>Users details:<h5>
-
-            <table class="table table-responsive">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>email</th>
-                        <th>phone</th>
-                        <th>address</th>
-                    </tr>
-                </thead>
-
-                <tbody>              
-
-                    @foreach ($user_table as $user)
-                        
-                        <tr>
-                        <th scope="row">{{$user['id']}}</th>                        
-                        <td>{{$user['name']}}</td>
-                        <td>{{$user['email']}}</td>
-                        <td>{{$user['phone']}}</td>
-                        <td>{{$user['address']}}</td>
-                        </tr>                        
-                      
-                    @endforeach
-
-                </tbody>
-
-            </table>
-            </div>
-            </div>
+            <div class="col">
+                <h5>Users Table:</h5><button id="edit_users">Edit</button>
+                    <table class="table table-responsive">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>email</th>
+                                <th>phone</th>
+                                <th>address</th>
+                            </tr>
+                        </thead>
+                            <tbody>
+                                @foreach ($user_table as $user)
+                                    <tr>
+                                    <th scope="row">{{$user['id']}}</th>
+                                    <td>{{$user['name']}}</td>
+                                    <td>{{$user['email']}}</td>
+                                    <td>{{$user['phone']}}</td>
+                                    <td>{{$user['address']}}</td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                    </table>
+                    <h5>Slot Table:</h5><button id="edit_slots">Edit</button>
+                    <table class="table table-responsive">
+                        <thead>
+                            <br>
+                            <tr>
+                                <th>SLOT ID</th>
+                                <th>lesson_start</th>
+                                <th>User_Name</th>
+                                <th>User_email</th>
+                                <th>n_students</th>
+                            </tr>
+                        </thead>
+                            <tbody>
+                                @foreach ($slot_table as $slot)
+                                    <tr>
+                                        <th scope="row">{{  $slot['id']}}</th>
+                                        <td>{{ $slot['lesson_start']}}</td>
+                                        <td>User_Name</td>
+                                        <td>User_email</td>
+                                        <td>{{ $slot['n_students']}}</td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                    </table>
+                </div>
+        </div>
         @endcan
     </div>
 @endsection
@@ -368,7 +385,7 @@
                         console.log(data);
                     }
                 }
-            )
+            );
             $( "#booking_confirmation" ).dialog();
 
         });
@@ -428,11 +445,42 @@
                     $('#day'+i).text($.datepicker.formatDate('D, dd-mm-yy', datex,inst.settings));
                 }
 
+                //we clean first all that was previously on the table
+
+                //we assign the clicked date to each day of the week
 
                 var header_day = $('th#day0').text();
-                console.log(header_day);
+                header_day = header_day.slice(5,7);//19
+                var monday = header_day;
+                var tuesday = monday+1;
+                var wednesday = tuesday+1;
+                var thursday = wednesday+1;
+                var friday = thursday+1;
+                var saturday = friday+1;
+                var sunday = saturday+1;
 
-                
+                //given a specific week we get the booked slots from moday to friday from slots(or reservation) table
+
+                //if from the DB that date exist give it the proper column, col2
+
+                //if from the DB that time exist give it the proper column, row2
+
+                // and append to the matches with a function that append not empty columns and rows
+                //change the css of the selected row
+
+                $("#row1col4").append('booked');
+
+                $.ajax({
+                    method: 'get',
+                    url: '{{ action('Api\ReservationController@week') }}' ,
+                    data : { monday: startDate},
+                    success: function(data){
+                        console.log(data);
+                        //take the data an assign into
+                    }
+
+                });
+
                 selectCurrentWeek();
             },
             beforeShowDay: function(date) {
