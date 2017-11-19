@@ -300,6 +300,7 @@
                 </tbody>
 
             </table>
+                <h5>Slot details:<h5>
             </div>
             </div>
         @endcan
