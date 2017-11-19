@@ -37,6 +37,11 @@ class ReservationController extends Controller
         
         //dd($_POST);
         //
+    }
 
+    public function display_slots()
+    {
+        //return here the slots available for a given date
+        return $slots_table;
     }
 }
