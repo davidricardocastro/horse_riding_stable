@@ -127,16 +127,11 @@ class slotController extends Controller
 
     public function listing()
     {
-
-
-       
         //return view('/slots/list');
-
         $view = view('slots/list');
-    
             $all_slots = slot::all();
             //$all_authors= Author::orderBy('year', 'dsc')->get();
-    
+
             $view->slots = $all_slots;
     
             return $view;

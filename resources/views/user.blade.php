@@ -283,21 +283,44 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>email</th>
-                            <th>phone</th>
-                            <th>address</th>
+                            <th>n_students</th>
+                            <th>lesson_start</th>
+                            <th>level</th>
+                            <th>max_reservations</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($user_table as $user)
+                        @foreach ($slot_table as $slot)
                             <tr>
-                                <th scope="row">{{$user['id']}}</th>
-                                <td>{{$user['name']}}</td>
-                                <td>{{$user['email']}}</td>
-                                <td>{{$user['phone']}}</td>
-                                <td>{{$user['address']}}</td>
+                                <th scope="row">{{$slot['id']}}</th>
+                                <td>{{$slot['n_students']}}</td>
+                                <td>{{$slot['lesson_start']}}</td>
+                                <td>{{$slot['lesson_end']}}</td>
+                                <td>{{$slot['created_at']}}</td>
                             </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+                <h5>Reservation details:</h5>
+                <table class="table table-responsive">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>email</th>
+                        <th>phone</th>
+                        <th>address</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach ($user_table as $user)
+                        <tr>
+                            <th scope="row">{{$user['id']}}</th>
+                            <td>{{$user['name']}}</td>
+                            <td>{{$user['email']}}</td>
+                            <td>{{$user['phone']}}</td>
+                            <td>{{$user['address']}}</td>
+                        </tr>
                     @endforeach
                     </tbody>
                 </table>
@@ -369,7 +392,7 @@
                         console.log(data);
                     }
                 }
-            )
+            );
             $( "#booking_confirmation" ).dialog();
 
         });
@@ -394,10 +417,7 @@
             $( "#booking_confirmation" ).dialog("close");
             $("#accordion").css('display','none');
             $("#confirm_buttons").css('display','none');
-
-
         });
-
 
     </script>
     
@@ -428,12 +448,8 @@
                     datex = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()+ i);
                     $('#day'+i).text($.datepicker.formatDate('D, dd-mm-yy', datex,inst.settings));
                 }
-
-
                 var header_day = $('th#day0').text();
                 console.log(header_day);
-
-                
                 selectCurrentWeek();
             },
             beforeShowDay: function(date) {
