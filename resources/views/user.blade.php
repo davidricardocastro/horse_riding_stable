@@ -269,56 +269,12 @@
 
         <div class="row">
 
-            <div class="col">
-                <h5>Users Table:</h5><button id="edit_users">Edit</button>
-                    <table class="table table-responsive">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>email</th>
-                                <th>phone</th>
-                                <th>address</th>
-                            </tr>
-                        </thead>
-                            <tbody>
-                                @foreach ($user_table as $user)
-                                    <tr>
-                                    <th scope="row">{{$user['id']}}</th>
-                                    <td>{{$user['name']}}</td>
-                                    <td>{{$user['email']}}</td>
-                                    <td>{{$user['phone']}}</td>
-                                    <td>{{$user['address']}}</td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                    </table>
-                    <h5>Slot Table:</h5><button id="edit_slots">Edit</button>
-                    <table class="table table-responsive">
-                        <thead>
-                            <br>
-                            <tr>
-                                <th>SLOT ID</th>
-                                <th>lesson_start</th>
-                                <th>User_Name</th>
-                                <th>User_email</th>
-                                <th>n_students</th>
-                            </tr>
-                        </thead>
-                            <tbody>
-                                @foreach ($slot_table as $slot)
-                                    <tr>
-                                        <th scope="row">{{  $slot['id']}}</th>
-                                        <td>{{ $slot['lesson_start']}}</td>
-                                        <td>User_Name</td>
-                                        <td>User_email</td>
-                                        <td>{{ $slot['n_students']}}</td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                    </table>
-                </div>
-        </div>
+                </tbody>
+
+            </table>
+                <h5>Slot details:<h5>
+            </div>
+            </div>
         @endcan
     </div>
 @endsection
