@@ -49,4 +49,14 @@ class ReservationController extends Controller
         //select the week into a JSON object
         return $monday;
     }
+
+    public function getSlotsForTime() {
+        $from = request()->input('from');
+        $until = request()->input('until');
+
+        $slots = Slot::where('lesson_start', '>=', $from)
+            ->where('lesson_end', '<=', $until)
+            ->get();
+        return $slots;
+    }
 }

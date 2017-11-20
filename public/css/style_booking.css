@@ -3,6 +3,9 @@ Theme Name: jqueryui-com
 Template: jquery
 */
 
+
+
+
 a,
 .title {
 	color: #b24926;
@@ -246,6 +249,3 @@ th {
 	height: 3em;
 }
 
-div#datepicker{
-
-}
