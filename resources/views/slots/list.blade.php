@@ -1,28 +1,50 @@
 @extends('/wrapper') @section('content')
 
 <div class="container background_light">
+    <div class="row">
+        <div class="col-6 mt-5">
+            <ul class="list-group" id="slotlist">
 
-    <div class="col-6 mt-5">
-        <ul class="list-group" id="slotlist">
+                <h3 class="list-group-item active">Slots</h3>
 
-            <li class="list-group-item active">Slots</li>
+                @foreach($slots as $slot)
+                <li class="list-group-item">
 
-            @foreach($slots as $slot)
-            <li class="list-group-item">
+                    <a href="{{route('slot detail', ['id'=> $slot->id])}}">{{$slot->description}}</a>
+                    <table class="table">
+                        <thead>
+                            <th>
+                                Start
+                            </th>
+                            <th>
+                                End
+                            </th>
+                            <th>
+                                Number of riders
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{$slot->lesson_start}}</td>
+                                <td>{{$slot->lesson_end}}</td>
+                                <td>{{$slot->n_students}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--begins({{$slot->lesson_start}}) ends({{$slot->lesson_end}}) number of riders({{$slot->n_students}})
+                    -->
 
-                <a href="{{route('slot detail', ['id'=> $slot->id])}}">{{$slot->description}}</a>
-                begins({{$slot->lesson_start}})
-                ends({{$slot->lesson_end}})
-                number of riders({{$slot->n_students}})
+                </li>
+                @endforeach
 
 
-            </li>
-            @endforeach
-
-
-        </ul>
+            </ul>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-outline-success">
+                <a href="{{ action('slotController@create') }}">New slot</a>
+            </button>
+        </div>
     </div>
-
-
 </div>
 @endsection

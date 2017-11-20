@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="{{ asset('css/style_booking.css') }}">
     <div class="container background_light">
         <div class="row">
-       
-        <div class="col-6 forms my-5">
-        
-        </div>
             <div class="col-12">
                 <h3>Welcome {{ $user_name }}</h3>
                 <p>Please select a date:</p>
@@ -94,17 +90,16 @@
                 </div>
             </div>
             <div class="legend">Instructions: Please click to book a lesson. Shortly your request will be confirmed by the trainer.
-            <ul>
-                <div style="width:10px;height:10px;background:lightgreen;"></div>Green:  available<br>
-                <div style="width:10px;height:10px;background:#007fff;"></div>Blue:  current selection<br>
-                <div style="width:10px;height:10px;background:darkslategrey;"></div>Grey:  unavailable<br>
-            </ul>
+                <ul>
+                    <div style="width:10px;height:10px;background:lightgreen;"></div>Green:  available<br>
+                    <div style="width:10px;height:10px;background:#007fff;"></div>Blue:  current selection<br>
+                    <div style="width:10px;height:10px;background:darkslategrey;"></div>Grey:  unavailable<br>
+                </ul>
             </div>
         </div>
 
         @can('admin')
-
-        <!-- This style hides the user's datepicker,confirm_buttons-->
+<!-- This style hides the user's datepicker,confirm_buttons-->
             <style>
                 div#datepicker{ display:none;}
                 div#confirm_buttons{ display:none;}
@@ -114,8 +109,7 @@
                 div#booking_sent{ display:none;}
                 div#accordion{display:none;}
             </style>
-
-        <div class="container">
+    <div class="container">
         <div class="row">
         <div class="col">
     
@@ -261,20 +255,68 @@
                 </table>
             </div>
             <div class="newDiv"></div>
-
-            </div>
-            </div>
-        <!--Table for displaying all users info -->
-
-
+        </div>
+    </div>
+<!--Table for displaying all users info -->
         <div class="row">
+<<<<<<< HEAD
 
                 </tbody>
 
             </table>
                 <h5>Slot details:<h5>
             </div>
+=======
+            <div class="col-12">
+                <h5>Users details:</h5>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>email</th>
+                            <th>phone</th>
+                            <th>address</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            @foreach ($user_table as $user)
+                                <tr>
+                                    <th scope="row">{{$user['id']}}</th>
+                                    <td>{{$user['name']}}</td>
+                                    <td>{{$user['email']}}</td>
+                                    <td>{{$user['phone']}}</td>
+                                    <td>{{$user['address']}}</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                </table>
+                <h5>Slot details:</h5>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>email</th>
+                            <th>phone</th>
+                            <th>address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($user_table as $user)
+                            <tr>
+                                <th scope="row">{{$user['id']}}</th>
+                                <td>{{$user['name']}}</td>
+                                <td>{{$user['email']}}</td>
+                                <td>{{$user['phone']}}</td>
+                                <td>{{$user['address']}}</td>
+                            </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+>>>>>>> admin_table
             </div>
+        </div>
         @endcan
     </div>
 @endsection
