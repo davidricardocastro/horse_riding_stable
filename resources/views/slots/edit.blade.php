@@ -12,7 +12,7 @@
                 <div class="form-group">
 
                     <label for="description">Description</label>
-                    <input class="form-control" type="text" name="description" value="{{ $slot->description }}">
+                    <input class="form-control" type="text" name="description" value="{{ $slot->description }}" required>
 
                     <label for="n_students">How many riders can attend lesson?</label>
                     <select class="form-control" name="n_students">
@@ -23,10 +23,10 @@
                     </select>
 
                     <label for="start_time">Start time</label>
-                    <input class="form-control" type="datetime-local" name="lesson_start" value="{{ $slot->lesson_start }}">
+                    <input class="form-control" type="datetime-local" name="lesson_start" value="{{ $slot->lesson_start }}" required>
 
                     <label for="finish_time">Finish time</label>
-                    <input class="form-control" type="datetime-local" name="lesson_end" value="{{ $slot->lesson_end }}">
+                    <input class="form-control" type="datetime-local" name="lesson_end" value="{{ $slot->lesson_end }}" required>
 
 
                     <label for="is_active">Active lesson</label>
