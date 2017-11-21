@@ -19,9 +19,9 @@
       <form class="delete" action="{{ action('slotController@destroy',  ['id' => $slot->id]) }}" method="post">
         {{ csrf_field()}}
 
-        <button id="hiddenBtn" class="d-none btn btn-danger">Confirm deletion</button>
+        <button id="hiddenBtn" class="d-none btn btn-danger ">Confirm deletion</button>
       </form>
-      <button id="hiddenBtn2" class="btn btn-success d-none" onclick="deleteCancel()">Cancel</button>
+      <button id="hiddenBtn2" class="btn btn-success d-none " onclick="deleteCancel()">Cancel</button>
       <button id="hiddenBtn3" class="btn btn-warning" onclick="deleteConfirm()">delete lesson slot</button>
 
     </div>

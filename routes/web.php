@@ -48,4 +48,7 @@ Route::get('/slot/list', 'slotController@listing');
 //delete slot
 Route::post('/slots/slot/{id}', 'slotController@destroy');
 
+//view all slots in a day
+Route::get('/slots/day/{lesson_start}', 'DaySlotController@show');
+
 
