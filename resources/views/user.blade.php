@@ -95,9 +95,8 @@
                                             })
                                         }
                                         function generateSlots(data) {
+                                            
                                         }
-
-
                                     </script>
                                 </div>
                             </td>
@@ -247,6 +246,7 @@
                     $.datepicker.formatDate('yy-mm-dd 00:00:00', intervalend,inst.settings),
                 );
                 
+
 
                 $("#row1col4").append('booked');
 
