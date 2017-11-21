@@ -14,26 +14,44 @@
         <li class="list-group-item">Available: {{$slot->available}}</li>
       </ul>
 
-
-
-
-
-
       <a href="{{ action('slotController@edit', ['id' => $slot->id])}}" class="btn btn-primary">Edit slot</a>
 
+      <form class="delete" action="{{ action('slotController@destroy',  ['id' => $slot->id]) }}" method="post">
+        {{ csrf_field()}}
+
+        <button id="hiddenBtn" class="d-none btn btn-danger">Confirm deletion</button>
+      </form>
+      <button id="hiddenBtn2" class="btn btn-success d-none" onclick="deleteCancel()">Cancel</button>
+      <button id="hiddenBtn3" class="btn btn-warning" onclick="deleteConfirm()">delete lesson slot</button>
 
     </div>
     <div class="col-2 mt-5">
       <button class="btn btn-outline-success">
-          <a href="{{ action('slotController@listing') }}">List of slots</a>
+        <a href="{{ action('slotController@listing') }}">List of slots</a>
       </button>
-  </div>
-  <div class="col-2 mt-5">
-    <button class="btn btn-outline-success">
+    </div>
+    <div class="col-2 mt-5">
+      <button class="btn btn-outline-success">
         <a href="{{ action('slotController@create') }}">New slot</a>
-    </button>
-</div>
+      </button>
+    </div>
   </div>
 
 </div>
-@endsection
+
+<script>
+  //confirmation before deleting lesson slot. 
+  function deleteConfirm() {
+    document.getElementById("hiddenBtn").classList.remove('d-none');
+    document.getElementById("hiddenBtn2").classList.remove('d-none');
+    document.getElementById("hiddenBtn3").classList.add('d-none');
+
+  }
+
+  function deleteCancel() {
+    document.getElementById("hiddenBtn").classList.add('d-none');
+    document.getElementById("hiddenBtn2").classList.add('d-none');
+    document.getElementById("hiddenBtn3").classList.remove('d-none');
+  }
+  
+</script> @endsection
