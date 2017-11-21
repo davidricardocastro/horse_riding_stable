@@ -120,8 +120,17 @@ class slotController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {
-        //
+    {    
+        
+        $slot = slot::findOrFail($id);
+        $slot->delete();
+
+        return redirect('slot/list')->with([
+            'flash_message' => 'Deleted',
+            'flash_message_important' => false
+          ]);
+        
+          
     }
 
 
