@@ -51,12 +51,12 @@
             <div class="week-picker"></div>
                 <label>Week :</label> <span id="startDate"></span> - <span id="endDate"></span>
                 <h3>Administrator's Master Menu</h3>
-
+                <h5>Slot details:<h5>
                 <!-- this is a dump of the users table useful to make our edit table
-                <p>{{ $user_table }}</p>-->
+                -->
                 <div id="container table_desktop">
                     
-                <table class="table">
+                <table class="table m-0">
                     <thead>
                         <tr>
                         <th class="slot_title">Time_Slot</th>
@@ -68,18 +68,18 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="label">
-                                <div class="container" style="width:80px; height:1140px" id="inner_table">
+                            <td class="label p-0">
+                                <div class="container p-0" style="width:80px; height:1140px" id="inner_table">
                                     @for ($j = 5; $j < 24; $j++)
-                                    <div class="row" style="width:80px; height:60px">
+                                    <div class="row p-0" style="width:80px; height:60px">
                                         {{ $j }}
                                     </div>
                                     @endfor
                                 </div>
                             </td>
                             @for ($i = 0; $i < 7; $i++)
-                            <td>
-                                <div class="container" style="height:1080px" id="inner_table">
+                            <td class="p-0">
+                                <div class="container m-0 p-0" style="height:1140px" id="inner_table">
                                     <script>
                                         function loadSlots(from, until) {
                                             $.ajax({
@@ -96,7 +96,7 @@
                                         }
                                         function generateSlots(data) {
                                         }
-                                        
+
 
                                     </script>
                                 </div>
@@ -113,15 +113,7 @@
         <!--Table for displaying all users info -->
 
 
-        <div class="row">
-
-                </tbody>
-
-            </table>
-                <h5>Slot details:<h5>
-            </div>
-            </div>
-
+        
     </div>
 @endsection
 
@@ -230,7 +222,7 @@
                 $('.week-picker').find('.ui-datepicker-current-day a').addClass('ui-state-active')
             }, 1);
         }
-        
+        // week-picker
         $('.week-picker').datepicker( {
             showOtherMonths: true,
             selectOtherMonths: true,
@@ -254,28 +246,7 @@
                     $.datepicker.formatDate('yy-mm-dd 00:00:00', intervalstart,inst.settings), 
                     $.datepicker.formatDate('yy-mm-dd 00:00:00', intervalend,inst.settings),
                 );
-                //we clean first all that was previously on the table
-
-                //we assign the clicked date to each day of the week
-
-                // var header_day = $('th#day0').text();
-                // header_day = header_day.slice(5,7);//19
-                // var monday = header_day;
-                // var tuesday = monday+1;
-                // var wednesday = tuesday+1;
-                // var thursday = wednesday+1;
-                // var friday = thursday+1;
-                // var saturday = friday+1;
-                // var sunday = saturday+1;
-
-                //given a specific week we get the booked slots from moday to friday from slots(or reservation) table
-
-                //if from the DB that date exist give it the proper column, col2
-
-                //if from the DB that time exist give it the proper column, row2
-
-                // and append to the matches with a function that append not empty columns and rows
-                //change the css of the selected row
+                
 
                 $("#row1col4").append('booked');
 
