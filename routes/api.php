@@ -15,7 +15,12 @@ use Illuminate\Http\Request;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+
+
 });
 
 
-Route::post('reservation/save', 'Api\ReservationController@create_reservation');
+
+    Route::post('reservation/save', 'Api\ReservationController@create_reservation');
+    Route::get('reservation/day', 'Api\ReservationController@display_reservation');
+

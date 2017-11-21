@@ -24,9 +24,7 @@ class slotController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {    
-        
-
+    {
         $view = view('/slots/edit');
         $view->slot = new slot;
         return $view;
@@ -48,8 +46,6 @@ class slotController extends Controller
         {
             $slot = new slot();
         }
-       
-       
 
         $slot->fill(request()->only([
             'id',
@@ -94,7 +90,6 @@ class slotController extends Controller
     public function edit($id)
     {
         $slot = slot::findOrFail($id);
-        
         $view = view('/slots/edit');
         $view->slot = $slot;
         
