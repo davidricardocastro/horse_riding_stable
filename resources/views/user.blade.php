@@ -229,6 +229,7 @@
                                                         </tr>');
 
                                             //Makes a description of what the user will see of a lesson like: Beginners , N of Students =1
+                                            if (slot.n_students>0){
                                             var slot_full_description = slot.description + '<br> N of Students =' + slot.n_students;
                                             one_tr.find('.slot').html(slot_full_description);
 
@@ -252,7 +253,9 @@
                                                 selected_slot_id = $(this).data('id');
                                                 n_students = $(this).data('n_students');
                                                     //console.log(n_students);
+
                                             });
+                                            }
                                         });
                                         activateSlots();
                                     }//ENDS ON SUCCESS
