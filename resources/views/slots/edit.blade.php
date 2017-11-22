@@ -43,10 +43,21 @@
 
 
         </div>
-        <div class="col-6">
-            <button class="btn btn-outline-success">
-                <a href="{{ action('slotController@listing') }}">List of slots</a>
-            </button>
+        
+        <div class="col-12 my-5 ">
+
+            <div class="btn-group" >
+                <button type="button" class="btn btn-outline-success">
+                    <a href="{{ action('slotController@create') }}">New lesson</a>
+                </button>
+                <button type="button" class="btn btn-outline-success">
+                        <a href="{{ action('slotController@listing') }}">All lessons</a>
+                    </button>
+                    <button type="button" class="btn btn-outline-success">
+                            <a href="{{ action('DaySlotController@index') }}">Select a day</a>
+                        </button>
+
+            </div>
         </div>
     </div>
 

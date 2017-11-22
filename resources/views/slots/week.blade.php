@@ -6,7 +6,7 @@
 
             <h3 class="list-group-item active">Select a different date </h3>
             <!-- selection of a new date-->
-            <form action="{{ action('DaySlotController@show',' ')  }}" method="post">
+            <form action="{{ action('WeekSlotController@show',' ')  }}" method="post">
 
                 {{ csrf_field() }}
                 <div class="form-group">
@@ -20,7 +20,7 @@
                     function updateForm(button) {
                         //console.log(button.form);
                         var targetDate = document.getElementById('newdate').value;
-                        button.form.action = '{{action('DaySlotController@show', '')}}/' + targetDate;
+                        button.form.action = '{{action('WeekSlotController@show', '')}}/' + targetDate;
                         button.form.submit();
                     }
                 </Script>
@@ -30,7 +30,7 @@
         <div class="col-12 mt-5">
             <ul class="list-group" id="slotlist">
 
-                <h3 class="list-group-item active">Lessons for {{$lesson_start}} </h3>
+                <h3 class="list-group-item active">Showing lessons for 7 days from {{$lesson_start}}  </h3>
 
                 @foreach($slots as $slot)
                 <li class="list-group-item">
@@ -91,6 +91,9 @@
                     </button>
                     <button type="button" class="btn btn-outline-success">
                             <a href="{{ action('DaySlotController@index') }}">Select a day</a>
+                        </button>
+                        <button type="button" class="btn btn-outline-success">
+                            <a href="#">Select a week</a>
                         </button>
 
             </div>

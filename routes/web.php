@@ -51,6 +51,17 @@ Route::post('/slots/slot/{id}', 'slotController@destroy');
 //view all slots in a day
 Route::get('/slots/day/{lesson_start}', 'DaySlotController@show');
 
+
+//select day to show slots
+Route::get('/slots/day', 'DaySlotController@index');
+Route::post('/slots/day/', 'DaySlotController@test'); //test method 
+
+
+//view all slots in a week
+Route::get('/slots/week/{lesson_start}', 'WeekSlotController@show');
+
+
+
 //user_data to view/edit
 Route::get('/user_data', 'userController@user_data');
 //user_data to store
@@ -59,6 +70,5 @@ Route::get('/user_data', 'userController@user_data');
 Route::post('/user_data/cancel/{id}', 'userController@cancel_reservation');
 //edit user
 Route::post('/user_data','userController@store');
-
 
 
