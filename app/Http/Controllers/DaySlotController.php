@@ -11,7 +11,9 @@ class DaySlotController extends Controller
    
    public function index()
    {
-       return view('slots/day');
+    
+       
+       return view('slots/selectday');
    }
 
 
@@ -37,4 +39,20 @@ class DaySlotController extends Controller
        $view->lesson_start = $lesson_start;
        return $view;
    }
+
+   public function test()
+   { 
+       // just for testing to be deleted later
+     $requested_date = $_POST['date'];
+       var_dump($_POST);
+
+       
+       
+       echo $requested_date;
+
+
+       return view('slots/test');
+   }
+
+
 }

@@ -51,4 +51,6 @@ Route::post('/slots/slot/{id}', 'slotController@destroy');
 //view all slots in a day
 Route::get('/slots/day/{lesson_start}', 'DaySlotController@show');
 
-
+//select day to show slots
+Route::get('/slots/day', 'DaySlotController@index');
+Route::post('/slots/day/', 'DaySlotController@test'); //test method 
