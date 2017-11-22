@@ -56,6 +56,12 @@ Route::get('/slots/day/{lesson_start}', 'DaySlotController@show');
 Route::get('/slots/day', 'DaySlotController@index');
 Route::post('/slots/day/', 'DaySlotController@test'); //test method 
 
+
+//view all slots in a week
+Route::get('/slots/week/{lesson_start}', 'WeekSlotController@show');
+
+
+
 //user_data to view/edit
 Route::get('/user_data', 'userController@user_data');
 //user_data to store

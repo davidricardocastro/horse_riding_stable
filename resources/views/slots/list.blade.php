@@ -5,7 +5,7 @@
         <div class="col-12 mt-5">
             <ul class="list-group" id="slotlist">
 
-                <h3 class="list-group-item active">Slots</h3>
+                <h3 class="list-group-item active">All lessons</h3>
 
                 @foreach($slots as $slot)
                 <li class="list-group-item">
