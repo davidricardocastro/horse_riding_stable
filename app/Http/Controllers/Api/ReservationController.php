@@ -24,9 +24,8 @@ class ReservationController extends Controller
         //var_dump($user_id);die();
         $user_id = request()->input('user_id');
         $slot_id = request()->input('id');//request the slot id of the selected slot
-        var_dump(request()->input('id'));
-        $n_students = request()->input('n_students');
-        $n_of_spots = request()->input('n_students');//slot spot -1 //number of riders availables to reserve0
+        //var_dump(request()->input('id'));
+        $n_of_spots = request()->input('n_of_spots');//slot spot -1 //number of riders availables to reserve0
 
 
         $reservation = new Reservation;
