@@ -190,12 +190,9 @@
     <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
     <script>
         var select_date = "";
-        var time_slot = "";
         var selected_slot_id = null;
-        var lesson_start_range = "";
-        var lesson_end_range = "";
         var n_of_spots = 3;
-        var n_of_students = 1;
+        var n_students = 1;
         var available_spots = 1;
 
     $(function () {
@@ -219,7 +216,7 @@
                             date: select_date// 11/16/2017
                             },
                                 success: function (data) {
-
+                                console.log(data);
                             $('#table_mobile').empty();//removes the childs and the text inside to our tr,td'S
                             $.each(data, function (i, slot) {
 
@@ -236,7 +233,8 @@
                                             one_tr.find('.slot').html(slot_full_description);
 
                                             //to be used later for the reservation check if higher than available slots
-                                            n_of_spots = slot.n_students;
+                                            //var n_student = slot.n_students;
+
 
                                             var lesson_start_range = slot.lesson_start.slice(10, 16);//2017-11-15 16:00:00->16:00
                                             var lesson_end_range = slot.lesson_end.slice(10, 16);//17:00
@@ -246,14 +244,14 @@
 
                                             //add a data attribute id="1" slot.id comes from the DB
                                             one_tr.data('id', slot.id);
-
+                                            one_tr.data('n_students', slot.n_students);
                                             // when the element is done, append it to the container
                                             $('#table_mobile').append(one_tr);
 
                                             one_tr.click(function (ev) {
-                                                //the this is the TR clicked
                                                 selected_slot_id = $(this).data('id');
-                                                console.log(selected_slot_id);
+                                                n_students = $(this).data('n_students');
+                                                    //console.log(n_students);
                                             });
                                         });
                                         activateSlots();
@@ -273,10 +271,9 @@
         }
 
     function activateSlots() {
-        //Slot time management and display in the table below the week
         $('.slot').click(function () {
             $("#confirm_buttons").css('display', 'block');
-            n_of_students = 1;
+            n_of_spots = 1;
         });
     }
 
@@ -287,49 +284,44 @@
         });
 
         $('#add_spot_counter').on('click', function() {
-            n_of_students++;
+            n_of_spots++;
             confirmCheck();
         });
 
         $('#remove_spot_counter').on('click', function() {
-            n_of_students--;
+            n_of_spots--;
             confirmCheck();
         });
 
         function confirmCheck() {
-
-            available_spots = n_of_spots - n_of_students;
-
-            if(n_of_students > 1 )
+            available_spots = n_students - n_of_spots;
+            if(n_of_spots > 1 )
             {
                 $('#remove_spot_counter').show();
             }
             else {
                 $('#remove_spot_counter').hide();
             }
-                    if (n_of_spots > n_of_students){
-                        console.log("number of students"+n_of_students);
-                        console.log("number of spots"+n_of_spots);
+                    if (n_students > n_of_spots){
+                        console.log("number of students "+n_of_spots);
+                        console.log("number of spots "+n_students);
                         console.log("you can invite: "+available_spots+" more person");
                         $('#add_spot_counter').show();
                         displaySlotCount();
-
-
                     }
                     else {
                         displaySlotMax();
                         $('#add_spot_counter').hide();
-
                     }
         }
 
         function displaySlotCount() {
 
-            $( "#add_spots" ).text("You have reservation for "+n_of_students+" student. You can add up to "+available_spots+" more");
+            $( "#add_spots" ).text("You have reservation for "+n_of_spots+" student. You can add up to "+available_spots+" more");
             //here add the button with the event onclick that will increase the counter until it reaches the limit of slots
         }
         function displaySlotMax() {
-            $( "#add_spots" ).text(n_of_spots+" is the maximum spots for this reservation");
+            $( "#add_spots" ).text(n_students+" is the maximum spots for this reservation");
         }
 
 
@@ -344,7 +336,8 @@
                     data: {
                         id: selected_slot_id,
                         user_id: {{ $user_id }},
-                        n_of_spots: n_of_spots
+                        n_of_spots: n_of_spots,
+                        n_students: n_students
                         },
                             success: function (data) {
                             }
