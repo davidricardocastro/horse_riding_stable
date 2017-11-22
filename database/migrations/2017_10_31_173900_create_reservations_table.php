@@ -15,8 +15,9 @@ class CreateReservationsTable extends Migration
     {
         Schema::create('reservations', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
+            $table->string('user_id');
             $table->integer('slot_id');
+            $table->integer('n_of_spots');//how many spots I want to reserve for example reserve for 3 people
             $table->integer('trainer_id')->nullable();
             $table->timestamps();
         });
