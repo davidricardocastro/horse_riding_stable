@@ -2,10 +2,10 @@
 
 <div class="container background_light">
     <div class="row">
-        <div class="col-6 mt-5">
+        <div class="col-12 mt-5">
             <ul class="list-group" id="slotlist">
 
-                <h3 class="list-group-item active">Slots</h3>
+                <h3 class="list-group-item active">All lessons</h3>
 
                 @foreach($slots as $slot)
                 <li class="list-group-item">
@@ -40,11 +40,24 @@
 
             </ul>
         </div>
-        <div class="col-6">
-            <button class="btn btn-outline-success">
-                <a href="{{ action('slotController@create') }}">New slot</a>
-            </button>
+       
+
+        <div class="col-12 my-5 ">
+
+            <div class="btn-group" >
+                <button type="button" class="btn btn-outline-success">
+                    <a href="{{ action('slotController@create') }}">New lesson</a>
+                </button>
+                <button type="button" class="btn btn-outline-success">
+                        <a href="{{ action('slotController@listing') }}">All lessons</a>
+                    </button>
+                    <button type="button" class="btn btn-outline-success">
+                            <a href="{{ action('DaySlotController@index') }}">Select a day</a>
+                        </button>
+
+            </div>
         </div>
+
     </div>
 </div>
 @endsection
