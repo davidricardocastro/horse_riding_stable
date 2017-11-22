@@ -6,48 +6,41 @@
 
 
 
-<div class="container background_light">
-    <div class="row">
-        <div class="col-12">
-            <h3>Welcome {{ $user_name }}</h3>
-            <p>Please select a date:</p>
-            <div class="hope"></div>
-        </div>
-        <div class="col-12">
-            <div id="datepicker"></div>
-        </div>
-        <div class="col-12">
-            <div id="accordion">
-                <h3>Current Selection</h3>
-                <table class="table" id="table_mobile" style="width:100%">
-
-                </table>
+    <div class="container background_light">
+        <div class="row">
+            <div class="col-12">
+                <h3>Welcome {{ $user_name }}</h3>
+                <p>Please select a date:</p>
+                <div class="hope"></div>
             </div>
-        </div>
-        <!-- Here used to be a lot of rows -->
-        <div class="col">
-            <div id="confirm_buttons" style="display:block;" class="confirm">
-                <button type="submit" id="confirm" class="btn btn-primary">Confirm</button>
-                <button type="submit" id="reset" class="btn btn-alert">Reset</button>
+            <div class="col-12">
+                <div id="datepicker"></div>
             </div>
+            <div class="col-12">
+                <div id="accordion">
+                    <h3>Current Selection</h3>
+                    <table class="table" id="table_mobile" style="width:100%">
 
-            <div id="booking_confirmation" title="Booking Confirmation">
-                <div id="add_spots"></div>
-                <i class="fa fa-plus-circle" aria-hidden="true">add one person more</i>
-                <button type="submit" id="accept" class="btn btn-primary">Accept</button>
-                <button type="submit" id="cancel" class="btn btn-primary">Cancel</button>
+                    </table>
+                </div>
             </div>
-
+            <!-- Here used to be a lot of rows -->
+            <div class="col">
+                <div id="confirm_buttons" style="display:block;" class="confirm">
+                    <button type="submit" id="confirm" class="btn btn-primary">Confirm</button>
+                    <button type="submit" id="reset" class="btn btn-alert">Reset</button>
+                </div>
                 <div id="booking_confirmation" title="Booking Confirmation">
-                    <!-- Dialog box to add more spots to your reservation-->
                     <div id="add_spots"></div>
                         <button id="add_spot_counter">
-                            <i class="fa fa-plus-circle" aria-hidden="true"> add 1+ person</i>
-                        </button><br><br>
+                            <i class="fa fa-plus-circle" aria-hidden="true"> add +1 person</i>
+                        </button><br>
+                    <button id="remove_spot_counter">
+                        <i class="fa fa-plus-circle" aria-hidden="true"> remove -1 person</i>
+                    </button><br>
                         <button type="submit" id="accept" class="btn btn-primary">Accept</button>
                         <button type="submit" id="cancel" class="btn btn-primary">Cancel</button>
                 </div>
-
                 <div id="booking_sent" title="Booking Sent">
                     <p>Thank you for your reservation. You will receive an email with the details of your lesson</p>
                     <button type="submit" id="back" class="btn btn-primary">Continue</button>
@@ -69,33 +62,13 @@
     @can('admin')
     <!-- This style hides the user's datepicker,confirm_buttons-->
     <style>
-        div#datepicker {
-            display: none;
-        }
-
-        div#confirm_buttons {
-            display: none;
-        }
-
-        button#confirm {
-            display: none;
-        }
-
-        button#reset {
-            display: none;
-        }
-
-        div#booking_confirmation {
-            display: none;
-        }
-
-        div#booking_sent {
-            display: none;
-        }
-
-        div#accordion {
-            display: none;
-        }
+        div#datepicker {            display: none;        }
+        div#confirm_buttons {            display: none;        }
+        button#confirm {            display: none;        }
+        button#reset {            display: none;        }
+        div#booking_confirmation {            display: none;        }
+        div#booking_sent {            display: none;        }
+        div#accordion {            display: none;        }
     </style>
     <div class="container">
         <div class="row">
@@ -104,13 +77,14 @@
                 <!-- Links for creting new lessons slots-->
                 <div class="btn-group">
                     <button type="button" class="btn btn-outline-success">
-                        <a href="{{ action('slotController@create') }}">Create New lesson</a>
+                        <a href="{{ action('slotController@create') }}">Create New lesson</a></button>
                         <button type="button" class="btn btn-outline-success">
                             <a href="{{ action('slotController@listing') }}">All lessons</a>
                         </button>
                         <button type="button" class="btn btn-outline-success">
                             <a href="{{ action('DaySlotController@index') }}">Select a day</a>
                         </button>
+
                 </div>
 
 
@@ -221,7 +195,7 @@
         var lesson_start_range = "";
         var lesson_end_range = "";
         var n_of_spots = 3;
-        var n_of_students = 5;
+        var n_of_students = 1;
         var available_spots = 1;
 
     $(function () {
@@ -232,92 +206,83 @@
         $("#booking_confirmation").css('display', 'none');//not display until the user clicks in a slot
         $("#booking_sent").css('display', 'none');//not display until the user clicks in a slot
         $("#accordion").css('display', 'none');//not display until the user clicks in a slot
-
+        console.log("stuff is hidden");
         //displays the datepicker
         $("#datepicker").datepicker({
             onSelect: function (date, inst) {
                 select_date = date;//11/16/2017
-                console.log(select_date);
-
-                //here create an API end point that will receive the date and retrieve
-
-                $.ajax(
-                    {
-                        method: 'get',
-                        url: '{{ action('Api\ReservationController@display_reservation')}}',
+                    $.ajax(
+                        {
+                            method: 'get',
+                            url: '{{ action('Api\ReservationController@display_reservation')}}',
                             data: {
-                    date: select_date// 11/16/2017
+                            date: select_date// 11/16/2017
+                            },
+                                success: function (data) {
 
-                },
-            success: function (data) {
+                            $('#table_mobile').empty();//removes the childs and the text inside to our tr,td'S
+                            $.each(data, function (i, slot) {
 
-                //console.log(data[0]['description']);//Gives 2 : amount of rows from DB
+                                        //ELEMENT one_tr CREATED this is the rows with the time and detailed info of lesson
+                                        var one_tr = $('<tr>\
+                                                        <td class="slot_data">\
+                                                        </td>\
+                                                        <td class="slot unchecked">\
+                                                        </td>\
+                                                        </tr>');
 
-                $('#table_mobile').empty();//removes the childs and the text inside to our tr,td'S
-                $.each(data, function (i, slot) {
+                                            //Makes a description of what the user will see of a lesson like: Beginners , N of Students =1
+                                            var slot_full_description = slot.description + '<br> N of Students =' + slot.n_students;
+                                            one_tr.find('.slot').html(slot_full_description);
 
-                                    console.log(data);
-                                    console.log(slot);
-                                    //ELEMENT one_tr CREATED this is the rows with the time and detailed info of lesson
-                                    var one_tr = $('<tr>\
-                                                    <td class="slot_data">\
-                                                    </td>\
-                                                    <td class="slot unchecked">\
-                                                    </td>\
-                                                    </tr>');
+                                            //to be used later for the reservation check if higher than available slots
+                                            n_of_spots = slot.n_students;
 
-                    //Makes a description of what the user will see of a lesson like: Beginners , N of Students =1
-                    var slot_full_description = slot.description + '<br> N of Students =' + slot.n_students;
-                    one_tr.find('.slot').html(slot_full_description);
+                                            var lesson_start_range = slot.lesson_start.slice(10, 16);//2017-11-15 16:00:00->16:00
+                                            var lesson_end_range = slot.lesson_end.slice(10, 16);//17:00
+                                            var lesson_hour_range = lesson_start_range + ' - ' + lesson_end_range;
 
-                    //to be used later for the reservation check if higher than available slots
-                    n_of_spots = slot.n_students;
+                                            one_tr.find('.slot_data').html(lesson_hour_range);//16:00 - 17:00
 
-                    var lesson_start_range = slot.lesson_start.slice(10, 16);//2017-11-15 16:00:00->16:00
-                    var lesson_end_range = slot.lesson_end.slice(10, 16);//17:00
-                    var lesson_hour_range = lesson_start_range + ' - ' + lesson_end_range;
+                                            //add a data attribute id="1" slot.id comes from the DB
+                                            one_tr.data('id', slot.id);
 
-                    one_tr.find('.slot_data').html(lesson_hour_range);//16:00 - 17:00
+                                            // when the element is done, append it to the container
+                                            $('#table_mobile').append(one_tr);
 
-                    //add a data attribute id="1" slot.id comes from the DB
-                    one_tr.data('id', slot.id);
+                                            one_tr.click(function (ev) {
+                                                //the this is the TR clicked
+                                                selected_slot_id = $(this).data('id');
+                                                console.log(selected_slot_id);
+                                            });
+                                        });
+                                        activateSlots();
+                                    }//ENDS ON SUCCESS
 
-                    // when the element is done, append it to the container
-                    $('#table_mobile').append(one_tr);
+                            });//ends AJAX Request
 
-                    one_tr.click(function (ev) {
-                        //the this is the TR clicked
-                        selected_slot_id = $(this).data('id');
-                        console.log(selected_slot_id);
-                    });
-                });
-                activateSlots();
-            }//ENDS ON SUCCESS
-        });//ends AJAX Request
+                                $("#accordion").css('display', 'block');
 
-        $("#accordion").css('display', 'block');
+                                    }
+                                });//ends the date picker
 
-    }
-            });//ends the date picker
-
-    $("#accordion").accordion({
-        collapsible: true,
-        heightStyle: "content"
-    });
+                        $("#accordion").accordion({
+                            collapsible: true,
+                            heightStyle: "content"
+                        });
         }
 
     function activateSlots() {
         //Slot time management and display in the table below the week
         $('.slot').click(function () {
             $("#confirm_buttons").css('display', 'block');
+            n_of_students = 1;
         });
-
     }
 
         //Actions for the dialog boxes: first is confirm second is accept.
         $('#confirm').on('click', function(){
             $( "#booking_confirmation" ).dialog();//behavior of the dialog box
-            //SLOT-RESERVATION logic. number per reservation
                 confirmCheck();
         });
 
@@ -326,24 +291,40 @@
             confirmCheck();
         });
 
+        $('#remove_spot_counter').on('click', function() {
+            n_of_students--;
+            confirmCheck();
+        });
+
         function confirmCheck() {
+
             available_spots = n_of_spots - n_of_students;
 
-            if (n_of_spots > n_of_students){
-                console.log("number of students"+n_of_students);
-                console.log("number of spots"+n_of_spots);
-                console.log("you can invite: "+available_spots+" more person");
-                $('#add_spot_counter').show();
-                displaySlotCount();
+            if(n_of_students > 1 )
+            {
+                $('#remove_spot_counter').show();
             }
             else {
-                console.log("no room to add more people");
-                displaySlotMax();
-                $('#add_spot_counter').hide();
+                $('#remove_spot_counter').hide();
             }
+                    if (n_of_spots > n_of_students){
+                        console.log("number of students"+n_of_students);
+                        console.log("number of spots"+n_of_spots);
+                        console.log("you can invite: "+available_spots+" more person");
+                        $('#add_spot_counter').show();
+                        displaySlotCount();
+
+
+                    }
+                    else {
+                        displaySlotMax();
+                        $('#add_spot_counter').hide();
+
+                    }
         }
 
         function displaySlotCount() {
+
             $( "#add_spots" ).text("You have reservation for "+n_of_students+" student. You can add up to "+available_spots+" more");
             //here add the button with the event onclick that will increase the counter until it reaches the limit of slots
         }
@@ -354,23 +335,22 @@
 
         $('#reset').on('click', function(){
             initialize();
-
         });
+
         $('#accept').on('click', function(){
-            //ajax request
-            $.ajax({
-                method : 'post',
-                url: '{{ action('Api\ReservationController@create_reservation') }}',
-                data: {
-            id: selected_slot_id,
-                user_id: { { $user_id } },
-        n_of_spots: n_of_spots
-                },
-        success: function (data) {
-        }
-            });
-    $("#booking_confirmation").dialog("close");
-    $("#booking_sent").dialog();
+                $.ajax({
+                    method : 'post',
+                    url: '{{ action('Api\ReservationController@create_reservation') }}',
+                    data: {
+                        id: selected_slot_id,
+                        user_id: {{ $user_id }},
+                        n_of_spots: n_of_spots
+                        },
+                            success: function (data) {
+                            }
+                });
+                    $("#booking_confirmation").dialog("close");
+                    $("#booking_sent").dialog();
         });
 
     $('#cancel').on('click', function () {
