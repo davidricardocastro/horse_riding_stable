@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <title>Talli Andantino</title>
 
     <meta name="google-site-verification" content="NiiCPfk6WwAm8q-Ou36omWALx5JwXGlvSJK5X_ezunM" />
@@ -110,7 +110,7 @@
    
    
    <!-- this link is need for the dropdown menu in the navbar.-->
-    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
 

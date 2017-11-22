@@ -45,11 +45,20 @@ Route::post('/slot/edit/{id}', 'slotController@store');
 //list all slots
 Route::get('/slot/list', 'slotController@listing');
 
-Route::get('/user_data', 'userController@user_data');
 //delete slot
 Route::post('/slots/slot/{id}', 'slotController@destroy');
 
 //view all slots in a day
 Route::get('/slots/day/{lesson_start}', 'DaySlotController@show');
+
+//user_data to view/edit
+Route::get('/user_data', 'userController@user_data');
+//user_data to store
+//Route::post('/user_data', 'userController@change_user_data');
+//delete reservation
+Route::post('/user_data/cancel/{id}', 'userController@cancel_reservation');
+//edit user
+Route::post('/user_data','userController@store');
+
 
 
