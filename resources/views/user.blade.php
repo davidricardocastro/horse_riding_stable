@@ -83,127 +83,6 @@
                                 <th id="day5" class="weekday day6"></th>
                                 <th id="day6" class="weekday day7"></th>
                             </tr>
-                            <tr  id="1">
-                                <td id="0" class="slot_data">08:00 - 09:00</td>
-                                <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="7" class="slot unchecked" data-class="unchecked"></td>
-                            </tr>
-                            <tr  id="2">
-                                <td id="0" class="slot_data">09:00 - 10:00</td>
-                                <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="7" class="slot unchecked" data-class="unchecked"></td>
-                            </tr>
-                            <tr  id="3">
-                                <td id="0" class="slot_data">10:00 - 11:00</td>
-                                <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="7" class="slot unchecked" data-class="unchecked"></td>
-                            </tr>
-                            <tr  id="4">
-                                <td id="0" class="slot_data">11:00 - 12:00</td>
-                                <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="7" class="slot unchecked" data-class="unchecked"></td>
-                            </tr>
-                            <tr id="5">
-                                <td id="0" class="slot_data">12:00 - 13:00</td>
-                                <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="7" class="slot unchecked" data-class="unchecked"></td>
-                            </tr>
-                            <tr  id="6">
-                                <td id="0" class="slot_data">13:00 - 14:00</td>
-                                <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="7" class="slot unchecked" data-class="unchecked"></td>
-                            </tr>
-                            <tr  id="7">
-                                <td id="0" class="slot_data">14:00 - 15:00</td>
-                                <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="7" class="slot unchecked" data-class="unchecked"></td>
-                            </tr>
-
-                            <tr  id="8">
-                                <td id="0" class="slot_data">15:00 - 16:00</td>
-                                <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="7" class="slot unchecked" data-class="unchecked"></td>
-                            </tr>
-                            <tr  id="9">
-                                <td id="0" class="slot_data">16:00 - 17:00</td>
-                                <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="7" class="slot unchecked" data-class="unchecked"></td>
-                            </tr>
-                            <tr id="10">
-                                <td id="0" class="slot_data">17:00 - 18:00</td>
-                                <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="7" class="slot unchecked" data-class="unchecked"></td>
-                            </tr>
-                            <tr  id="11">
-                                <td id="0" class="slot_data">18:00 - 19:00</td>
-                                <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="7" class="slot unchecked" data-class="unchecked"></td>
-                            </tr>
-                            <tr  id="12">
-                                <td id="0" class="slot_data">19:00 - 20:00</td>
-                                <td id="1" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="2" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="3" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="4" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="5" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="6" class="slot unchecked" data-class="unchecked"></td>
-                                <td id="7" class="slot unchecked" data-class="unchecked"></td>
-                            </tr>
                         </table>
                     </div>
                     <div class="newDiv"></div>
@@ -295,7 +174,6 @@
         var selected_slot_id = null;
         var lesson_start_range = "";
         var lesson_end_range = "";
-        var lesson_hour_range = "";
         var n_of_spots = 3;
 
         $(function(){
@@ -342,6 +220,9 @@
                                     var slot_full_description = slot.description+'<br> N of Students ='+slot.n_students;
                                     one_tr.find('.slot').html(slot_full_description);
 
+                                    //to be used later for the reservation check if higher than available slots
+                                    n_of_spots = slot.n_students;
+
                                     var lesson_start_range = slot.lesson_start.slice(10,16);//2017-11-15 16:00:00->16:00
                                     var lesson_end_range = slot.lesson_end.slice(10,16);//17:00
                                     var lesson_hour_range = lesson_start_range+' - '+lesson_end_range;
@@ -373,30 +254,46 @@
                 collapsible: true,
                 heightStyle: "content"
             });
-
-
-
         }
 
-
         function activateSlots(){
-
             //Slot time management and display in the table below the week
             $('.slot').click(function(){
-
                 $("#confirm_buttons").css('display','block');
-
-
             });
 
         }
 
-        //Button actions for the overlay
+        //Button actions for the dialog boxes: first is confirm second is accept.
         $('#confirm').on('click', function(){
             $( "#booking_confirmation" ).dialog();//behavior of the dialog box
-            $( "#add_spots" ).text("add "+n_of_spots+" spots to your reservation");
-            //here add the button with the event onclick that will increase the counter until it reaches the limit of slots
 
+
+            var n_of_students = 1;//default number per reservation
+            var available_spots = n_of_spots - n_of_students;
+            if (n_of_spots > n_of_students){
+
+                console.log("you can invite: "+available_spots+" more person");
+                displaySlotCount();
+            }
+            else {
+                console.log("no room to add more people");
+                displaySlotMax();
+            }
+            // then onclick increase n_of_spots++
+
+            // } else {
+
+            // }else you reached the maximum available spots for this hour
+
+            //
+            function displaySlotCount() {
+            $( "#add_spots" ).text("add up to "+n_of_spots+" spots to your reservation");
+            //here add the button with the event onclick that will increase the counter until it reaches the limit of slots
+            }
+            function displaySlotMax() {
+                $( "#add_spots" ).text(n_of_spots+" is the maximum spots for this reservation");
+            }
         });
 
         $('#reset').on('click', function(){
