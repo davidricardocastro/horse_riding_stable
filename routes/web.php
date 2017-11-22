@@ -45,6 +45,7 @@ Route::post('/slot/edit/{id}', 'slotController@store');
 //list all slots
 Route::get('/slot/list', 'slotController@listing');
 
+Route::get('/user_data', 'userController@user_data');
 //delete slot
 Route::post('/slots/slot/{id}', 'slotController@destroy');
 

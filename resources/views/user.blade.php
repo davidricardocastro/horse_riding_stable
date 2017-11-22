@@ -259,14 +259,6 @@
     </div>
 <!--Table for displaying all users info -->
         <div class="row">
-<<<<<<< HEAD
-
-                </tbody>
-
-            </table>
-                <h5>Slot details:<h5>
-            </div>
-=======
             <div class="col-12">
                 <h5>Users details:</h5>
                 <table class="table table-responsive">
@@ -314,7 +306,6 @@
                     @endforeach
                     </tbody>
                 </table>
->>>>>>> admin_table
             </div>
         </div>
         @endcan

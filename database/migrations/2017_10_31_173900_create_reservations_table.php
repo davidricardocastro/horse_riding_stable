@@ -17,7 +17,7 @@ class CreateReservationsTable extends Migration
             $table->increments('id');
             $table->integer('user_id');
             $table->integer('slot_id');
-            $table->integer('trainer_id');
+            $table->integer('trainer_id')->nullable();
             $table->timestamps();
         });
     }

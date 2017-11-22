@@ -27,4 +27,24 @@ class userController extends Controller
     }
 
 
+    public function user_data() {
+        $user= \Auth::user();
+        $reservation = \App\Reservation::select(
+            'reservations.*',
+            'slots.lesson_start',
+            'slots.lesson_end',
+            'slots.description as slot_description'
+        )
+        ->leftJoin('slots', 'reservations.slot_id', '=', 'slots.id')
+        //->where('reservation.user_id', '=', $user->id)
+        ->get();
+        return view('user_data', [
+            'user' => $user,
+            'reservation' => $reservation
+        ]);
+    }
+
 }
+
+
+
