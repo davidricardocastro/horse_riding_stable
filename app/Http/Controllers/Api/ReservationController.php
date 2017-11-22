@@ -52,7 +52,7 @@ class ReservationController extends Controller
         //Now I request the info
         $slots = Slot::where('lesson_start','>=',$date.' 00:00:00')->where('lesson_end','<=',$date.' 23:59:59')->get();
 
-        $n_of_spots =
+        //$n_of_spots = 4;
         return $slots;
     }
 
