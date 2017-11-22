@@ -35,10 +35,13 @@
                 </div>
 
                 <div id="booking_confirmation" title="Booking Confirmation">
+                    <!-- Dialog box to add more spots to your reservation-->
                     <div id="add_spots"></div>
-                    <i class="fa fa-plus-circle" aria-hidden="true">add one person more</i>
-                    <button type="submit" id="accept" class="btn btn-primary">Accept</button>
-                    <button type="submit" id="cancel" class="btn btn-primary">Cancel</button>
+                        <button id="add_spot_counter">
+                            <i class="fa fa-plus-circle" aria-hidden="true"> add 1+ person</i>
+                        </button><br><br>
+                        <button type="submit" id="accept" class="btn btn-primary">Accept</button>
+                        <button type="submit" id="cancel" class="btn btn-primary">Cancel</button>
                 </div>
 
                 <div id="booking_sent" title="Booking Sent">
@@ -175,6 +178,8 @@
         var lesson_start_range = "";
         var lesson_end_range = "";
         var n_of_spots = 3;
+        var n_of_students = 5;
+        var available_spots = 1;
 
         $(function(){
             initialize();
@@ -208,6 +213,8 @@
                                 $('#table_mobile').empty();//removes the childs and the text inside to our tr,td'S
                                 $.each(data, function(i, slot) {
 
+                                    console.log(data);
+                                    console.log(slot);
                                     //ELEMENT one_tr CREATED this is the rows with the time and detailed info of lesson
                                     var one_tr = $('<tr>\
                                                     <td class="slot_data">\
@@ -264,37 +271,43 @@
 
         }
 
-        //Button actions for the dialog boxes: first is confirm second is accept.
+        //Actions for the dialog boxes: first is confirm second is accept.
         $('#confirm').on('click', function(){
             $( "#booking_confirmation" ).dialog();//behavior of the dialog box
+            //SLOT-RESERVATION logic. number per reservation
+                confirmCheck();
+        });
 
+        $('#add_spot_counter').on('click', function() {
+            n_of_students++;
+            confirmCheck();
+        });
 
-            var n_of_students = 1;//default number per reservation
-            var available_spots = n_of_spots - n_of_students;
+        function confirmCheck() {
+            available_spots = n_of_spots - n_of_students;
+
             if (n_of_spots > n_of_students){
-
+                console.log("number of students"+n_of_students);
+                console.log("number of spots"+n_of_spots);
                 console.log("you can invite: "+available_spots+" more person");
+                $('#add_spot_counter').show();
                 displaySlotCount();
             }
             else {
                 console.log("no room to add more people");
                 displaySlotMax();
+                $('#add_spot_counter').hide();
             }
-            // then onclick increase n_of_spots++
+        }
 
-            // } else {
-
-            // }else you reached the maximum available spots for this hour
-
-            //
-            function displaySlotCount() {
-            $( "#add_spots" ).text("add up to "+n_of_spots+" spots to your reservation");
+        function displaySlotCount() {
+            $( "#add_spots" ).text("You have reservation for "+n_of_students+" student. You can add up to "+available_spots+" more");
             //here add the button with the event onclick that will increase the counter until it reaches the limit of slots
-            }
-            function displaySlotMax() {
-                $( "#add_spots" ).text(n_of_spots+" is the maximum spots for this reservation");
-            }
-        });
+        }
+        function displaySlotMax() {
+            $( "#add_spots" ).text(n_of_spots+" is the maximum spots for this reservation");
+        }
+
 
         $('#reset').on('click', function(){
             initialize();
@@ -302,8 +315,6 @@
         });
         $('#accept').on('click', function(){
             //ajax request
-            console.log(n_of_spots);
-            n_of_spots = 5;
             $.ajax({
                 method : 'post',
                 url: '{{ action('Api\ReservationController@create_reservation') }}',
@@ -328,6 +339,7 @@
             $( "#booking_confirmation" ).dialog("close");
             $("#accordion").css('display','none');
             $("#confirm_buttons").css('display','none');
+            initialize();
         });
 
 
