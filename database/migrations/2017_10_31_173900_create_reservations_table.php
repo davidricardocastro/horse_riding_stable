@@ -18,6 +18,7 @@ class CreateReservationsTable extends Migration
             $table->string('user_id');
             $table->integer('slot_id');
             $table->integer('n_of_spots');//how many spots I want to reserve for example reserve for 3 people
+            $table->integer('trainer_id')->nullable();
             $table->timestamps();
         });
     }

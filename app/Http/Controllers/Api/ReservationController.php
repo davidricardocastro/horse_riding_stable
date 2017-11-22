@@ -56,4 +56,15 @@ class ReservationController extends Controller
         return $slots;
     }
 
+
+    /**
+     * @return string
+     */
+    public function week()
+    {   $monday = 'Hello';
+        //$monday = request()->input('monday');
+        //select the week into a JSON object
+        return $monday;
+    }
+
 }

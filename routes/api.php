@@ -21,6 +21,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 
-    Route::post('reservation/save', 'Api\ReservationController@create_reservation');
-    Route::get('reservation/day', 'Api\ReservationController@display_reservation');
+Route::post('reservation/save', 'Api\ReservationController@create_reservation');
+Route::get('reservation', 'Api\ReservationController@week');
 
