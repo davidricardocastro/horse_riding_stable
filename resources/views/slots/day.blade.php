@@ -47,7 +47,7 @@
                                 End
                             </th>
                             <th>
-                                Number of riders
+                            Available places
                             </th>
                         </thead>
                         <tbody>
