@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Slot;
+use app\slot;
 use App\Reservation;
 use Illuminate\Support\Facades\Auth;
 
@@ -26,7 +26,7 @@ class ReservationController extends Controller
         $n_of_spots = request()->input('n_of_spots');//slot spot -1 //number of riders availables to reserve0
         $n_students = request()->input('n_students');//slot spot -1 //number of riders availables to reserve0
 
-        $n_student = Slot::find($slot_id);
+        $n_student = slot::find($slot_id);
         $n_student->n_students = $n_students-$n_of_spots;
         $n_student->save();
 
