@@ -24,7 +24,7 @@ body{
 }
 
 
-p, li, h2, h3, h4, h5, h6 {
+p, li, h2, h3, h4, h5, h6, label, input, button {
     font-family: 'Lora', sans;
 }
 .bigger_font {

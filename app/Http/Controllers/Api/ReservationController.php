@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Slot;
-use App\User;
 use App\Reservation;
 use Illuminate\Support\Facades\Auth;
 
@@ -24,8 +23,27 @@ class ReservationController extends Controller
         //var_dump($user_id);die();
         $user_id = request()->input('user_id');
         $slot_id = request()->input('id');//request the slot id of the selected slot
-        //var_dump(request()->input('id'));
         $n_of_spots = request()->input('n_of_spots');//slot spot -1 //number of riders availables to reserve0
+        $n_students = request()->input('n_students');//slot spot -1 //number of riders availables to reserve0
+
+        $n_student = Slot::find($slot_id);
+        $n_student->n_students = $n_students-$n_of_spots;
+        $n_student->save();
+
+
+        /*
+        $affected = Slot::find($slot_id)->get();
+        $affected->n_students = $n_of_spots;
+        $affected->save();
+
+ public function edit(Request $request,$id) {
+      $name = $request->input('stud_name');
+      DB::update('update slots set n_students = ? where id = ?',[$n_of_spots,$slot_id]);
+      echo "Record updated successfully.<br/>";
+      echo '<a href = "/edit-records">Click Here</a> to go back.';
+   }
+
+*/
 
 
         $reservation = new Reservation;
