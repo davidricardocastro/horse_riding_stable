@@ -31,7 +31,7 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->from('davidricardocastro@outlook.com')
+        return $this->from('stable.matic@outlook.com')
                     ->view('emails.contact')->with($this->data);
     }
 }
