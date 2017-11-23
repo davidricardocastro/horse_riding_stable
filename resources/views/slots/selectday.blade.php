@@ -5,11 +5,11 @@
 
             <h3 class="list-group-item active">Select a different date </h3>
             <!-- selection of a new date-->
-            <form action="{{ action('DaySlotController@show',' ')  }}" method="post">
+            <form  method="post">
 
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <input type="date" name="date" value="" id="newdate">
+                    <input type="date" name="date" id="newdate">
                 </div>
 
                 <div class="form-group">
@@ -19,9 +19,11 @@
                     function updateForm(button) {
                         //console.log(button.form);
                         var targetDate = document.getElementById('newdate').value;
-                        button.form.action = '{{action('DaySlotController@show', '')}}/' + targetDate;
-                        button.form.submit();
+                        window.location.href = './day/' + targetDate;
                     }
+                    
+
+
                 </Script>
             </form>
         </div>
