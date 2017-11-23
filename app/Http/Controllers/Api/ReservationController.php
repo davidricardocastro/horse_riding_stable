@@ -61,7 +61,8 @@ class ReservationController extends Controller
         //11/16/2017 this is the format in the JS Datepicker
 
         //I store the AJAX request(date: 11/16/2017 into the variable $date)
-        $date = request()->input('date');
+
+        $date = request()->input('date');//we need to xplode this there is a method mktime it gives you an hour day and secondst this returns a number of seconds from period time time vs mktime will give the difference and based upon that the if will work
 
         //I change it into DB format -> 2017-11-15 16:00:00
         $date = date('Y-m-d', strtotime($date));

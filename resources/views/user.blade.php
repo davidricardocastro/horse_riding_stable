@@ -266,7 +266,12 @@
 
                                 $("#accordion").css('display', 'block');
 
-                                    }
+                                    },
+            beforeShowDay: function(date) {
+                var yesterday = new Date();
+                yesterday.setDate(yesterday.getDate()-1);
+                return [date.getTime() > yesterday.getTime()];
+            }
                                 });//ends the date picker
 
                         $("#accordion").accordion({
