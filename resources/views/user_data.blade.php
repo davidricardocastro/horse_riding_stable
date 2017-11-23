@@ -33,7 +33,7 @@
     <!--VIEW-->
     <div class="col">
     <button class="btn btn-success ml-4 mb-2" id="edit_personal_data_button" style="white-space:normal;">Muokkaa Henkilötietoja ja Salasanaa</button>
-    <button class="btn btn-success ml-2 mb-2" id="save_personal_data_button" style="display:none;">Tallentaa</button>
+    
 
     <div id="view_personal_data" class="col mt-2">
         <p class="m-0">Sähköposti: {{$user->email}}</p>
@@ -42,7 +42,7 @@
     </div>
     <!--EDIT-->
     <div id="edit_personal_data" class="col mt-2" style="display:none;">
-        <form method="post">
+        <form method="post" action="{{ action('userController@store', ['id' => $user->id])}}">
         {{ csrf_field() }}
             <div class ="form-field">
                 <label style="width:250px">Sähköposti: </label>
@@ -64,6 +64,7 @@
                 <label style="width:250px">Toista uusi salasana: </label>
                 <input type="password" name="password_repeat"><br>
             </div>
+            <button class="btn btn-success ml-2 mb-2" id="save_personal_data_button" style="display:none;">Tallentaa</button>
         </form>
     </div>
 </div>

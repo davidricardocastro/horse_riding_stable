@@ -69,6 +69,6 @@ Route::get('/user_data', 'userController@user_data');
 //delete reservation
 Route::post('/user_data/cancel/{id}', 'userController@cancel_reservation');
 //edit user
-Route::post('/user_data','userController@store');
+Route::post('/user_data/{user}','userController@store');
 
 

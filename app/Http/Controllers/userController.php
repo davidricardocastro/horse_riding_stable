@@ -65,7 +65,7 @@ class userController extends Controller
         // check if difference is > 6 hours
         if ($diff_in_hours>6) {
 
-        // DELETE RESERVATION IF TIME - NOW > 6 HOURS
+        // CANCEL RESERVATION IF (TIME - NOW) > 6 HOURS
         $reservation->delete();
         return redirect('user_data')->with([
             'flash_message' => 'Canceled',
@@ -80,13 +80,20 @@ class userController extends Controller
         }
     }
 
-    // STORE NEW USER PERSONAL DATA
-    public function store($id = null)
+    // UPDATE USER PERSONAL DATA
+    public function store(\App\User $user)
     {
-        $user = new \App\user();
-        if ($user->password == $user->password_repeat) {
+        $psw  = request()->input('password');
+        $psw_repeat  = request()->input('password_repeat');
+        if ($psw !== null && $psw == $psw_repeat) {
             $user->fill(request()->only(['email', 'phone', 'address', 'password']));
-            $user->save();
+            $user->update();
+            //$user->password => bcrypt($data['password'])
+            session()->flash('success_message', 'Updated user data was successfully saved!');
+        return redirect('/user_data');
+        } else if ($psw == null) {
+            $user->fill(request()->only(['email', 'phone', 'address']));
+            $user->update();
             session()->flash('success_message', 'Updated user data was successfully saved!');
         return redirect('/user_data');
         } else {

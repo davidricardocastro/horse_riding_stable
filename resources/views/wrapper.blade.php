@@ -48,7 +48,7 @@
                 <li class="nav-item active px-2">
                     <a class="nav-link main_font bigger_font" href="{{ action('userController@user') }}">Booking</a>
                 </li>
-                @if (isset($user))
+                @if (null !== (Auth::user()))
                 <li class="nav-item active px-2">
                     <a class="nav-link main_font bigger_font" href="{{ action('userController@user_data') }}">Profiilini</a>
                 </li>
