@@ -36,7 +36,7 @@ class userController extends Controller
     // USER DATA DISPLAY, IT SHOULD SHOW ONLY THE SPECIFIC USER RESERVATION
     public function user_data() {
         $user= \Auth::user();
-        $reservations = \App\Reservation::select(
+        $reservations = \App\reservation::select(
             'reservations.*',
             'slots.lesson_start',
             'slots.lesson_end',
