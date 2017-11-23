@@ -230,7 +230,7 @@
 
                                             //Makes a description of what the user will see of a lesson like: Beginners , N of Students =1
                                             if (slot.n_students>0){
-                                            var slot_full_description = slot.description + '<br> N of Students =' + slot.n_students;
+                                            var slot_full_description = 'Class: '+slot.description + '<br>Available spots = ' + slot.n_students;
                                             one_tr.find('.slot').html(slot_full_description);
 
                                             //to be used later for the reservation check if higher than available slots
@@ -250,8 +250,10 @@
                                             $('#table_mobile').append(one_tr);
 
                                             one_tr.click(function (ev) {
+
                                                 selected_slot_id = $(this).data('id');
                                                 n_students = $(this).data('n_students');
+                                                $(this).css("color", "blue").css("font-weight","bold");
                                                     //console.log(n_students);
 
                                             });
@@ -306,9 +308,6 @@
                 $('#remove_spot_counter').hide();
             }
                     if (n_students > n_of_spots){
-                        console.log("number of students "+n_of_spots);
-                        console.log("number of spots "+n_students);
-                        console.log("you can invite: "+available_spots+" more person");
                         $('#add_spot_counter').show();
                         displaySlotCount();
                     }
@@ -320,7 +319,7 @@
 
         function displaySlotCount() {
 
-            $( "#add_spots" ).text("You have reservation for "+n_of_spots+" student. You can add up to "+available_spots+" more");
+            $( "#add_spots" ).text("You have reserved for "+n_of_spots+" student(s). You can add up to "+available_spots+" more");
             //here add the button with the event onclick that will increase the counter until it reaches the limit of slots
         }
         function displaySlotMax() {
