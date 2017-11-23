@@ -45,6 +45,7 @@ class userController extends Controller
         ->leftJoin('slots', 'reservations.slot_id', '=', 'slots.id')
         ->where('reservations.user_id', '=', $user->id)
         ->where('slots.lesson_start', '>', date('Y-m-d H:i:s'))
+        ->orderBy('id', 'DESC')
         ->get();
         return view('user_data', [
             'user' => $user,
@@ -85,20 +86,24 @@ class userController extends Controller
     {
         $psw  = request()->input('password');
         $psw_repeat  = request()->input('password_repeat');
+
         if ($psw !== null && $psw == $psw_repeat) {
-            $user->fill(request()->only(['email', 'phone', 'address', 'password']));
+            $user->fill(request()->only(['email', 'phone', 'address']));
+            $user->password = bcrypt($psw); // HERE NEW PASSWORD IS ENCRYPTED AND STORED
             $user->update();
-            //$user->password => bcrypt($data['password'])
-            session()->flash('success_message', 'Updated user data was successfully saved!');
-        return redirect('/user_data');
-        } else if ($psw == null) {
+            return redirect('/user_data')->with([
+            'flash_message' => 'Updated user data was successfully saved!',
+            'flash_message_important' => false
+          ]);
+        } 
+        else if ($psw !== $psw_repeat) {
+            session()->flash('The two passwords inserted should be equal');
+            return redirect('/user_data');
+        } 
+        else if ($psw == null) {
             $user->fill(request()->only(['email', 'phone', 'address']));
             $user->update();
-            session()->flash('success_message', 'Updated user data was successfully saved!');
-        return redirect('/user_data');
-        } else {
-            session()->flash('The two passwords inserted should be equal');
-        return redirect('/user_data');
+            return redirect('user_data')->with('status', 'Updated user data was successfully saved!');
         }
     }
 

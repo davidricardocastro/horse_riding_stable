@@ -49,7 +49,6 @@ p, li, h2, h3, h4, h5, h6, label, input, button {
     padding: 20px;
 }
 
-
 @font-face {
     font-family: Playball;
     src: url('/fonts/Playball-Regular.ttf');
@@ -60,4 +59,7 @@ p, li, h2, h3, h4, h5, h6, label, input, button {
     src: url('/fonts/Lora-Regular.ttf');
     }
 
+a.nav-link.dropdown-toggle {
+    font-size: 1.25rem;
+}
 
