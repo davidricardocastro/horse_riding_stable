@@ -8,6 +8,13 @@ use App\slot;
 
 class WeekSlotController extends Controller
 {
+    public function index()
+        {
+        
+        return view('slots/selectweek');
+    }
+
+
     public function show($lesson_start)
     {
          //if user inputs a wrong value

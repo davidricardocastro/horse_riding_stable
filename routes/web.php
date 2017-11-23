@@ -19,12 +19,12 @@ Route::get('/riding','ridingController@riding');
 Route::get('/stable','stableController@stable');
 Route::get('/team','horseController@horse');
 Route::get('/contact','contactController@contact');
-Route::get('/admin','adminController@admin')->middleware('auth');
+//Route::get('/admin','adminController@admin')->middleware('auth');
 Route::get('/user','userController@user')->middleware('auth');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 //for storing contacts to db
 Route::post('/contact', 'contactController@store');
@@ -59,6 +59,8 @@ Route::post('/slots/day/', 'DaySlotController@test'); //test method
 
 //view all slots in a week
 Route::get('/slots/week/{lesson_start}', 'WeekSlotController@show');
+//week selecter
+Route::get('/slots/week', 'WeekSlotController@index');
 
 
 

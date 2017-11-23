@@ -16,9 +16,9 @@ class userController extends Controller
         $name = \Auth::user()->name;
         $email = \Auth::user()->email;
 
-        $user_table = \app\User::get();
-        $slot_table = \App\Slot::get();
-        $reservation_table = \App\Reservation::get();
+        $user_table = \App\User::get();
+        $slot_table = \App\slot::get();
+        $reservation_table = \App\reservation::get();
 
         return view('user',[
             'user_id'=>$user_id,
@@ -36,7 +36,7 @@ class userController extends Controller
     // USER DATA DISPLAY, IT SHOULD SHOW ONLY THE SPECIFIC USER RESERVATION
     public function user_data() {
         $user= \Auth::user();
-        $reservations = \App\Reservation::select(
+        $reservations = \App\reservation::select(
             'reservations.*',
             'slots.lesson_start',
             'slots.lesson_end',
