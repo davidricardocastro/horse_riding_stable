@@ -59,6 +59,8 @@ Route::post('/slots/day/', 'DaySlotController@test'); //test method
 
 //view all slots in a week
 Route::get('/slots/week/{lesson_start}', 'WeekSlotController@show');
+//week selecter
+Route::get('/slots/week', 'WeekSlotController@index');
 
 
 

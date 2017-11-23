@@ -25,16 +25,27 @@
       <button id="hiddenBtn3" class="btn btn-warning" onclick="deleteConfirm()">delete lesson slot</button>
 
     </div>
-    <div class="col-2 mt-5">
-      <button class="btn btn-outline-success">
-        <a href="{{ action('slotController@listing') }}">List of slots</a>
-      </button>
+
+    <div class="col-12 my-5 ">
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-outline-success">
+          <a href="{{ action('slotController@create') }}">New lesson</a>
+        </button>
+        <button type="button" class="btn btn-outline-success">
+          <a href="{{ action('slotController@listing') }}">All lessons</a>
+        </button>
+        <button type="button" class="btn btn-outline-success">
+          <a href="{{ action('DaySlotController@index') }}">Select a day</a>
+        </button>
+        <button type="button" class="btn btn-outline-success">
+          <a href="{{ action('WeekSlotController@index') }}">Select a week</a>
+        </button>
+
+      </div>
     </div>
-    <div class="col-2 mt-5">
-      <button class="btn btn-outline-success">
-        <a href="{{ action('slotController@create') }}">New slot</a>
-      </button>
-    </div>
+
+
   </div>
 
 </div>
@@ -53,5 +64,5 @@
     document.getElementById("hiddenBtn2").classList.add('d-none');
     document.getElementById("hiddenBtn3").classList.remove('d-none');
   }
-  
+
 </script> @endsection

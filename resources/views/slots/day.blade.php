@@ -94,6 +94,9 @@
                     <button type="button" class="btn btn-outline-success">
                             <a href="{{ action('DaySlotController@index') }}">Select a day</a>
                         </button>
+                        <button type="button" class="btn btn-outline-success">
+                            <a href="{{ action('WeekSlotController@index') }}">Select a week</a>
+                        </button>
 
             </div>
         </div>

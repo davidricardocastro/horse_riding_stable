@@ -1,11 +1,10 @@
 @extends('/wrapper') @section('content')
 <div class="container background_light">
     <div class="row">
-        <div class="col-6 mt-5">
-
+        <div class="col">
             <h3 class="list-group-item active">Select a different date </h3>
             <!-- selection of a new date-->
-            <form  method="post">
+            <form method="post">
 
                 {{ csrf_field() }}
                 <div class="form-group">
@@ -17,15 +16,12 @@
                 </div>
                 <Script>
                     function updateForm(button) {
-                        //console.log(button.form);
                         var targetDate = document.getElementById('newdate').value;
-                        window.location.href = './day/' + targetDate;
+                        window.location.href = './week/' + targetDate;
                     }
-                    
-
-
                 </Script>
             </form>
+
         </div>
 
 
