@@ -8,11 +8,17 @@
 
       <ul class="list-group">
         <li class="list-group-item active">Description: {{$slot->description}}</li>
-        <li class="list-group-item">Number of riders: {{$slot->n_students}}</li>
+        <li class="list-group-item">Available places: {{$slot->n_students}}</li>
         <li class="list-group-item">Start time: {{$slot->lesson_start}}</li>
         <li class="list-group-item">Finish time: {{$slot->lesson_end}}</li>
-        <li class="list-group-item">Available: {{$slot->available}}</li>
+        
       </ul>
+
+      <ol class="list-group">
+        <li class="list-group-item active">Riders: </li>
+        <li class="list-group-item"> someone</li>
+
+      </ol>
 
       <a href="{{ action('slotController@edit', ['id' => $slot->id])}}" class="btn btn-primary">Edit slot</a>
 

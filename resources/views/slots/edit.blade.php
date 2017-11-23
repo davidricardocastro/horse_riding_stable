@@ -28,11 +28,11 @@
                     <label for="finish_time">Finish time</label>
                     <input class="form-control" type="datetime-local" name="lesson_end" value="{{ $slot->lesson_end }}" required>
 
-
-                    <label for="is_active">Active lesson</label>
-                    <input class="form-control" type="radio" name="available" value="1" checked> Active
-                    <input class="form-control" type="radio" name="available" value="0"> No Active
-
+                    
+                    <label for="is_active" hidden>Active lesson</label>
+                    <input class="form-control" type="radio" name="available" value="1" checked hidden> Active
+                    <input class="form-control" type="radio" name="available" value="0" hidden> No Active
+                 
 
 
                 </div>
