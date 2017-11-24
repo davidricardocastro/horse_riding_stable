@@ -74,7 +74,7 @@ class slotController extends Controller
      */
     public function show($id)
     {   
-            $reservations = \App\Reservation::select(
+            $reservations = \App\reservation::select(
                         
         )
         ->leftJoin('users', 'reservations.user_id', '=', 'users.id')

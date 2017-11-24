@@ -262,10 +262,13 @@
 
                                             one_tr.click(function (ev) {
 
+
                                                 selected_slot_id = $(this).data('id');
                                                 n_students = $(this).data('n_students');
+                                                //select slot.id
+                                                $(".slot").css("color", "black").css("font-weight","normal");
                                                 $(this).css("color", "blue").css("font-weight","bold");
-                                                    //console.log(n_students);
+
 
                                             });
                                             }
