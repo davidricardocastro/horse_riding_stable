@@ -68,10 +68,10 @@ class userController extends Controller
 
         // CANCEL RESERVATION IF (TIME - NOW) > 6 HOURS
         $reservation->delete();
-        session()->flash('success_message', 'Canceled');
+        session()->flash('success_message', 'Peruttu');
         return redirect('/user_data');
         } else {
-        session()->flash('warning_message', 'Reservation can\'t be canceled within 6 hours from the lesson');
+        session()->flash('warning_message', 'Varaus ei voi peruuttaa 6 tunnin kuluessa oppitunnista');
         return redirect('/user_data');
         }
     }
@@ -86,18 +86,18 @@ class userController extends Controller
             $user->fill(request()->only(['email', 'phone', 'address']));
             $user->password = bcrypt($psw); // HERE NEW PASSWORD IS ENCRYPTED AND STORED
             $user->update();
-            session()->flash('success_message', 'Updated user data was successfully saved!');
+            session()->flash('success_message', 'Päivitetyt käyttäjätiedot tallennettiin onnistuneesti!');
             return redirect('/user_data');
         } 
         else if ($psw !== $psw_repeat) {
-            session()->flash('warning_message', 'The two passwords inserted should be equal');
+            session()->flash('warning_message', 'Kahden salasanan tulee olla yhtä suuri');
             return redirect('/user_data');
         } 
         else if ($psw == null) {
             $user->fill(request()->only(['email', 'phone', 'address']));
             $user->update();
             // return redirect('/user_data')->with('flash message', 'Updated user data was successfully saved!');
-            session()->flash('success_message', 'Updated user data was successfully saved!');
+            session()->flash('success_message', 'Päivitetyt käyttäjätiedot tallennettiin onnistuneesti!');
             return redirect('/user_data');
         }
     }
