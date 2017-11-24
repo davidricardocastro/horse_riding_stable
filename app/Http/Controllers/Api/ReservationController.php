@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\slot;
-use App\Reservation;
+use App\reservation;
 use Illuminate\Support\Facades\Auth;
 
 class ReservationController extends Controller
