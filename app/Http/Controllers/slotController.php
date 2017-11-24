@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\slot;
 
+use App\reservation;
+
 class slotController extends Controller
 {
     /**
@@ -71,12 +73,23 @@ class slotController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
+    {   
+        //    $reservations = \App\Reservation::select(
+        //    'reservations.user_id',
+        //    'slots.id'            
+        //)
+        //->leftJoin('slots', 'reservations.slot_id', '=', 'slots.id')
+        //->where('reservations.slot_id', '=', $id)
+        //->get();
+        //var_dump($reservations);
+
+        
         $view = view('slots/detail');
         
         $slot = slot::find($id);
         
-        $view->slot = $slot;       
+        $view->slot = $slot; 
+        //$view->reservations = $reservations;       
         
         return $view;
     }
@@ -134,9 +147,11 @@ class slotController extends Controller
         //return view('/slots/list');
         $view = view('slots/list');
             $all_slots = slot::all();
-            //$all_authors= Author::orderBy('year', 'dsc')->get();
+            //$all_reservations= reservation::all();
 
             $view->slots = $all_slots;
+            //$view->reservations = $all_reservations;
+            
     
             return $view;
             
