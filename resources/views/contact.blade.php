@@ -16,9 +16,15 @@
 
 
 </div>
-
-
-
+        @if (count($errors) > 0)
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <div class="col-12 mt-3">
             <p>Voit ottaa yhteyttä Andatino Talliin myös oheisella lomakkeella.<br> Täytä yhteystietosi, niin otamme
                 yhteyttä!</p>
@@ -44,7 +50,7 @@
                     <label for="message">Viesti</label>
                     <textarea class="form-control" id="message" rows="6" value=""  name="message"></textarea>
                 </div>
-                <div class="form-group g-recaptcha" data-sitekey="6LcdIDgUAAAAAPi04wbQkq_u791O3gvjodZGEwRK"></div>
+                {!! Recaptcha::render() !!}
                 <button class="btn btn-success" id="send_btn" type="submit">
                     Lähetä
                 </button>
