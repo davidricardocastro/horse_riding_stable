@@ -15,8 +15,12 @@
       </ul>
 
       <ol class="list-group">
-        <li class="list-group-item active">Riders: </li>
-        <li class="list-group-item"> someone</li>
+        <li class="list-group-item active">Riders booked: </li>
+
+        @foreach ($reservations as $reservation)
+        <li class="list-group-item"> {{$reservation->name}}</li>
+
+        @endforeach
 
       </ol>
 
