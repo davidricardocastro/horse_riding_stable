@@ -24,7 +24,7 @@ Route::get('/user','userController@user')->middleware('auth');
 
 Auth::routes();
 
-//Route::get('/home', 'HomeController@index')->name('home');
+
 
 //for storing contacts to db
 Route::post('/contact', 'contactController@store');
