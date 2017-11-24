@@ -3,6 +3,17 @@
 @section('content')
 
 <div class="container background_light p-4">
+    @if(Session::has('success_message'))
+        <div class="alert alert-success">
+            {{ Session::get('success_message') }}
+        </div>
+    @endif
+
+    @if(Session::has('warning_message'))
+        <div class="alert alert-warning">
+            {{ Session::get('warning_message') }}
+        </div>
+    @endif
     <h3>Profiilini</h3>
     <h4>{{$user->name}}</h4>
     <p>Varaus voidaan peruuttaa 6 tunnin kuluessa oppitunnista</p>

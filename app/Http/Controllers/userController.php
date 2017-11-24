@@ -68,16 +68,11 @@ class userController extends Controller
 
         // CANCEL RESERVATION IF (TIME - NOW) > 6 HOURS
         $reservation->delete();
-        return redirect('user_data')->with([
-            'flash_message' => 'Canceled',
-            'flash_message_important' => false
-          ]);
+        session()->flash('success_message', 'Canceled');
+        return redirect('/user_data');
         } else {
-
-        return redirect('user_data')->with([
-            'flash_message' => 'Reservation can\'t be canceled within 6 hours from the lesson',
-            'flash_message_important' => false
-          ]);
+        session()->flash('warning_message', 'Reservation can\'t be canceled within 6 hours from the lesson');
+        return redirect('/user_data');
         }
     }
 
@@ -91,19 +86,19 @@ class userController extends Controller
             $user->fill(request()->only(['email', 'phone', 'address']));
             $user->password = bcrypt($psw); // HERE NEW PASSWORD IS ENCRYPTED AND STORED
             $user->update();
-            return redirect('/user_data')->with([
-            'flash_message' => 'Updated user data was successfully saved!',
-            'flash_message_important' => false
-          ]);
+            session()->flash('success_message', 'Updated user data was successfully saved!');
+            return redirect('/user_data');
         } 
         else if ($psw !== $psw_repeat) {
-            session()->flash('The two passwords inserted should be equal');
+            session()->flash('warning_message', 'The two passwords inserted should be equal');
             return redirect('/user_data');
         } 
         else if ($psw == null) {
             $user->fill(request()->only(['email', 'phone', 'address']));
             $user->update();
-            return redirect('user_data')->with('status', 'Updated user data was successfully saved!');
+            // return redirect('/user_data')->with('flash message', 'Updated user data was successfully saved!');
+            session()->flash('success_message', 'Updated user data was successfully saved!');
+            return redirect('/user_data');
         }
     }
 
