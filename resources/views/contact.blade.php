@@ -26,7 +26,7 @@
 
 
         <div class="col col-md-8 col-lg-6">
-            <form action="" method="post">
+            <form action="{{ action('contactController@store') }}" method="post">
             {{ csrf_field()}}
                 <div class="form-group">
                     <label for="name">Nimi</label>
