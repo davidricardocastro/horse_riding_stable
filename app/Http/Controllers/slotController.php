@@ -74,13 +74,12 @@ class slotController extends Controller
      */
     public function show($id)
     {   
-        //    $reservations = \App\Reservation::select(
-        //    'reservations.user_id',
-        //    'slots.id'            
-        //)
-        //->leftJoin('slots', 'reservations.slot_id', '=', 'slots.id')
-        //->where('reservations.slot_id', '=', $id)
-        //->get();
+            $reservations = \App\Reservation::select(
+                        
+        )
+        ->leftJoin('users', 'reservations.user_id', '=', 'users.id')
+        ->where('reservations.slot_id', '=', $id)
+        ->get();
         //var_dump($reservations);
 
         
@@ -89,7 +88,7 @@ class slotController extends Controller
         $slot = slot::find($id);
         
         $view->slot = $slot; 
-        //$view->reservations = $reservations;       
+        $view->reservations = $reservations;       
         
         return $view;
     }
