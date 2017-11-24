@@ -70,9 +70,9 @@
         div#booking_sent {            display: none;        }
         div#accordion {            display: none;        }
     </style>
-    <div class="container">
+    <div class="container background_light">
         <div class="row">
-            <div class="col">
+            <div class="col py-3">
 
                 <!-- Links for creting new lessons slots-->
                 <div class="btn-group">
@@ -84,11 +84,14 @@
                         <button type="button" class="btn btn-outline-success">
                             <a href="{{ action('DaySlotController@index') }}">Select a day</a>
                         </button>
+                        <button type="button" class="btn btn-outline-success">
+                    <a href="{{ action('WeekSlotController@index') }}">Select a week</a>
+                    </button>
 
                 </div>
 
 
-                </button>
+                
                 <div class="week-picker"></div>
                 <label>Week :</label>
                 <span id="startDate"></span> -
@@ -110,7 +113,7 @@
             <div class="newDiv"></div>
 
         </div>
-    </div>
+    
     <!--Table for displaying all users info -->
     <div class="row">
         <div class="col-12">
