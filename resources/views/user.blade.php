@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-12">
                 <h3>Welcome {{ $user_name }}</h3>
-                <p>Please select a date:</p>
+                <p class="legend">Please select a date:</p>
                 <div class="hope"></div>
             </div>
             <div class="col-12">
@@ -69,6 +69,8 @@
         div#booking_confirmation {            display: none;        }
         div#booking_sent {            display: none;        }
         div#accordion {            display: none;        }
+        div.legend {            display: none;        }
+        p.legend {            display: none;        }
     </style>
     <div class="container background_light">
         <div class="row">
@@ -91,7 +93,7 @@
                 </div>
 
 
-                
+                <!--Table for displaying all users info -->
                 <div class="week-picker"></div>
                 <label>Week :</label>
                 <span id="startDate"></span> -
@@ -114,7 +116,7 @@
 
         </div>
     
-    <!--Table for displaying all users info -->
+
     <div class="row">
         <div class="col-12">
             <h5>Users details:</h5>
@@ -168,8 +170,11 @@
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>user_name</th>
-                        <th>slot_detail</th>
+                        <th>user_id</th>
+                        <th>slot_id</th>
+                        <th>n_of_spots</th>
+                        <th>created_at</th>
+                        <th>updated_at</th>
 
                     </tr>
                 </thead>
@@ -177,17 +182,20 @@
                     @foreach ($reservation_table as $reservation)
                     <tr>
                         <th scope="row">{{$user['id']}}</th>
-                        <td>{{$reservation['user_name']}}</td>
-                        <td>{{$reservation['slot_detail']}}</td>
-                        <td>{{$reservation['slot_detail']}}</td>
+                        <td>{{$reservation['user_id']}}</td>
+                        <td>{{$reservation['slot_id']}}</td>
+                        <td>{{$reservation['n_of_spots']}}</td>
+                        <td>{{$reservation['created_at']}}</td>
+                        <td>{{$reservation['updated_at']}}</td>
                     </tr>
                     @endforeach
                 </tbody>
             </table>
         </div>
     </div>
-    @endcan
 </div>
+    @endcan
+
 @endsection @section('scripts')
 
     <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
