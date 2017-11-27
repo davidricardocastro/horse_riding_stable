@@ -266,7 +266,7 @@
                                                 selected_slot_id = $(this).data('id');
                                                 n_students = $(this).data('n_students');
                                                 //select slot.id
-                                                $(".slot").css("color", "black").css("font-weight","normal");
+                                                //$(".slot").css("color", "black").css("font-weight","normal");
                                                 $(this).css("color", "blue").css("font-weight","bold");
 
 
@@ -381,48 +381,4 @@
 
 
 </script>
-
-<script type="text/javascript">
-    // Week picker DEPRECATED ********************************************************************************
-    $(function () {
-        var startDate;
-        var endDate;
-
-        var selectCurrentWeek = function () {
-            window.setTimeout(function () {
-                $('.week-picker').find('.ui-datepicker-current-day a').addClass('ui-state-active')
-            }, 1);
-        }
-
-        $('.week-picker').datepicker({
-            showOtherMonths: true,
-            selectOtherMonths: true,
-            onSelect: function (dateText, inst) {
-                var date = $(this).datepicker('getDate');
-                startDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay());
-                endDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + 6);
-                var dateFormat = inst.settings.dateFormat || $.datepicker._defaults.dateFormat;
-                $('#startDate').text($.datepicker.formatDate(dateFormat, startDate, inst.settings));
-                $('#endDate').text($.datepicker.formatDate(dateFormat, endDate, inst.settings));
-
-                for (var i = 0; i <= 6; i++) {
-                    datex = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + i);
-                    $('#day' + i).text($.datepicker.formatDate('D, dd-mm-yy', datex, inst.settings));
-                }
-                var header_day = $('th#day0').text();
-                console.log(header_day);
-                selectCurrentWeek();
-            },
-            beforeShowDay: function (date) {
-                var cssClass = '';
-                if (date >= startDate && date <= endDate)
-                    cssClass = 'ui-datepicker-current-day';
-                return [true, cssClass];
-            },
-            onChangeMonthYear: function (year, month, inst) {
-                selectCurrentWeek();
-            }
-        });
-
-    });
-</script> @endsection
+ @endsection
