@@ -19,10 +19,10 @@ Route::get('/','indexController@index');
 //Route::get('/home','indexController@index');
 //Route::get('/logout','indexController@index');
 
-Route::get('/riding','ridingController@riding');
-Route::get('/stable','stableController@stable');
-Route::get('/team','horseController@horse');
-Route::get('/contact','contactController@contact');
+Route::get('/ratsastus','ridingController@riding');
+Route::get('/talli','stableController@stable');
+Route::get('/hevoset','horseController@horse');
+Route::get('/yhteystiedot','contactController@contact');
 Route::get('/user','userController@user')->middleware('auth');
 
 Auth::routes();
