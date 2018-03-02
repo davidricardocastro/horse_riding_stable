@@ -1,1 +1,13 @@
-.custom_color1{background-color:rgb(32,53,33)}.custom__color2{background-color:#B39C4D}body{color:rgb(32,53,33)}.main_font{font-family:'Playball',sans;color:#D0CFCF}.secondary_font{font-family:'Playball',sans;color:rgb(32,53,33)}.nav_font{color:#D0CFCF}p,li,h2,h3,h4,h5,h6,label,input,button{font-family:'Lora',sans}.bigger_font{font-size:1.25em}.container_background{background:url(/img/deearr.jpg);background-attachment:fixed;background-size:cover;background-position:0%;padding:1em;min-height:100vh}.background_light{background-color:rgba(255,255,255,.9)}.top{background:url(/img/horse_eating_cut.jpg);background-size:cover;background-position:0%;font-size:3em;padding:20px}@font-face{font-family:Playball;src:url(/fonts/Playball-Regular.ttf)}@font-face{font-family:Lora;src:url(/fonts/Lora-Regular.ttf)}a.nav-link.dropdown-toggle{font-size:1.25rem}
+.custom_color1{background-color:rgb(32,53,33)}
+.custom__color2{background-color:#B39C4D}
+body{color:rgb(32,53,33)}.main_font{font-family:'Playball',sans;color:#D0CFCF}
+.secondary_font{font-family:'Playball',sans;color:rgb(32,53,33)}
+.nav_font{color:#D0CFCF}p,li,h1,h2,h3,h4,h5,h6,label,input,button{font-family:'Lora',sans}
+.bigger_font{font-size:1.25em}
+.container_background{background:url(/img/deearr.jpg);background-attachment:fixed;background-size:cover;background-position:0%;padding:1em;min-height:100vh}
+.background_light{background-color:rgba(255,255,255,.9)}.top{background:url(/img/horse_eating_cut.jpg);background-size:cover;background-position:0%;font-size:3em;padding:20px}@font-face{font-family:Playball;src:url(/fonts/Playball-Regular.ttf)}@font-face{font-family:Lora;src:url(/fonts/Lora-Regular.ttf)}
+a.nav-link.dropdown-toggle{font-size:1.25rem}
+
+.heading{
+    color: blue;    
+}

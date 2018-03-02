@@ -6,13 +6,13 @@
     <div class="container background_light p-4">
     <div class="row">
 <div class="col-12 pb-2">
-<h2>Yhteystiedot</h2>
+<h1>Yhteystiedot</h1>
 
 
 
 <p class="m-0"><i class="fa fa-map-marker" aria-hidden="true"></i> Lopentie 6, 01860 Nurmijärvi</p>
 <p class="m-0"><i class="fa fa-phone " aria-hidden="true"></i> +358 452 312 398</p>
-<p class="m-0"><i class="fa fa-envelope-o" aria-hidden="true"></i> stallgranbacka@gmail.com </p>
+<p class="m-0"><i class="fa fa-envelope-o" aria-hidden="true"></i> toimisto@jarteam.com </p>
 
 
 </div>

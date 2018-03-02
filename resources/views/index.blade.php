@@ -2,8 +2,8 @@
 
 @section('content')
 
-<div class="container background_light p-4">
-    <h4>Talli Andantino <br> Ratsastustunnit 1-4 hengen ryhmissä Perttulassa, Nummijärvellä</h4>    
+<div class="container background_light p-4 secondary_font">
+    <h1 >Talli Andantino </h1> <h3>Ratsastustunnit 1-4 hengen ryhmissä Perttulassa, Nurmijärvellä</h3>   
 </div>
 
 <div class="container background_light p-4 mt-3">

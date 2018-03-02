@@ -1,14 +1,31 @@
 @extends('wrapper') @section('content')
 <div class="container background_light p-4">
-<h2>Ratsastus</h2>
+<h1>Ratsastus</h1>
 <!--horse riding-->
     <ul class="m-0 list-group">
         <li class="list-group-item">Tarjoamme ratsastustunteja tiistaista lauantaihin, myös aamuisin ja aamupäivisin.</li> 
         <li class="list-group-item">Kaikki tuntimme keskittyvät kouluratsastukseen, muuta teemme myös tarvittaessa harjoituksia puomeilla.</li> 
         <li class="list-group-item">Ryhmien koko max. 4 ratsastajaa.</li>
-        <li class="list-group-item">Kaikilla hevosilla on käytössä koulusatula. Hevosten ehdoton maksimi työmäärä oppilaskäytössä on 2 tuntia päivässä.</li>
+        
     </ul>    
 </div>
+
+
+<div class="container background_light p-4 p-4 mt-2 p-4">
+<h3>Hinnasto</h3>
+<!--horse riding-->
+    <ul class="m-0 list-group">
+        <li class="list-group-item">10X kortti <b> 330€</b></li> 
+        <li class="list-group-item">Irtotunti Ryhmässä <b> 40€</b></li> 
+        <li class="list-group-item">Yksityistunti <b>55€</b></li>
+        <li class="list-group-item">Yksityistunti 10X kortti <b>500€</b></li>
+    </ul>
+    
+    
+
+
+</div>
+
 
 <div class="container background_light pl-4 pr-4 mt-2 pb-4">
     <div class="row">
@@ -22,7 +39,7 @@
 </div>
 
 <div class="container background_light p-4 mt-2">
-    <h4>Ohjeita ratsastajalle</h4>
+    <h2>Ohjeita ratsastajalle</h2>
     <h6><strong></strong></h6>
     <ul class="m-0 list-group">
         <li class="list-group-item list-group-item-success">Tahdomme säilyttää hevosemme positiivisina ja mielellään työskentelevinä. Huomioithan siis muutamia asioita:</li>
