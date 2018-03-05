@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container background_light p-4 secondary_font">
-    <h1 >Talli Andantino </h1> <h3>Ratsastustunnit 1-4 hengen ryhmissä Perttulassa, Nurmijärvellä</h3>   
+    <h1 >Talli Andantino </h1> <h2>Ratsastustunnit 1-4 hengen ryhmissä Perttulassa, Nurmijärvellä</h2>   
 </div>
 
 <div class="container background_light p-4 mt-3">

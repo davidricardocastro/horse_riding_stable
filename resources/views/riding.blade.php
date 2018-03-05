@@ -15,11 +15,13 @@
 <h3>Hinnasto</h3>
 <!--horse riding-->
     <ul class="m-0 list-group">
-        <li class="list-group-item">10X kortti <b> 330€</b></li> 
+        <li class="list-group-item">10X kortti <b> 330€</b> (voimassa 12 vko)</li> 
         <li class="list-group-item">Irtotunti Ryhmässä <b> 40€</b></li> 
         <li class="list-group-item">Yksityistunti <b>55€</b></li>
-        <li class="list-group-item">Yksityistunti 10X kortti <b>500€</b></li>
+        <li class="list-group-item">Yksityistunti 10X kortti <b>500€</b> (voimassa 12 vko)</li>
     </ul>
+    <p class="px-2 pt-2 ">Kaikki hinnat sisältävät alv. 10%. </p>
+    
     
     
 

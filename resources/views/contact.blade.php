@@ -50,7 +50,8 @@
                     <label for="message">Viesti</label>
                     <textarea class="form-control" id="message" rows="6" value=""  name="message"></textarea>
                 </div>
-                {!! Recaptcha::render() !!}
+                <!-- //To be implemented
+                    {!! Recaptcha::render() !!}  -->
                 <button class="btn btn-success" id="send_btn" type="submit">
                     Lähetä
                 </button>
