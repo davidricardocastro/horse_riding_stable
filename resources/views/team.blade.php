@@ -9,7 +9,7 @@
             <div class="card m-3 text-center bg-light" style="width: 20rem;">
                 <div class="card-body">
                     <h4 class="card-title">Antonya</h4>
-                    <img class="card-img-top" src="./img/horse3_low.jpg" alt="horse">
+                    <img class="card-img-top" src="./img/horse3_low.jpg" alt="horse image">
                     <p class="card-text"><!-- info about horse here--></p>
                 </div>
             </div>
@@ -18,7 +18,7 @@
             <div class="card m-3 text-center bg-light" style="width: 20rem;">
                 <div class="card-body">
                     <h4 class="card-title">Daniel</h4>
-                    <img class="card-img-top" src="./img/horse4_low.png" alt="horse">
+                    <img class="card-img-top" src="./img/horse4_low.png" alt="horse image">
                     <p class="card-text"><!-- info about horse here--></p>
                 </div>
             </div>
@@ -27,7 +27,7 @@
             <div class="card m-3 text-center bg-light" style="width: 20rem;">
                 <div class="card-body">
                     <h4 class="card-title">Roky</h4>
-                    <img class="card-img-top" src="./img/horse1_low.jpg" alt="horse">
+                    <img class="card-img-top" src="./img/horse1_low.jpg" alt="horse image">
                     <p class="card-text"><!-- info about horse here--></p>
                 </div>
             </div>
@@ -36,7 +36,7 @@
             <div class="card m-3 text-center bg-light" style="width: 20rem;">
                 <div class="card-body ">
                     <h4 class="card-title">Verdi</h4>
-                    <img class="card-img-top" src="./img/horse2_low.jpg" alt="horse">
+                    <img class="card-img-top" src="./img/horse2_low.jpg" alt="horse image">
                     <p class="card-text"><!-- info about horse here--></p>
                 </div>
             </div>
@@ -44,7 +44,15 @@
             <div class="card m-3 text-center bg-light" style="width: 20rem;">
                 <div class="card-body ">
                     <h4 class="card-title">Lily</h4>
-                    <img class="card-img-top" src="./img/horse6.jpg" alt="Lily">
+                    <img class="card-img-top" src="./img/lily.jpeg" alt="horse image">
+                    <p class="card-text"><!-- info about horse here--></p>
+                </div>
+            </div>
+
+             <div class="card m-3 text-center bg-light" style="width: 20rem;">
+                <div class="card-body ">
+                    <h4 class="card-title">Evita</h4>
+                    <img class="card-img-top" src="./img/evita.jpeg" alt="horse image">
                     <p class="card-text"><!-- info about horse here--></p>
                 </div>
             </div>

@@ -8,12 +8,13 @@
 <div class="col-12 pb-2">
 <h1>Yhteystiedot</h1>
 
-
-
+<br>
+<h4>Jarteam Oy</h4>
 <p class="m-0"><i class="fa fa-map-marker" aria-hidden="true"></i> Lopentie 6, 01860 Nurmijärvi</p>
 <p class="m-0"><i class="fa fa-phone " aria-hidden="true"></i> +358 452 312 398</p>
 <p class="m-0"><i class="fa fa-envelope-o" aria-hidden="true"></i> toimisto@jarteam.com </p>
-
+<br>
+<p>Pankkiyhteys: <br> Nordea FI80 2290 1800 1294 40 </p>
 
 </div>
         @if (count($errors) > 0)
