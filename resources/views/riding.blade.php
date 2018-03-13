@@ -4,8 +4,9 @@
 <!--horse riding-->
     <ul class="m-0 list-group">
         <li class="list-group-item">Tarjoamme ratsastustunteja tiistaista lauantaihin, myös aamuisin ja aamupäivisin.</li> 
-        <li class="list-group-item">Kaikki tuntimme keskittyvät kouluratsastukseen, muuta teemme myös tarvittaessa harjoituksia puomeilla.</li> 
+        <li class="list-group-item">Kaikki tuntimme keskittyvät kouluratsastukseen, mutta teemme myös tarvittaessa harjoituksia puomeilla.</li> 
         <li class="list-group-item">Ryhmien koko max. 4 ratsastajaa.</li>
+        <li class="list-group-item">Ratsastajia ei ole vakuutettu tallin puolesta. Ratsastaminen ja liikkuminen tallin alueella omalla vastuulla. Suosittelemme henkilökohtaista vakuutusta.</li>
         
     </ul>    
 </div>
@@ -15,10 +16,10 @@
 <h3>Hinnasto</h3>
 <!--horse riding-->
     <ul class="m-0 list-group">
-        <li class="list-group-item">10X kortti <b> 330€</b> (voimassa 12 vko)</li> 
-        <li class="list-group-item">Irtotunti Ryhmässä <b> 40€</b></li> 
-        <li class="list-group-item">Yksityistunti <b>55€</b></li>
-        <li class="list-group-item">Yksityistunti 10X kortti <b>500€</b> (voimassa 12 vko)</li>
+        <li class="list-group-item">10X kortti <b> 330&euro;</b> (voimassa 12 vko)</li> 
+        <li class="list-group-item">Irtotunti Ryhmässä <b> 40&euro;</b></li> 
+        <li class="list-group-item">Yksityistunti <b>55&euro;</b></li>
+        <li class="list-group-item">Yksityistunti 10X kortti <b>500&euro;</b> (voimassa 12 vko)</li>
     </ul>
     <p class="px-2 pt-2 ">Kaikki hinnat sisältävät alv. 10%. </p>
     

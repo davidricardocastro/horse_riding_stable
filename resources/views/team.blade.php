@@ -49,13 +49,7 @@
                 </div>
             </div>
 
-             <div class="card m-3 text-center bg-light" style="width: 20rem;">
-                <div class="card-body ">
-                    <h4 class="card-title">Evita</h4>
-                    <img class="card-img-top" src="./img/evita.jpeg" alt="horse image">
-                    <p class="card-text"><!-- info about horse here--></p>
-                </div>
-            </div>
+             
     </div>
 </div>
 

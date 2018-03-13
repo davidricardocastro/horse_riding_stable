@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
 
+    <meta name="google-site-verification" content="ouoWwN0Hs1JR2kPHVFEzsxdXtaLww2CZSV0VEugmqyM" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <title>Talli Andantino - Ratsastustunnit 1-4 hengen ryhmissä - Perttula, Nurmijärvi</title>

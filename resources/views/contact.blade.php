@@ -9,13 +9,16 @@
 <h1>Yhteystiedot</h1>
 
 <br>
-<h4>Jarteam Oy</h4>
+
 <p class="m-0"><i class="fa fa-map-marker" aria-hidden="true"></i> Lopentie 6, 01860 Nurmijärvi</p>
 <p class="m-0"><i class="fa fa-phone " aria-hidden="true"></i> +358 452 312 398</p>
 <p class="m-0"><i class="fa fa-envelope-o" aria-hidden="true"></i> toimisto@jarteam.com </p>
 <br>
-<p>Pankkiyhteys: <br> Nordea FI80 2290 1800 1294 40 </p>
-
+<h4>Jarteam Oy</h4>
+<p class="m-0"><i class="fa fa-tag"></i> Y-tunnus 0947473-9</p>
+<p class="m-0"><i class="fa fa-building"></i> Pankkiyhteys - Nordea: FI80 2290 1800 1294 40 </p>
+<div><br>Copyright<i class="fa fa-copyright"></i> Jarteam Oy</div>
+<br>
 </div>
         @if (count($errors) > 0)
             <div class="alert alert-danger">
@@ -27,8 +30,7 @@
             </div>
         @endif
         <div class="col-12 mt-3">
-            <p>Voit ottaa yhteyttä Andatino Talliin myös oheisella lomakkeella.<br> Täytä yhteystietosi, niin otamme
-                yhteyttä!</p>
+            <p>Voitte ottaa meihin yhteyttä alla olevalla lomakkeella:</p>
         </div>
 
 
@@ -37,28 +39,35 @@
             {{ csrf_field()}}
                 <div class="form-group">
                     <label for="name">Nimi</label>
-                    <input type="text" class="form-control" name="name" id="name" placeholder="" value="">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="" value="" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Sähköposti</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="" value="">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="" value="" required>
                 </div>
                 <div class="form-group">
                     <label for="phone">Puhelinnumero</label>
-                    <input type="int" class="form-control" name="phone" id="phone" placeholder="" value="">
+                    <input type="int" class="form-control" name="phone" id="phone" placeholder="" value="" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Viesti</label>
-                    <textarea class="form-control" id="message" rows="6" value=""  name="message"></textarea>
+                    <textarea class="form-control" id="message" rows="6" value=""  name="message" required></textarea>
                 </div>
-                <!-- //To be implemented
-                    {!! Recaptcha::render() !!}  -->
+               
+                    {!! Recaptcha::render() !!}  
+                    <br>
                 <button class="btn btn-success" id="send_btn" type="submit">
                     Lähetä
                 </button>
             </form>
         </div>
     </div>
+
+    
+
+
+
+
 </div>
 
 @endsection
