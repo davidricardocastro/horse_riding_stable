@@ -48,7 +48,7 @@ $email=new ContactMail(array(
     'phone'=>$request->get('phone')
 ));
 
-Mail::to('dptorri@gmail.com', 'Admin')->send($email);
+Mail::to('davidricardocastro@gmail.com', 'Admin')->send($email);
 
     /* Mail::send('emails.contact',
         array(
