@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER'),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp-mail.outlook.com'),
+    'host' => env('MAIL_HOST'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'stable.matic@outlook.com'),
-        'name' => env('MAIL_FROM_NAME', 'Stable Matic'),
+        'address' => env('MAIL_FROM_ADDRESS'),
+        'name' => env('MAIL_FROM_NAME'),
     ],
 
     /*
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
+    'encryption' => env('MAIL_ENCRYPTION'),
 
     /*
     |--------------------------------------------------------------------------

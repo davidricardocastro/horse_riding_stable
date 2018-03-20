@@ -37,7 +37,7 @@
             </div>
         @endif
 
-        <!--
+       
         <div class="col-12 mt-3">
             <p>Voitte ottaa meihin yhteyttä alla olevalla lomakkeella:</p>
         </div>
@@ -63,14 +63,14 @@
                     <textarea class="form-control" id="message" rows="6" value=""  name="message" required></textarea>
                 </div>
                
-                    {!! Recaptcha::render() !!}  
+                   <!-- {!! Recaptcha::render() !!}  -->
                     <br>
                 <button class="btn btn-success" id="send_btn" type="submit">
                     Lähetä
                 </button>
             </form>
         </div>
-        -->
+       
     </div>
 
     
