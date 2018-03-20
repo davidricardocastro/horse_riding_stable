@@ -1,9 +1,14 @@
-# Project Title: Talli Andantino
-Full website for a horse ridding stable in Nurmijärvi, Finland
-Users can book a certan time and date for a riding lesson
+# Project Title: Horse riding stable
+Full website for a horse riding stable Finland
 
 ## Getting Started
 You can copy the project and run it on your local machine for development and testing purposes.
 
-### Prerequisites
-You need to install Laravel, mySQL and Boostrap 4 to be able to run it properly.
+## Prerequisites 
+Apache server
+PHP >= 7.1.
+mySQL 
+
+## Notes
+Riding lessons booking system is still under development
+Images have copyrights and cannot be used for other projects
