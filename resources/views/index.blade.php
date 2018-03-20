@@ -1,5 +1,12 @@
 @extends('wrapper')
 
+@section('seoMeta')
+<link rel="canonical" href="https://www.andantino.fi/">
+<meta name="description" content="Tarjoamme ratsastustunteja 1-4 hengen ryhmissä tiistaista lauantaihin, myös aamuisin ja aamupäivisin. Perttula, Nurmijärvi"/>
+<meta name="title" content="Talli Andantino - Ratsastustunnit 1-4 hengen ryhmissä - Perttula, Nurmijärvi">
+    
+@endsection
+
 @section('content')
 
 <div class="container background_light p-4 secondary_font">

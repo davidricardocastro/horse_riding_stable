@@ -11,13 +11,13 @@
 
     <meta name="google-site-verification" content="ouoWwN0Hs1JR2kPHVFEzsxdXtaLww2CZSV0VEugmqyM" />
 
+    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <title>Talli Andantino - Ratsastustunnit 1-4 hengen ryhmissä - Perttula, Nurmijärvi</title>
 
-    
-    <meta name="description" content="Tarjoamme ratsastustunteja 1-4 hengen ryhmissä tiistaista lauantaihin, myös aamuisin ja aamupäivisin. Perttula, Nurmijärvi"/>
-    <meta name="title" content="Talli Andantino - Ratsastustunnit 1-4 hengen ryhmissä - Perttula, Nurmijärvi">
+    @yield('seoMeta') 
     
 
 </head>
