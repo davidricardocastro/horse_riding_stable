@@ -3,9 +3,10 @@
 
 @section('seoMeta')
 <link rel="canonical" href="https://www.andantino.fi/yhteystiedot/">
-<meta name="description" content="Tarjoamme ratsastustunteja 1-4 hengen ryhmissä tiistaista lauantaihin, myös aamuisin ja aamupäivisin. Perttula, Nurmijärvi"/>
-<meta name="title" content="Talli Andantino - Ratsastustunnit 1-4 hengen ryhmissä - Perttula, Nurmijärvi">
+<meta name="description" content="Andantinon yhteystiedot ja yhteydenottolomake."/>
+<meta name="title" content="Talli Andantino - Yhteystiedot">
     
+<title>Talli Andantino - Yhteystiedot</title>
 @endsection
 
 @section('content')
@@ -63,7 +64,7 @@
                     <textarea class="form-control" id="message" rows="6" value=""  name="message" required></textarea>
                 </div>
                
-                   <!-- {!! Recaptcha::render() !!}  -->
+                   {!! Recaptcha::render() !!} 
                     <br>
                 <button class="btn btn-success" id="send_btn" type="submit">
                     Lähetä
