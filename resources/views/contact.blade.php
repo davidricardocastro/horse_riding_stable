@@ -57,13 +57,13 @@
                 </div>
                 <div class="form-group">
                     <label for="phone">Puhelinnumero</label>
-                    <input type="int" class="form-control" name="phone" id="phone" placeholder="" value="" required>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="" value="" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Viesti</label>
                     <textarea class="form-control" id="message" rows="6" value=""  name="message" required></textarea>
                 </div>
-               
+            
                    {!! Recaptcha::render() !!} 
                     <br>
                 <button class="btn btn-success" id="send_btn" type="submit">

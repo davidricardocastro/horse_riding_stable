@@ -23,7 +23,7 @@ class contactController extends Controller
         $this->validate($request, [
             'name' => 'required|max:100',
             'email' => 'required',
-            'phone' => 'required|max:10',
+            'phone' => 'required|max:20',
             'message' => 'required|max:140',
             'g-recaptcha-response' => 'required|recaptcha'
         ]);
@@ -48,7 +48,7 @@ $email=new ContactMail(array(
     'phone'=>$request->get('phone')
 ));
 
-Mail::to('davidricardocastro@gmail.com', 'Admin')->send($email);
+Mail::to('toimisto@jarteam.com', 'Admin')->send($email);
 
     /* Mail::send('emails.contact',
         array(
