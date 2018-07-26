@@ -22,10 +22,10 @@
 <p class="m-0"><i class="fa fa-phone " aria-hidden="true"></i> +358 452 312 398</p>
 <p class="m-0"><i class="fa fa-envelope-o" aria-hidden="true"></i> toimisto@jarteam.com </p>
 <br>
-<h4>Jarteam Oy</h4>
-<p class="m-0"><i class="fa fa-tag"></i> Y-tunnus 0947473-9</p>
-<p class="m-0"><i class="fa fa-building"></i> Pankkiyhteys - Nordea: FI80 2290 1800 1294 40 </p>
-<div><br>Copyright<i class="fa fa-copyright"></i> Jarteam Oy</div>
+<h4>Tmi Henri Pohjonen</h4>
+<p class="m-0"><i class="fa fa-tag"></i> Y-tunnus 2921382-7</p>
+<p class="m-0"><i class="fa fa-building"></i> Pankkiyhteys - Nordea: FI46 1029 3500 4673 02 </p>
+<div><br>Copyright<i class="fa fa-copyright"></i> Tmi Henri Pohjonen</div>
 <br>
 </div>
         @if (count($errors) > 0)

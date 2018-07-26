@@ -57,8 +57,8 @@ Mail::to('toimisto@jarteam.com', 'Admin')->send($email);
             'user_message' => $request->get('message')
         ), function($message)
     {
-        $message->from('davidricardocastro@outlook.com');
-        $message->to('davidricardocastro@gmail.com', 'Admin')->subject('contact');
+        $message->from('name@outlook.com');
+        $message->to('name@gmail.com', 'Admin')->subject('contact');
     });*/
 
 
