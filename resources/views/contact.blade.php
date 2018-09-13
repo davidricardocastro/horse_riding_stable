@@ -20,7 +20,7 @@
 
 <p class="m-0"><i class="fa fa-map-marker" aria-hidden="true"></i> Lopentie 6, 01860 Nurmijärvi</p>
 <p class="m-0"><i class="fa fa-phone " aria-hidden="true"></i> +358 452 312 398</p>
-<p class="m-0"><i class="fa fa-envelope-o" aria-hidden="true"></i> toimisto@jarteam.com </p>
+<p class="m-0"><i class="fa fa-envelope-o" aria-hidden="true"></i> talli@andantino.fi </p>
 <br>
 <h4>Tmi Henri Pohjonen</h4>
 <p class="m-0"><i class="fa fa-tag"></i> Y-tunnus 2921382-7</p>
