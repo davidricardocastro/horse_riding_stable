@@ -48,7 +48,7 @@ $email=new ContactMail(array(
     'phone'=>$request->get('phone')
 ));
 
-Mail::to('toimisto@jarteam.com', 'Admin')->send($email);
+Mail::to('talli@andantino.fi', 'Admin')->send($email);
 
     /* Mail::send('emails.contact',
         array(
