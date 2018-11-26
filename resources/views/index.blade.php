@@ -15,7 +15,7 @@
 </div>
 
 <div class="container background_light p-4 mt-3">
-    <img class="img-fluid" src="{{url ('/img/horse5_cut.jpg') }}" alt="black horse">
+    <img class="img-fluid" src="{{url ('/img/hero.jpg') }}" alt="black horse">
 </div>
 
 <div class="container background_light mt-2 p-4">
