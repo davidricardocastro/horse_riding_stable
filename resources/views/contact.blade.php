@@ -19,8 +19,9 @@
 <br>
 
 <p class="m-0"><i class="fa fa-map-marker" aria-hidden="true"></i> Lopentie 6, 01860 Nurmijärvi</p>
-<p class="m-0"><i class="fa fa-phone " aria-hidden="true"></i> +358 452 312 398</p>
+<p class="m-0"><a href="tel:+358452312398"><i class="fa fa-phone " aria-hidden="true"></i></a> +358 452 312 398</p>
 <p class="m-0"><i class="fa fa-envelope-o" aria-hidden="true"></i> talli@andantino.fi </p>
+<p class="m-0"> <a target="_blank" title="follow me on facebook" href="https://www.facebook.com/talliandantino/"><i class="fa fa-facebook-square"></i></a> facebook.com/talliandantino </p> 
 <br>
 <h4>Tmi Henri Pohjonen</h4>
 <p class="m-0"><i class="fa fa-tag"></i> Y-tunnus 2921382-7</p>

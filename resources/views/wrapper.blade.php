@@ -37,6 +37,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <span class="main_font bigger_font ">Talli Andantino</span>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark custom_color1">
+
+ 
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">                       
                 <span class="navbar-toggler-icon"></span>
@@ -125,6 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="col-lg-12 col-xl-3"><p class=" text-center nav_font" ><i class="fa fa-map-marker" aria-hidden="true"></i> Lopentie 6, 01860 Nurmijärvi </p></div>
                 <div class="col-lg-12 col-xl-3"><p class=" text-center nav_font"><i class="fa fa-envelope-o" aria-hidden="true"></i> talli@andantino.fi </p> </div>
                 <div class="col-lg-12 col-xl-3"><p class=" text-center nav_font"><i class="fa fa-phone " aria-hidden="true"></i> +358 452 312 398 </p> </div>
+                
                 
             </div>
         </div>

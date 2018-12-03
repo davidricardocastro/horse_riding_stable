@@ -27,12 +27,14 @@
 <h3>Hinnasto</h3>
 <!--horse riding-->
     <ul class="m-0 list-group">
-        <li class="list-group-item">10X kortti <b> 330&euro;</b> (voimassa 12 vko)</li> 
+        <li class="list-group-item">10X kortti <b style="text-decoration:line-through"> 330&euro;</b> (voimassa 12 vko) <br><span style="color: red;"><b>ALE 297&euro;*</b></span></li> 
         <li class="list-group-item">Irtotunti Ryhmässä <b> 40&euro;</b></li> 
         <li class="list-group-item">Yksityistunti <b>55&euro;</b></li>
-        <li class="list-group-item">Yksityistunti 10X kortti <b>500&euro;</b> (voimassa 12 vko)</li>
+        <li class="list-group-item">Yksityistunti 10X kortti <b style="text-decoration:line-through">500&euro;</b> (voimassa 12 vko) <br><span style="color: red;"><b>ALE 450&euro;*</b></span></li>
     </ul>
     <p class="px-2 pt-2 ">Kaikki hinnat sisältävät alv. 10%. </p>
+    <p class="px-2 pt-2 ">*Tunnit ratsastettava 24.3.2019 mennessä. Tutustumisyksityistunti ei sisälly 10X korttiin. Tarjous voimassa vuoden loppuun asti. </p>
+    
     
     
     
